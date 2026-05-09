@@ -1,0 +1,22 @@
+{
+  "name": "catfish-corner-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsx src/bot.ts",
+    "backfill": "tsx src/backfill.ts",
+    "generate": "python3 pipeline/run.py",
+    "deploy": "npm run generate && gh-pages -d site"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "gh-pages": "^6.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catfish Corner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🐟 bront and friends' catfish corner 🐈</h1>
+  <div id="table-container">
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th class="col-user"></th>
+          {% for col in columns %}
+          <th class="{{ 'col-summary' if col.is_summary else '' }}">{{ col.label }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr class="{{ 'row-sep' if row.row_sep else '' }}">
+          <th class="col-user">{{ row.label }}</th>
+          {% for cell in row.cells %}
+          <td class="{{ 'col-sep' if cell.col_sep else '' }}"{% if cell.bg %} style="background-color: {{ cell.bg }}"{% endif %}>{{ cell.display }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
