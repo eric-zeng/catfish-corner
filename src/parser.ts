@@ -18,26 +18,18 @@ interface MessageAuthor {
 }
 
 export function parseMessage(content: string, author: MessageAuthor): ParsedResult | null {
-  const lines = content.trim().split('\n');
+  const headerMatch = content.match(/#(\d+)\s*-\s*(\d+(?:\.\d+)?)\/(\d+)/);
+  if (!headerMatch) return null;
 
-  if (lines[0].trim() !== 'catfishing.net') return null;
-  if (lines.length < 3) return null;
-
-  const dayMatch   = lines[1].match(/#(\d+)/);
-  const scoreMatch = lines[1].match(/(\d+(?:\.\d+)?)\/(\d+)/);
-  if (!dayMatch || !scoreMatch) return null;
-
-  const day_number = parseInt(dayMatch[1]);
-  const score      = parseFloat(scoreMatch[1]);
-  const total      = parseInt(scoreMatch[2]);
+  const day_number = parseInt(headerMatch[1]);
+  const score      = parseFloat(headerMatch[2]);
+  const total      = parseInt(headerMatch[3]);
 
   const guesses: number[] = [];
-  for (let i = 2; i < lines.length; i++) {
-    for (const char of lines[i].trim()) {
-      if (char === CAT)  guesses.push(1);
-      else if (char === FISH) guesses.push(0);
-      else if (char === EGG)  guesses.push(0.5);
-    }
+  for (const char of content.slice(headerMatch.index! + headerMatch[0].length)) {
+    if (char === CAT)       guesses.push(1);
+    else if (char === FISH) guesses.push(0);
+    else if (char === EGG)  guesses.push(0.5);
   }
 
   if (guesses.length === 0) return null;

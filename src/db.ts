@@ -31,6 +31,11 @@ export function insertResult({ username, user_id, date, day_number, score, total
   return changes > 0;
 }
 
+export function getLatestEntryDate(): Date | null {
+  const row = db.prepare('SELECT MAX(date) as latest FROM results').get() as { latest: string | null };
+  return row.latest ? new Date(row.latest) : null;
+}
+
 export function closeDb(): void {
   db.close();
 }
