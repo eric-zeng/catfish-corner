@@ -21,5 +21,3 @@ venv/
 # Data
 data/
 
-# Generated
-site/index.html

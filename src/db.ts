@@ -25,9 +25,10 @@ export function initDb(): void {
   `);
 }
 
-export function insertResult({ username, user_id, date, day_number, score, total, guesses }: ParsedResult): void {
-  db.prepare('INSERT OR IGNORE INTO results VALUES (?, ?, ?, ?, ?, ?, ?)')
+export function insertResult({ username, user_id, date, day_number, score, total, guesses }: ParsedResult): boolean {
+  const { changes } = db.prepare('INSERT OR IGNORE INTO results VALUES (?, ?, ?, ?, ?, ?, ?)')
     .run(username, user_id, date.toISOString(), day_number, score, total, guesses);
+  return changes > 0;
 }
 
 export function closeDb(): void {
