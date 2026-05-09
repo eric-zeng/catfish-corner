@@ -1,6 +1,7 @@
 """Pivot results, compute summary stats, and render to site/index.html."""
 import pathlib
 import pandas as pd
+from datetime import datetime, timezone
 from jinja2 import Environment, FileSystemLoader
 
 ROOT      = pathlib.Path(__file__).parent.parent
@@ -78,8 +79,10 @@ def render() -> None:
         for col in all_cols
     ]
 
+    updated_at = datetime.now(timezone.utc).isoformat()
+
     env  = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=False)
-    html = env.get_template("index.html.j2").render(columns=columns, rows=rows)
+    html = env.get_template("index.html.j2").render(columns=columns, rows=rows, updated_at=updated_at)
 
     OUT.write_text(html)
     print(f"Rendered {len(score_rows)} users × {len(day_cols)} days → {OUT}")
