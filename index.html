@@ -14,7 +14,7 @@
 </head>
 <body>
   <h1>🐟 bront and friends' catfish corner 🐈</h1>
-  <p class="updated-at">last updated <time id="updated-at" datetime="2026-05-09T06:09:40.215296+00:00"></time></p>
+  <p class="updated-at">last updated <time id="updated-at" datetime="2026-05-09T06:35:07.702781+00:00"></time></p>
   <script>
     const t = document.getElementById('updated-at');
     t.textContent = new Date(t.dateTime).toLocaleString(undefined, {
@@ -465,6 +465,29 @@
   <div id="guess-breakdown"></div>
 
   <script type="text/babel">
+    function hammingDist(a, b) {
+      const n = Math.min(a.length, b.length);
+      let dist = 0;
+      for (let i = 0; i < n; i++) {
+        if (a[i] !== b[i]) dist++;
+      }
+      return dist;
+    }
+
+    function mostInSync(records) {
+      let best = null, bestDist = Infinity;
+      for (let i = 0; i < records.length; i++) {
+        for (let j = i + 1; j < records.length; j++) {
+          const d = hammingDist(records[i].guesses, records[j].guesses);
+          if (d < bestDist) {
+            bestDist = d;
+            best = [records[i].username, records[j].username];
+          }
+        }
+      }
+      return best;
+    }
+
     function GuessCell({ g }) {
       if (g === 1 || g === true)  return <td className="guess-hit">🐈</td>;
       if (g === 0.5)               return <td className="guess-half">🥚</td>;
@@ -496,9 +519,10 @@
 
       if (allDays.length === 0) return null;
 
-      const day     = allDays[idx];
-      const records = [...dayMap[day]].sort((a, b) => b.score - a.score);
+      const day       = allDays[idx];
+      const records   = [...dayMap[day]].sort((a, b) => b.score - a.score);
       const numGuesses = Math.max(...records.map(r => r.guesses.length));
+      const syncPair  = mostInSync(records);
 
       return (
         <>
@@ -533,6 +557,9 @@
               </tbody>
             </table>
           </div>
+          {syncPair && (
+            <p className="most-in-sync">Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
+          )}
         </>
       );
     }
