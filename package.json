@@ -5,6 +5,7 @@
     "start": "tsx src/bot.ts",
     "backfill": "tsx src/backfill.ts",
     "generate": "python3 pipeline/run.py",
+    "serve": "python3 -m http.server 8080 --directory site",
     "deploy": "npm run generate && gh-pages -d site"
   },
   "dependencies": {

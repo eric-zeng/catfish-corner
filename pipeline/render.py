@@ -34,14 +34,15 @@ def render() -> None:
     df = pd.read_json(IN)
 
     pivot = df.pivot_table(index="username", columns="day_number", values="score", aggfunc="first")
-    pivot = pivot.reindex(sorted(pivot.columns), axis=1).reindex(sorted(pivot.index))
+    pivot = pivot.reindex(sorted(pivot.columns), axis=1)
     pivot.columns = [f"#{int(d)}" for d in pivot.columns]
     pivot.index.name = None
-    day_cols   = list(pivot.columns)
-    score_rows = list(pivot.index)
+    day_cols = list(pivot.columns)
 
     pivot["Mean"]    = pivot[day_cols].mean(axis=1).round(2)
     pivot["Std Dev"] = pivot[day_cols].std(axis=1).round(2)
+    pivot = pivot.sort_values("Mean", ascending=False)
+    score_rows = list(pivot.index)
 
     mean_row = pd.Series({col: pivot.loc[score_rows, col].mean() for col in day_cols}, name="Daily Mean").round(2)
     std_row  = pd.Series({col: pivot.loc[score_rows, col].std()  for col in day_cols}, name="Daily Std Dev").round(2)
@@ -69,7 +70,11 @@ def render() -> None:
         })
 
     columns = [
-        {"label": col, "is_summary": col in SUMMARY_COLS}
+        {
+            "label":      col,
+            "is_summary": col in SUMMARY_COLS,
+            "url":        f"https://catfishing.net/game/{col[1:]}" if col.startswith("#") else None,
+        }
         for col in all_cols
     ]
 

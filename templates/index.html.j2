@@ -14,7 +14,7 @@
         <tr>
           <th class="col-user"></th>
           {% for col in columns %}
-          <th class="{{ 'col-summary' if col.is_summary else '' }}">{{ col.label }}</th>
+          <th class="{{ 'col-summary' if col.is_summary else '' }}">{% if col.url %}<a href="{{ col.url }}" target="_blank">{{ col.label }}</a>{% else %}{{ col.label }}{% endif %}</th>
           {% endfor %}
         </tr>
       </thead>
