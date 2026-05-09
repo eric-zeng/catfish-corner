@@ -3,9 +3,10 @@ import sqlite3
 import json
 import pathlib
 
-ROOT = pathlib.Path(__file__).parent.parent
-DB   = ROOT / "data" / "catfish.db"
-OUT  = ROOT / "data" / "raw.json"
+ROOT     = pathlib.Path(__file__).parent.parent
+DB       = ROOT / "data" / "catfish.db"
+OUT      = ROOT / "data" / "raw.json"
+SITE_OUT = ROOT / "site" / "data.json"
 
 
 def extract() -> None:
@@ -14,5 +15,7 @@ def extract() -> None:
     rows = [dict(r) for r in conn.execute("SELECT * FROM results ORDER BY day_number, username")]
     conn.close()
 
-    OUT.write_text(json.dumps(rows, indent=2))
+    payload = json.dumps(rows, indent=2)
+    OUT.write_text(payload)
+    SITE_OUT.write_text(payload)
     print(f"Extracted {len(rows)} rows → {OUT}")
