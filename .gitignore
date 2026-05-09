@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+*.js.map
+
+# TypeScript
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Data
+data/
+
+# Generated
+site/index.html

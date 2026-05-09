@@ -1,0 +1,740 @@
+[
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-04-23T16:40:54.283Z",
+    "day_number": 669,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,false,true,true,false,false,false,false,true,true]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-04-23T16:56:00.605Z",
+    "day_number": 669,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,true,true,true,false,false,false,false,true,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-23T16:59:50.774Z",
+    "day_number": 669,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,true,true,false,false,true,false,true,true]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-04-23T17:40:19.511Z",
+    "day_number": 669,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,true,true,true,false,false,true,false,true,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-04-24T15:58:56.157Z",
+    "day_number": 670,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,true,false,true,true,true,false,true,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-04-24T15:13:42.969Z",
+    "day_number": 670,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,true,true,true,true,true,false,false,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-24T17:21:20.456Z",
+    "day_number": 670,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,true,true,false,true,true,true,false,false]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-04-24T20:49:59.437Z",
+    "day_number": 670,
+    "score": 8,
+    "total": 10,
+    "guesses": "[true,true,true,true,true,false,true,true,true,false]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-04-24T15:02:49.199Z",
+    "day_number": 670,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,true,true,true,false,false,false,false,false,false]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-04-24T22:41:10.065Z",
+    "day_number": 670,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,true,true,true,false,true,false,false,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-04-25T04:15:14.467Z",
+    "day_number": 671,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,true,true,true,true,true,false,false,false,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-25T16:01:08.667Z",
+    "day_number": 671,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,true,false,true,false,true,false,true,true,false]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-04-25T12:20:06.429Z",
+    "day_number": 671,
+    "score": 8,
+    "total": 10,
+    "guesses": "[true,true,true,true,true,true,false,true,true,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-04-26T13:27:38.409Z",
+    "day_number": 672,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,true,false,false,false,true,true,false,true,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-26T18:02:17.604Z",
+    "day_number": 672,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,false,false,true,true,true,true,true,false]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-04-26T08:33:49.220Z",
+    "day_number": 672,
+    "score": 8,
+    "total": 10,
+    "guesses": "[true,true,true,false,true,false,true,true,true,true]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-04-26T07:15:52.903Z",
+    "day_number": 672,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,true,false,false,true,false,false,false,true,true]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-04-27T18:47:49.116Z",
+    "day_number": 673,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,true,true,false,false,true,true,false,true]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-04-27T13:04:00.781Z",
+    "day_number": 673,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,false,false,false,true,false,true,true,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-27T16:54:19.730Z",
+    "day_number": 673,
+    "score": 8,
+    "total": 10,
+    "guesses": "[true,false,false,true,true,true,true,true,true,true]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-04-27T08:19:00.347Z",
+    "day_number": 673,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,false,false,true,true,false,true,true,true,false]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-04-27T16:10:51.694Z",
+    "day_number": 673,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,false,false,false,true,false,false,true,false,true]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-04-28T18:08:16.501Z",
+    "day_number": 674,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,false,false,false,true,false,true,false,false,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-28T17:47:49.344Z",
+    "day_number": 674,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,false,false,false,true,true,false,false,false,true]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-04-28T19:32:29.694Z",
+    "day_number": 674,
+    "score": 3,
+    "total": 10,
+    "guesses": "[true,false,false,false,false,false,false,true,false,true]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-04-28T22:34:57.029Z",
+    "day_number": 674,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,false,true,true,true,true,false,true,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-29T17:13:18.086Z",
+    "day_number": 675,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,true,true,true,false,false,false,true,true,false]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-04-29T09:43:45.225Z",
+    "day_number": 675,
+    "score": 8,
+    "total": 10,
+    "guesses": "[true,true,true,true,false,false,true,true,true,true]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-04-29T17:32:14.253Z",
+    "day_number": 675,
+    "score": 2,
+    "total": 10,
+    "guesses": "[false,true,false,true,false,false,false,false,false,false]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-04-29T18:55:04.381Z",
+    "day_number": 675,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,true,true,false,false,false,false,true,false,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-04-30T06:22:02.966Z",
+    "day_number": 676,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,true,false,false,true,true,false,false,false,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-04-30T18:37:02.461Z",
+    "day_number": 676,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,true,false,false,false,true,false,false,false,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-04-30T17:14:33.595Z",
+    "day_number": 676,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,false,true,false,true,true,false,true,true]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-04-30T15:18:19.336Z",
+    "day_number": 676,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,true,false,false,false,true,false,false,true,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-01T05:41:42.265Z",
+    "day_number": 677,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,true,true,false,true,false,true,false,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-01T12:37:47.187Z",
+    "day_number": 677,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,false,true,true,true,true,true,false,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-01T16:45:23.668Z",
+    "day_number": 677,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,false,true,false,false,true,true,true,false,false]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-05-01T08:08:28.256Z",
+    "day_number": 677,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,false,true,true,false,true,true,true,false,false]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-01T16:20:00.850Z",
+    "day_number": 677,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,false,false,true,false,true,true,true,false,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-02T15:50:52.741Z",
+    "day_number": 678,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,false,true,false,true,true,true,true,false,true]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-02T18:18:10.738Z",
+    "day_number": 678,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,false,false,false,true,true,true,false,false,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-02T16:23:12.738Z",
+    "day_number": 678,
+    "score": 8,
+    "total": 10,
+    "guesses": "[true,false,true,false,true,true,true,true,true,true]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-02T19:33:05.196Z",
+    "day_number": 678,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,false,true,false,true,false,true,true,false,true]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-03T02:15:01.529Z",
+    "day_number": 678,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,false,false,false,true,true,true,true,false,true]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-03T13:30:42.283Z",
+    "day_number": 679,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,false,false,true,false,true,false,true,false,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-03T23:27:25.840Z",
+    "day_number": 679,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,true,false,true,true,false,false,false,false,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-03T17:28:35.304Z",
+    "day_number": 679,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,true,true,false,true,true,false,false,false,true]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-05-03T11:57:16.408Z",
+    "day_number": 679,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,false,true,false,true,false,false,true,true,false]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-03T09:37:38.058Z",
+    "day_number": 679,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,false,false,true,true,true,true,false,false,true]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-05-03T16:37:07.503Z",
+    "day_number": 679,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,false,false,false,true,false,false,true,false,true]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-03T10:47:10.245Z",
+    "day_number": 679,
+    "score": 3,
+    "total": 10,
+    "guesses": "[true,false,false,false,true,false,false,false,false,true]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-04T06:15:33.436Z",
+    "day_number": 680,
+    "score": 2,
+    "total": 10,
+    "guesses": "[false,false,true,true,false,false,false,false,false,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-04T15:03:49.832Z",
+    "day_number": 680,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,true,true,true,false,true,false,false,true,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-04T16:33:24.924Z",
+    "day_number": 680,
+    "score": 2,
+    "total": 10,
+    "guesses": "[false,false,false,true,false,false,false,false,false,true]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-05-04T07:16:07.990Z",
+    "day_number": 680,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,false,true,false,false,true,false,true,false]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-04T08:40:03.478Z",
+    "day_number": 680,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,false,true,true,false,false,true,false,false,false]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-05-04T14:44:16.006Z",
+    "day_number": 680,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,false,true,false,false,true,true,false,true,false]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-04T21:14:25.638Z",
+    "day_number": 680,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,false,true,true,false,false,true,false,false,true]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-05T19:29:55.955Z",
+    "day_number": 681,
+    "score": 2,
+    "total": 10,
+    "guesses": "[false,true,false,true,false,false,false,false,false,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-05T16:20:27.996Z",
+    "day_number": 681,
+    "score": 2,
+    "total": 10,
+    "guesses": "[false,false,false,true,false,false,false,false,true,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-05T17:45:47.447Z",
+    "day_number": 681,
+    "score": 6,
+    "total": 10,
+    "guesses": "[false,true,true,true,false,true,false,false,true,true]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-05T15:59:26.604Z",
+    "day_number": 681,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,true,false,true,false,true,false,false,true,false]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-05-05T17:57:56.431Z",
+    "day_number": 681,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,true,false,true,false,true,false,false,true,false]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-05T07:21:45.788Z",
+    "day_number": 681,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,false,false,true,false,true,false,false,true,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-06T05:48:06.762Z",
+    "day_number": 682,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,false,false,true,true,true,false,false,false,true]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-06T14:02:23.826Z",
+    "day_number": 682,
+    "score": 4,
+    "total": 10,
+    "guesses": "[true,true,true,true,false,false,false,false,false,false]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-06T16:30:42.423Z",
+    "day_number": 682,
+    "score": 6,
+    "total": 10,
+    "guesses": "[false,false,true,true,true,true,false,true,true,false]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-05-06T07:09:00.647Z",
+    "day_number": 682,
+    "score": 6,
+    "total": 10,
+    "guesses": "[false,true,true,true,true,true,false,false,true,false]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-05-06T16:13:40.344Z",
+    "day_number": 682,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,true,true,true,true,false,false,true,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-07T04:05:34.454Z",
+    "day_number": 683,
+    "score": 9,
+    "total": 10,
+    "guesses": "[true,true,false,true,true,true,true,true,true,true]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-07T14:50:14.103Z",
+    "day_number": 683,
+    "score": 7,
+    "total": 10,
+    "guesses": "[false,true,false,true,true,false,true,true,true,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-07T16:44:13.696Z",
+    "day_number": 683,
+    "score": 8,
+    "total": 10,
+    "guesses": "[false,true,false,true,true,true,true,true,true,true]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-07T15:49:53.837Z",
+    "day_number": 683,
+    "score": 3,
+    "total": 10,
+    "guesses": "[false,true,false,true,false,false,false,false,false,true]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-05-07T15:52:48.720Z",
+    "day_number": 683,
+    "score": 7,
+    "total": 10,
+    "guesses": "[true,true,false,true,true,false,false,true,true,true]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-07T21:00:18.272Z",
+    "day_number": 683,
+    "score": 5,
+    "total": 10,
+    "guesses": "[true,true,false,true,true,true,false,false,false,false]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-05-08T04:40:30.010Z",
+    "day_number": 684,
+    "score": 6,
+    "total": 10,
+    "guesses": "[false,true,true,true,true,false,true,false,true,false]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-05-08T13:09:42.185Z",
+    "day_number": 684,
+    "score": 7,
+    "total": 10,
+    "guesses": "[false,true,true,true,true,false,false,true,true,true]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-05-08T17:14:31.166Z",
+    "day_number": 684,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,true,true,false,false,false,true,false,true,true]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-05-08T12:10:28.130Z",
+    "day_number": 684,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,true,true,true,false,true,false,false,true,false]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-05-08T08:02:44.180Z",
+    "day_number": 684,
+    "score": 5,
+    "total": 10,
+    "guesses": "[false,true,true,false,false,true,false,true,true,false]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-05-08T15:50:39.955Z",
+    "day_number": 684,
+    "score": 6,
+    "total": 10,
+    "guesses": "[true,true,false,false,true,true,false,true,true,false]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-08T08:48:03.127Z",
+    "day_number": 684,
+    "score": 4,
+    "total": 10,
+    "guesses": "[false,true,true,false,false,true,false,false,true,false]"
+  }
+]

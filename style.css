@@ -1,0 +1,77 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  color: #2d2d2d;
+  background: #fef9f0;
+}
+
+h1 {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  color: #d4621a;
+  letter-spacing: 0.01em;
+}
+
+#table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  display: inline-block;
+}
+
+table.results-table {
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.92rem;
+}
+
+thead th {
+  padding: 0.65rem 0.85rem;
+  background: #fff3e0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #7a4a1e;
+  text-align: center;
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 0.5rem 0.85rem;
+  text-align: center;
+}
+
+/* Sticky username column */
+th.col-user {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #fff3e0;
+}
+
+tbody th.col-user {
+  background: #fff;
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* ── Borders ────────────────────────────────── */
+
+/* After header row */
+thead { border-bottom: 2px solid #f5cfa0; }
+
+/* After username column */
+.col-user { border-right: 1px solid #f5cfa0; }
+
+/* Before first summary column (Mean) */
+.col-sep { border-left: 1px solid #f5cfa0; }
+
+/* Before first summary row (Daily Mean) */
+tr.row-sep td,
+tr.row-sep th { border-top: 1px solid #f5cfa0; }
