@@ -8,6 +8,13 @@ body {
   background: #fef9f0;
 }
 
+.updated-at {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+
 h1 {
   font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
   font-size: 2.25rem;

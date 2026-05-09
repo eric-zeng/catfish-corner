@@ -8,6 +8,13 @@
 </head>
 <body>
   <h1>🐟 bront and friends' catfish corner 🐈</h1>
+  <p class="updated-at">last updated <time id="updated-at" datetime="2026-05-09T05:12:32.134031+00:00"></time></p>
+  <script>
+    const t = document.getElementById('updated-at');
+    t.textContent = new Date(t.dateTime).toLocaleString(undefined, {
+      dateStyle: 'medium', timeStyle: 'short'
+    });
+  </script>
   <div id="table-container">
     <table class="results-table">
       <thead>
