@@ -137,3 +137,9 @@ h2 {
 .guess-hit  { background-color: hsl(120, 60%, 75%); }
 .guess-miss { background-color: hsl(0,   60%, 78%); }
 .guess-half { background-color: hsl(50,  80%, 75%); }
+
+.most-in-sync {
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: #7a4a1e;
+}
