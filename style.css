@@ -3,7 +3,7 @@
 body {
   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
   margin: 2rem auto;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 8rem;
   color: #2d2d2d;
   background: #fef9f0;
 }
@@ -23,7 +23,7 @@ h1 {
   letter-spacing: 0.01em;
 }
 
-#table-container {
+.table-wrap {
   overflow-x: auto;
   border-radius: 12px;
   box-shadow: 0 3px 12px rgba(0,0,0,0.12);
@@ -31,7 +31,8 @@ h1 {
   max-width: 100%;
 }
 
-table.results-table {
+table.results-table,
+table.guess-table {
   border-collapse: collapse;
   background: #fff;
   font-size: 0.92rem;
@@ -92,3 +93,47 @@ thead { border-bottom: 2px solid #f5cfa0; }
 /* Before first summary row (Daily Mean) */
 tr.row-sep td,
 tr.row-sep th { border-top: 1px solid #f5cfa0; }
+
+/* ── Guess Breakdown ─────────────────────── */
+
+h2 {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
+  font-size: 1.5rem;
+  color: #d4621a;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#day-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+#day-nav button {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid #f5cfa0;
+  border-radius: 6px;
+  background: #fff3e0;
+  color: #7a4a1e;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#day-nav button:hover:not(:disabled) { background: #f5cfa0; }
+#day-nav button:disabled { opacity: 0.35; cursor: default; }
+
+#day-label a {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #d4621a;
+  text-decoration: none;
+}
+
+#day-label a:hover { text-decoration: underline; }
+
+.guess-hit  { background-color: hsl(120, 60%, 75%); }
+.guess-miss { background-color: hsl(0,   60%, 78%); }
+.guess-half { background-color: hsl(50,  80%, 75%); }
