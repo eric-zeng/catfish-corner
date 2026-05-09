@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE';
   margin: 2rem auto;
   padding: 0 1.5rem;
   color: #2d2d2d;
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE';
   font-size: 2.25rem;
   margin-bottom: 1.5rem;
   color: #d4621a;
