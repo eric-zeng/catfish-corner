@@ -14,7 +14,7 @@
 </head>
 <body>
   <h1>🐟 bront and friends' catfish corner 🐈</h1>
-  <p class="updated-at">last updated <time id="updated-at" datetime="2026-05-11T13:54:37.992240+00:00"></time></p>
+  <p class="updated-at">last updated <time id="updated-at" datetime="2026-05-11T16:44:48.382622+00:00"></time></p>
   <script>
     const t = document.getElementById('updated-at');
     t.textContent = new Date(t.dateTime).toLocaleString(undefined, {
@@ -113,11 +113,11 @@
           
           <td class="" style="background-color: hsl(84, 70%, 68%)">7</td>
           
-          <td class=""></td>
+          <td class="" style="background-color: hsl(72, 70%, 68%)">6</td>
           
-          <td class="col-sep" style="background-color: hsl(74, 70%, 68%)">6.22</td>
+          <td class="col-sep" style="background-color: hsl(74, 70%, 68%)">6.21</td>
           
-          <td class="">1.66</td>
+          <td class="">1.62</td>
           
         </tr>
         
@@ -442,7 +442,7 @@
           
           <td class="" style="background-color: hsl(64, 70%, 68%)">5.36</td>
           
-          <td class="" style="background-color: hsl(42, 70%, 68%)">3.50</td>
+          <td class="" style="background-color: hsl(48, 70%, 68%)">4.00</td>
           
           <td class="col-sep"></td>
           
@@ -489,7 +489,7 @@
           
           <td class="">1.18</td>
           
-          <td class="">0.58</td>
+          <td class="">1.22</td>
           
           <td class="col-sep"></td>
           
@@ -500,6 +500,9 @@
       </tbody>
     </table>
   </div>
+
+  <h2>similarity</h2>
+  <div id="similarity-breakdown"></div>
 
   <h2>per-day results</h2>
   <div id="guess-breakdown"></div>
@@ -605,6 +608,55 @@
     }
 
     ReactDOM.createRoot(document.getElementById('guess-breakdown')).render(<GuessBreakdown />);
+
+    function simBg(s) {
+      return { backgroundColor: `hsl(${Math.round(s * 120)}, 70%, 68%)` };
+    }
+
+    function SimilarityTable() {
+      const [rows, setRows] = React.useState([]);
+
+      React.useEffect(() => {
+        fetch('similarity.csv')
+          .then(r => r.text())
+          .then(text => {
+            const lines = text.trim().split('\n').slice(1);
+            setRows(lines.map(l => {
+              const [user1, user2, similarity, days] = l.split(',');
+              return { user1, user2, similarity: parseFloat(similarity), days: parseInt(days) };
+            }));
+          });
+      }, []);
+
+      if (rows.length === 0) return null;
+
+      return (
+        <div className="table-wrap">
+          <table className="results-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Pair</th>
+                <th>Similarity</th>
+                <th>Days in common</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{row.user1} & {row.user2}</td>
+                  <td style={simBg(row.similarity)}>{row.similarity.toFixed(2)}</td>
+                  <td>{row.days}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('similarity-breakdown')).render(<SimilarityTable />);
   </script>
 </body>
 </html>
