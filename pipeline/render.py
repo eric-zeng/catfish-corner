@@ -1,34 +1,20 @@
-"""Pivot results, compute summary stats, and render to site/index.html."""
+"""Pivot results, compute summary stats, write leaderboard.json."""
+import json
+import math
 import pathlib
 import pandas as pd
 from datetime import datetime, timezone
-from jinja2 import Environment, FileSystemLoader
 
-ROOT      = pathlib.Path(__file__).parent.parent
-IN        = ROOT / "data" / "raw.json"
-TEMPLATES = ROOT / "templates"
-OUT       = ROOT / "site" / "index.html"
-
-SUMMARY_ROWS = {"Daily Mean", "Daily Std Dev"}
-SUMMARY_COLS = {"Mean", "Std Dev"}
+ROOT = pathlib.Path(__file__).parent.parent
+IN   = ROOT / "data" / "raw.json"
+SITE = ROOT / "site"
 
 
-def fmt_score(x):
-    if pd.isna(x): return ""
-    return str(int(x)) if x % 1 == 0 else str(x)
-
-def fmt_stat(x):
-    if pd.isna(x): return ""
-    return f"{x:.2f}"
-
-def hsl_color(x, vmin=0, vmax=10):
-    t = max(0.0, min(1.0, (float(x) - vmin) / (vmax - vmin)))
-    return f"hsl({int(t * 120)}, 70%, 68%)"
-
-def cell_bg(value, row_label, col):
-    if pd.isna(value) or col == "Std Dev" or row_label == "Daily Std Dev":
+def _clean(x):
+    """Convert NaN to None for JSON serialisation."""
+    if isinstance(x, float) and math.isnan(x):
         return None
-    return hsl_color(value)
+    return x
 
 
 def render() -> None:
@@ -36,53 +22,38 @@ def render() -> None:
 
     pivot = df.pivot_table(index="username", columns="day_number", values="score", aggfunc="first")
     pivot = pivot.reindex(sorted(pivot.columns), axis=1)
-    pivot.columns = [f"#{int(d)}" for d in pivot.columns]
     pivot.index.name = None
-    day_cols = list(pivot.columns)
 
-    pivot["Mean"]    = pivot[day_cols].mean(axis=1).round(2)
-    pivot["Std Dev"] = pivot[day_cols].std(axis=1).round(2)
-    pivot = pivot.sort_values("Mean", ascending=False)
-    score_rows = list(pivot.index)
+    days = [int(d) for d in pivot.columns]
 
-    mean_row = pd.Series({col: pivot.loc[score_rows, col].mean() for col in day_cols}, name="Daily Mean").round(2)
-    std_row  = pd.Series({col: pivot.loc[score_rows, col].std()  for col in day_cols}, name="Daily Std Dev").round(2)
-    pivot = pd.concat([pivot, pd.DataFrame([mean_row, std_row])])
+    user_mean = pivot.mean(axis=1).round(2)
+    user_std  = pivot.std(axis=1).round(2)
+    users = user_mean.sort_values(ascending=False).index.tolist()
 
-    all_cols = day_cols + ["Mean", "Std Dev"]
-    all_rows = score_rows + ["Daily Mean", "Daily Std Dev"]
+    scores = {
+        user: {int(d): _clean(float(pivot.loc[user, d])) for d in pivot.columns}
+        for user in users
+    }
 
-    rows = []
-    for row_label in all_rows:
-        cells = []
-        for col in all_cols:
-            val = pivot.loc[row_label, col] if col in pivot.columns else None
-            is_stat = row_label in SUMMARY_ROWS or col in SUMMARY_COLS
-            cells.append({
-                "display": fmt_stat(val) if is_stat else fmt_score(val),
-                "bg":      cell_bg(val, row_label, col),
-                "col_sep": col == "Mean",
-            })
-        rows.append({
-            "label":      row_label,
-            "is_summary": row_label in SUMMARY_ROWS,
-            "row_sep":    row_label == "Daily Mean",
-            "cells":      cells,
-        })
+    user_stats = {
+        user: {"mean": _clean(float(user_mean[user])), "std": _clean(float(user_std[user]))}
+        for user in users
+    }
 
-    columns = [
-        {
-            "label":      col,
-            "is_summary": col in SUMMARY_COLS,
-            "url":        f"https://catfishing.net/game/{col[1:]}" if col.startswith("#") else None,
-        }
-        for col in all_cols
-    ]
+    day_stats = {
+        "mean": {int(d): _clean(round(float(pivot[d].mean()), 2)) for d in pivot.columns},
+        "std":  {int(d): _clean(round(float(pivot[d].std()),  2)) for d in pivot.columns},
+    }
 
-    updated_at = datetime.now(timezone.utc).isoformat()
+    leaderboard = {
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "days":       days,
+        "users":      users,
+        "scores":     scores,
+        "user_stats": user_stats,
+        "day_stats":  day_stats,
+    }
 
-    env  = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=False)
-    html = env.get_template("index.html.j2").render(columns=columns, rows=rows, updated_at=updated_at)
+    (SITE / "leaderboard.json").write_text(json.dumps(leaderboard, indent=2))
 
-    OUT.write_text(html)
-    print(f"Rendered {len(score_rows)} users × {len(day_cols)} days → {OUT}")
+    print(f"Rendered {len(users)} users × {len(days)} days → {SITE / 'leaderboard.json'}")

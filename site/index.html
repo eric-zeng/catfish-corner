@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catfish Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <h1>🐟 bront and friends' catfish corner 🐈</h1>
+  <p class="updated-at">last updated <time id="updated-at"></time></p>
+
+  <h2>leaderboard</h2>
+  <div id="leaderboard"></div>
+
+  <h2>similarity</h2>
+  <div id="similarity-breakdown"></div>
+
+  <h2>per-day results</h2>
+  <div id="guess-breakdown"></div>
+
+  <script type="text/babel">
+    // ── Shared helpers ────────────────────────────────────────────────────────
+
+    function hslColor(val) {
+      const t = Math.max(0, Math.min(1, val / 10));
+      return `hsl(${Math.round(t * 120)}, 70%, 68%)`;
+    }
+
+    function hslBg(val) {
+      return { backgroundColor: hslColor(val) };
+    }
+
+    function fmtScore(x) {
+      if (x === null || x === undefined) return '';
+      return x % 1 === 0 ? String(Math.round(x)) : String(x);
+    }
+
+    function fmtStat(x) {
+      if (x === null || x === undefined || isNaN(x)) return '';
+      return Number(x).toFixed(2);
+    }
+
+    // ── LeaderboardTable ──────────────────────────────────────────────────────
+
+    function LeaderboardTable() {
+      const [data, setData] = React.useState(null);
+
+      React.useEffect(() => {
+        fetch('leaderboard.json').then(r => r.json()).then(d => {
+          setData(d);
+          const el = document.getElementById('updated-at');
+          el.dateTime = d.updated_at;
+          el.textContent = new Date(d.updated_at).toLocaleString(undefined, {
+            dateStyle: 'medium', timeStyle: 'short',
+          });
+        });
+      }, []);
+
+      if (!data) return null;
+
+      const { days, users, scores, user_stats, day_stats } = data;
+
+      return (
+        <div className="table-wrap">
+          <table className="results-table">
+            <thead>
+              <tr>
+                <th className="col-user"></th>
+                {days.map(d => (
+                  <th key={d}>
+                    <a href={`https://catfishing.net/game/${d}`} target="_blank">#{d}</a>
+                  </th>
+                ))}
+                <th className="col-sep">Mean</th>
+                <th>Std Dev</th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map(user => (
+                <tr key={user}>
+                  <th className="col-user">{user}</th>
+                  {days.map(d => {
+                    const val = scores[user][d];
+                    return <td key={d} style={val !== null ? hslBg(val) : {}}>{fmtScore(val)}</td>;
+                  })}
+                  <td className="col-sep" style={hslBg(user_stats[user].mean)}>
+                    {fmtStat(user_stats[user].mean)}
+                  </td>
+                  <td>{fmtStat(user_stats[user].std)}</td>
+                </tr>
+              ))}
+              <tr className="row-sep">
+                <th className="col-user">Daily Mean</th>
+                {days.map(d => (
+                  <td key={d} style={hslBg(day_stats.mean[d])}>{fmtStat(day_stats.mean[d])}</td>
+                ))}
+                <td className="col-sep"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th className="col-user">Daily Std Dev</th>
+                {days.map(d => (
+                  <td key={d}>{fmtStat(day_stats.std[d])}</td>
+                ))}
+                <td className="col-sep"></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('leaderboard')).render(<LeaderboardTable />);
+
+    // ── SimilarityTable ───────────────────────────────────────────────────────
+
+    function simBg(s) {
+      return { backgroundColor: `hsl(${Math.round(s * 120)}, 70%, 68%)` };
+    }
+
+    function SimilarityTable() {
+      const [rows, setRows] = React.useState([]);
+
+      React.useEffect(() => {
+        fetch('similarity.csv')
+          .then(r => r.text())
+          .then(text => {
+            const lines = text.trim().split('\n').slice(1);
+            setRows(lines.map(l => {
+              const [user1, user2, similarity, days] = l.split(',');
+              return { user1, user2, similarity: parseFloat(similarity), days: parseInt(days) };
+            }));
+          });
+      }, []);
+
+      if (rows.length === 0) return null;
+
+      return (
+        <div className="table-wrap">
+          <table className="results-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Pair</th>
+                <th>Similarity</th>
+                <th>Days in common</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{row.user1} & {row.user2}</td>
+                  <td style={simBg(row.similarity)}>{row.similarity.toFixed(2)}</td>
+                  <td>{row.days}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('similarity-breakdown')).render(<SimilarityTable />);
+
+    // ── GuessBreakdown ────────────────────────────────────────────────────────
+
+    function hammingDist(a, b) {
+      const n = Math.min(a.length, b.length);
+      let dist = 0;
+      for (let i = 0; i < n; i++) {
+        if (a[i] !== b[i]) dist++;
+      }
+      return dist;
+    }
+
+    function mostInSync(records) {
+      let best = null, bestDist = Infinity;
+      for (let i = 0; i < records.length; i++) {
+        for (let j = i + 1; j < records.length; j++) {
+          const d = hammingDist(records[i].guesses, records[j].guesses);
+          if (d < bestDist) {
+            bestDist = d;
+            best = [records[i].username, records[j].username];
+          }
+        }
+      }
+      return best;
+    }
+
+    function GuessCell({ g }) {
+      if (g === 1 || g === true)  return <td className="guess-hit">🐈</td>;
+      if (g === 0.5)               return <td className="guess-half">🥚</td>;
+      if (g === 0 || g === false)  return <td className="guess-miss">🐟</td>;
+      return <td></td>;
+    }
+
+    function GuessBreakdown() {
+      const [allDays, setAllDays] = React.useState([]);
+      const [dayMap,  setDayMap]  = React.useState({});
+      const [idx,     setIdx]     = React.useState(0);
+
+      React.useEffect(() => {
+        fetch('data.json')
+          .then(r => r.json())
+          .then(data => {
+            const map = {};
+            data.forEach(rec => {
+              const guesses = typeof rec.guesses === 'string' ? JSON.parse(rec.guesses) : rec.guesses;
+              if (!map[rec.day_number]) map[rec.day_number] = [];
+              map[rec.day_number].push({ username: rec.username, score: rec.score, total: rec.total, guesses });
+            });
+            const days = Object.keys(map).map(Number).sort((a, b) => a - b);
+            setDayMap(map);
+            setAllDays(days);
+            setIdx(days.length - 1);
+          });
+      }, []);
+
+      if (allDays.length === 0) return null;
+
+      const day        = allDays[idx];
+      const records    = [...dayMap[day]].sort((a, b) => b.score - a.score);
+      const numGuesses = Math.max(...records.map(r => r.guesses.length));
+      const syncPair   = mostInSync(records);
+
+      return (
+        <>
+          <div id="day-nav">
+            <button onClick={() => setIdx(i => i - 1)} disabled={idx === 0}>←</button>
+            <span id="day-label">
+              <a href={`https://catfishing.net/game/${day}`} target="_blank">#{day}</a>
+            </span>
+            <button onClick={() => setIdx(i => i + 1)} disabled={idx === allDays.length - 1}>→</button>
+          </div>
+          <div className="table-wrap">
+            <table className="guess-table">
+              <thead>
+                <tr>
+                  <th className="col-user"></th>
+                  {Array.from({ length: numGuesses }, (_, i) => <th key={i}>{i + 1}</th>)}
+                  <th className="col-sep">Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                {records.map(rec => (
+                  <tr key={rec.username}>
+                    <th className="col-user">{rec.username}</th>
+                    {Array.from({ length: numGuesses }, (_, i) =>
+                      i < rec.guesses.length
+                        ? <GuessCell key={i} g={rec.guesses[i]} />
+                        : <td key={i}></td>
+                    )}
+                    <td className="col-sep">{rec.score}/{rec.total}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {syncPair && (
+            <p className="most-in-sync">Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
+          )}
+        </>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('guess-breakdown')).render(<GuessBreakdown />);
+  </script>
+</body>
+</html>
