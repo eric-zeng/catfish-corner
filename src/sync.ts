@@ -1,6 +1,7 @@
 import { TextChannel } from 'discord.js';
 import { insertResult, getLatestEntryDate } from './db';
 import { parseMessage } from './parser';
+import { reactToScore } from './reactions';
 
 // Fallback cutoff if the database is empty
 export const CUTOFF = new Date('2026-04-23T16:00:00Z');
@@ -25,7 +26,10 @@ export async function syncChannel(channel: TextChannel, since?: Date): Promise<n
       if (!result) { continue; }
 
       result.date = message.createdAt;
-      if (insertResult(result)) inserted++;
+      if (insertResult(result)) {
+        inserted++;
+        await reactToScore(message, result.score);
+      }
     }
 
     lastId = batch.last()?.id;

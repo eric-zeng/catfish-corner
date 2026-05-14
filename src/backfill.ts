@@ -3,7 +3,7 @@ import { Client, GatewayIntentBits, TextChannel } from 'discord.js';
 import { initDb, closeDb } from './db';
 import { syncChannel, CUTOFF } from './sync';
 
-const CHANNEL_ID = process.argv[2] ?? process.env.DISCORD_CHANNEL_IDS?.split(',')[0].trim();
+const CHANNEL_ID = process.argv[2] ?? process.env.DISCORD_CHANNEL_ID;
 if (!CHANNEL_ID) {
   console.error('Usage: npx tsx src/backfill.ts <channel-id>');
   process.exit(1);

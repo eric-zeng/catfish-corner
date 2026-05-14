@@ -5,9 +5,11 @@ import { Client, GatewayIntentBits, TextChannel, type Message } from 'discord.js
 import { initDb, insertResult } from './db';
 import { parseMessage } from './parser';
 import { syncChannel } from './sync';
+import { scheduleDailySummary } from './summary';
+import { reactToScore } from './reactions';
 
 const ROOT = path.join(__dirname, '..');
-const CHANNEL_IDS = (process.env.DISCORD_CHANNEL_IDS ?? '').split(',').map(s => s.trim()).filter(Boolean);
+const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID ?? '';
 
 const client = new Client({
   intents: [
@@ -27,20 +29,24 @@ function deploy(): void {
   });
 }
 
-async function runSync(): Promise<void> {
-  let total = 0;
-  for (const id of CHANNEL_IDS) {
-    try {
-      const channel = await client.channels.fetch(id);
-      if (!(channel instanceof TextChannel)) continue;
-      const inserted = await syncChannel(channel);
-      total += inserted;
-    } catch (err) {
-      console.error(`Sync failed for channel ${id}:`, err);
-    }
+async function getChannel(): Promise<TextChannel | null> {
+  try {
+    const ch = await client.channels.fetch(CHANNEL_ID);
+    return ch instanceof TextChannel ? ch : null;
+  } catch {
+    return null;
   }
-  if (total > 0) {
-    console.log(`Sync: ${total} new results — deploying...`);
+}
+
+async function runSync(): Promise<void> {
+  const channel = await getChannel();
+  if (!channel) {
+    console.error(`Sync failed: could not fetch channel ${CHANNEL_ID}`);
+    return;
+  }
+  const inserted = await syncChannel(channel);
+  if (inserted > 0) {
+    console.log(`Sync: ${inserted} new results — deploying...`);
     deploy();
   } else {
     console.log('Sync: up to date');
@@ -56,11 +62,12 @@ client.once('clientReady', async (c) => {
   initDb();
   console.log(`Logged in as ${c.user.tag}`);
 
-  if (CHANNEL_IDS.length === 0) {
-    console.warn('DISCORD_CHANNEL_IDS not set — skipping sync');
+  if (!CHANNEL_ID) {
+    console.warn('DISCORD_CHANNEL_ID not set — skipping sync');
   } else {
     await runSync();
     scheduleHourlySync();
+    scheduleDailySummary(getChannel);
   }
 });
 
@@ -75,7 +82,7 @@ client.on('messageCreate', async (message: Message) => {
   const inserted = insertResult(result);
   if (!inserted) return;
 
-  await message.react('🐈');
+  await reactToScore(message, result.score);
   deploy();
 });
 

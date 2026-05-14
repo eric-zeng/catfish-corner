@@ -36,6 +36,35 @@ export function getLatestEntryDate(): Date | null {
   return row.latest ? new Date(row.latest) : null;
 }
 
+export function getLatestDayNumber(): number | null {
+  const row = db.prepare('SELECT MAX(day_number) as latest FROM results').get() as { latest: number | null };
+  return row.latest;
+}
+
+export function getLatestDayDate(): string | null {
+  const row = db.prepare(
+    'SELECT MAX(date) as latest FROM results WHERE day_number = (SELECT MAX(day_number) FROM results)'
+  ).get() as { latest: string | null };
+  return row.latest;
+}
+
+export interface DayResult {
+  username: string;
+  user_id: string;
+  score: number;
+}
+
+export function getDayResults(dayNumber: number): DayResult[] {
+  return db.prepare('SELECT username, user_id, score FROM results WHERE day_number = ?').all(dayNumber) as DayResult[];
+}
+
+export function getUserBestScoreExcluding(userId: string, dayNumber: number): number | null {
+  const row = db.prepare(
+    'SELECT MAX(score) as best FROM results WHERE user_id = ? AND day_number != ?'
+  ).get(userId, dayNumber) as { best: number | null };
+  return row.best;
+}
+
 export function closeDb(): void {
   db.close();
 }

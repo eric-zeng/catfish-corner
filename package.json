@@ -6,7 +6,8 @@
     "backfill": "tsx src/backfill.ts",
     "generate": "python3 pipeline/run.py",
     "serve": "python3 -m http.server 8080 --directory site",
-    "deploy": "npm run generate && gh-pages -d site"
+    "deploy": "npm run generate && gh-pages -d site",
+    "summary": "tsx src/post_summary.ts"
   },
   "dependencies": {
     "better-sqlite3": "^11.0.0",
