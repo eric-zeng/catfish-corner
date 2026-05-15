@@ -143,3 +143,14 @@ h2 {
   font-size: 0.92rem;
   color: #7a4a1e;
 }
+
+/* Rotated article-name headers in the guess breakdown table */
+table.guess-table thead th.col-answer {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  height: 8rem;
+  padding: 0.5rem 0.4rem;
+  vertical-align: bottom;
+  font-size: 0.8rem;
+}

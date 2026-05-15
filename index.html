@@ -19,9 +19,6 @@
   <h2>leaderboard</h2>
   <div id="leaderboard"></div>
 
-  <h2>similarity</h2>
-  <div id="similarity-breakdown"></div>
-
   <h2>per-day results</h2>
   <div id="guess-breakdown"></div>
 
@@ -120,57 +117,6 @@
 
     ReactDOM.createRoot(document.getElementById('leaderboard')).render(<LeaderboardTable />);
 
-    // ── SimilarityTable ───────────────────────────────────────────────────────
-
-    function simBg(s) {
-      return { backgroundColor: `hsl(${Math.round(s * 120)}, 70%, 68%)` };
-    }
-
-    function SimilarityTable() {
-      const [rows, setRows] = React.useState([]);
-
-      React.useEffect(() => {
-        fetch('similarity.csv')
-          .then(r => r.text())
-          .then(text => {
-            const lines = text.trim().split('\n').slice(1);
-            setRows(lines.map(l => {
-              const [user1, user2, similarity, days] = l.split(',');
-              return { user1, user2, similarity: parseFloat(similarity), days: parseInt(days) };
-            }));
-          });
-      }, []);
-
-      if (rows.length === 0) return null;
-
-      return (
-        <div className="table-wrap">
-          <table className="results-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Pair</th>
-                <th>Similarity</th>
-                <th>Days in common</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr key={i}>
-                  <td>{i + 1}</td>
-                  <td>{row.user1} & {row.user2}</td>
-                  <td style={simBg(row.similarity)}>{row.similarity.toFixed(2)}</td>
-                  <td>{row.days}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      );
-    }
-
-    ReactDOM.createRoot(document.getElementById('similarity-breakdown')).render(<SimilarityTable />);
-
     // ── GuessBreakdown ────────────────────────────────────────────────────────
 
     function hammingDist(a, b) {
@@ -204,14 +150,14 @@
     }
 
     function GuessBreakdown() {
-      const [allDays, setAllDays] = React.useState([]);
-      const [dayMap,  setDayMap]  = React.useState({});
-      const [idx,     setIdx]     = React.useState(0);
+      const [allDays,    setAllDays]    = React.useState([]);
+      const [dayMap,     setDayMap]     = React.useState({});
+      const [answersMap, setAnswersMap] = React.useState({});
+      const [idx,        setIdx]        = React.useState(0);
 
       React.useEffect(() => {
-        fetch('data.json')
-          .then(r => r.json())
-          .then(data => {
+        Promise.all([fetch('data.json').then(r => r.json()), fetch('answers.json').then(r => r.json())])
+          .then(([data, answers]) => {
             const map = {};
             data.forEach(rec => {
               const guesses = typeof rec.guesses === 'string' ? JSON.parse(rec.guesses) : rec.guesses;
@@ -222,6 +168,7 @@
             setDayMap(map);
             setAllDays(days);
             setIdx(days.length - 1);
+            setAnswersMap(answers);
           });
       }, []);
 
@@ -231,6 +178,7 @@
       const records    = [...dayMap[day]].sort((a, b) => b.score - a.score);
       const numGuesses = Math.max(...records.map(r => r.guesses.length));
       const syncPair   = mostInSync(records);
+      const dayAnswers = answersMap[day] ?? [];
 
       return (
         <>
@@ -246,7 +194,16 @@
               <thead>
                 <tr>
                   <th className="col-user"></th>
-                  {Array.from({ length: numGuesses }, (_, i) => <th key={i}>{i + 1}</th>)}
+                  {Array.from({ length: numGuesses }, (_, i) => {
+                    const ans = dayAnswers[i];
+                    return (
+                      <th key={i} className="col-answer">
+                        {ans
+                          ? <a href={ans.wikipedia_url} target="_blank">{ans.article_name}</a>
+                          : i + 1}
+                      </th>
+                    );
+                  })}
                   <th className="col-sep">Score</th>
                 </tr>
               </thead>
