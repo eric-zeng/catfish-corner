@@ -204,6 +204,30 @@ h2 {
   cursor: default;
 }
 
+/* ── Mobile ──────────────────────────────────── */
+
+@media (max-width: 600px) {
+  body {
+    margin: 1rem auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  h1 { font-size: 1.6rem; }
+
+  .table-wrap {
+    display: block;
+    width: 98vw;
+    max-width: none;
+    margin-left: calc(1vw - 1.5rem);
+    border-radius: 4px;
+  }
+
+  #day-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
 /* Rotated article-name headers in the guess breakdown table */
 table.guess-table thead th.col-answer {
   writing-mode: vertical-lr;
