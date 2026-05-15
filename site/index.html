@@ -15,12 +15,7 @@
 <body>
   <h1>🐟 bront and friends' catfish corner 🐈</h1>
   <p class="updated-at">last updated <time id="updated-at"></time></p>
-
-  <h2>leaderboard</h2>
-  <div id="leaderboard"></div>
-
-  <h2>per-day results</h2>
-  <div id="guess-breakdown"></div>
+  <div id="app"></div>
 
   <script type="text/babel">
     // ── Shared helpers ────────────────────────────────────────────────────────
@@ -46,7 +41,7 @@
 
     // ── LeaderboardTable ──────────────────────────────────────────────────────
 
-    function LeaderboardTable() {
+    function LeaderboardTable({ onSelectDay }) {
       const [data, setData] = React.useState(null);
       const wrapRef = React.useRef(null);
 
@@ -79,7 +74,7 @@
                 <th className="col-user"></th>
                 {days.map(d => (
                   <th key={d}>
-                    <a href={`https://catfishing.net/game/${d}`} target="_blank">#{d}</a>
+                    <button className="day-select-btn" onClick={() => onSelectDay(d)}>#{d}</button>
                   </th>
                 ))}
                 <th className="col-sep">Mean</th>
@@ -121,8 +116,6 @@
         </div>
       );
     }
-
-    ReactDOM.createRoot(document.getElementById('leaderboard')).render(<LeaderboardTable />);
 
     // ── GuessBreakdown ────────────────────────────────────────────────────────
 
@@ -169,7 +162,7 @@
       return <td></td>;
     }
 
-    function GuessBreakdown() {
+    function GuessBreakdown({ selectedDay }) {
       const [allDays,     setAllDays]     = React.useState([]);
       const [dayMap,      setDayMap]      = React.useState({});
       const [answersMap,  setAnswersMap]  = React.useState({});
@@ -194,6 +187,13 @@
           });
       }, []);
 
+      // Navigate to selectedDay when leaderboard header is clicked
+      React.useEffect(() => {
+        if (selectedDay === null || allDays.length === 0) return;
+        const i = allDays.indexOf(selectedDay);
+        if (i !== -1) setIdx(i);
+      }, [selectedDay, allDays]);
+
       const day = allDays[idx];
 
       React.useEffect(() => { if (day !== undefined) setDayInput(String(day)); }, [day]);
@@ -210,6 +210,7 @@
         allDays.forEach((d, i) => { const dist = Math.abs(d - n); if (dist < minDist) { minDist = dist; nearest = i; } });
         setIdx(nearest);
       }
+
       const records    = [...dayMap[day]].sort((a, b) => b.score - a.score);
       const numGuesses = Math.max(...records.map(r => r.guesses.length));
       const syncPair   = mostInSync(records);
@@ -279,7 +280,7 @@
             return (
               <p className="best-pull">
                 🤔🎣 Best pull:{' '}
-                <span className={showAnswers ? '' : 'spoiler'}>
+                <span className={showAnswers ? '' : 'spoiler'} onClick={showAnswers ? undefined : () => setShowAnswers(true)}>
                   {showAnswers
                     ? <a href={pull.wikipedia_url} target="_blank">{pull.article_name}</a>
                     : pull.article_name}
@@ -292,7 +293,29 @@
       );
     }
 
-    ReactDOM.createRoot(document.getElementById('guess-breakdown')).render(<GuessBreakdown />);
+    // ── App ───────────────────────────────────────────────────────────────────
+
+    function App() {
+      const [selectedDay, setSelectedDay] = React.useState(null);
+      const perDayRef = React.useRef(null);
+
+      React.useEffect(() => {
+        if (selectedDay !== null && perDayRef.current) {
+          perDayRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, [selectedDay]);
+
+      return (
+        <>
+          <h2>leaderboard</h2>
+          <LeaderboardTable onSelectDay={setSelectedDay} />
+          <h2 ref={perDayRef}>per-day results</h2>
+          <GuessBreakdown selectedDay={selectedDay} />
+        </>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('app')).render(<App />);
   </script>
 </body>
 </html>

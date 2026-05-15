@@ -38,12 +38,19 @@ table.guess-table {
   font-size: 0.92rem;
 }
 
-thead th a {
+thead th a,
+button.day-select-btn {
   color: inherit;
   text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
 }
 
-thead th a:hover {
+thead th a:hover,
+button.day-select-btn:hover {
   text-decoration: underline;
 }
 
@@ -201,7 +208,7 @@ h2 {
   color: transparent;
   border-radius: 3px;
   user-select: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 /* ── Mobile ──────────────────────────────────── */
