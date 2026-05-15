@@ -201,7 +201,7 @@ h2 {
   color: transparent;
   border-radius: 3px;
   user-select: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 /* ── Mobile ──────────────────────────────────── */

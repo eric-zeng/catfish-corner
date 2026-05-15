@@ -279,7 +279,7 @@
             return (
               <p className="best-pull">
                 🤔🎣 Best pull:{' '}
-                <span className={showAnswers ? '' : 'spoiler'}>
+                <span className={showAnswers ? '' : 'spoiler'} onClick={showAnswers ? undefined : () => setShowAnswers(true)}>
                   {showAnswers
                     ? <a href={pull.wikipedia_url} target="_blank">{pull.article_name}</a>
                     : pull.article_name}
