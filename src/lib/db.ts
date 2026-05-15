@@ -6,7 +6,7 @@ import type { ParsedResult } from './parser';
 let db: Database.Database;
 
 export function initDb(): void {
-  const dataDir = path.join(__dirname, '..', 'data');
+  const dataDir = path.join(__dirname, '..', '..', 'data');
   fs.mkdirSync(dataDir, { recursive: true });
 
   db = new Database(path.join(dataDir, 'catfish.db'));
@@ -21,7 +21,15 @@ export function initDb(): void {
       total      INTEGER NOT NULL,
       guesses    TEXT NOT NULL,
       PRIMARY KEY (user_id, day_number)
-    )
+    );
+    CREATE TABLE IF NOT EXISTS answers (
+      day_id          INTEGER NOT NULL,
+      answer_index    INTEGER NOT NULL,
+      article_name    TEXT NOT NULL,
+      categories_list TEXT NOT NULL,
+      wikipedia_url   TEXT NOT NULL,
+      PRIMARY KEY (day_id, answer_index)
+    );
   `);
 }
 
@@ -56,6 +64,23 @@ export interface DayResult {
 
 export function getDayResults(dayNumber: number): DayResult[] {
   return db.prepare('SELECT username, user_id, score FROM results WHERE day_number = ?').all(dayNumber) as DayResult[];
+}
+
+export function getDayGuesses(dayNumber: number): { username: string; guesses: number[] }[] {
+  const rows = db.prepare('SELECT username, guesses FROM results WHERE day_number = ?').all(dayNumber) as { username: string; guesses: string }[];
+  return rows.map(r => ({ username: r.username, guesses: JSON.parse(r.guesses) as number[] }));
+}
+
+export interface AnswerRow {
+  answer_index: number;
+  article_name: string;
+  wikipedia_url: string;
+}
+
+export function getDayAnswers(dayNumber: number): AnswerRow[] {
+  return db.prepare(
+    'SELECT answer_index, article_name, wikipedia_url FROM answers WHERE day_id = ? ORDER BY answer_index'
+  ).all(dayNumber) as AnswerRow[];
 }
 
 export function getUserBestScoreExcluding(userId: string, dayNumber: number): number | null {

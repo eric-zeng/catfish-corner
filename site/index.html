@@ -19,9 +19,6 @@
   <h2>leaderboard</h2>
   <div id="leaderboard"></div>
 
-  <h2>similarity</h2>
-  <div id="similarity-breakdown"></div>
-
   <h2>per-day results</h2>
   <div id="guess-breakdown"></div>
 
@@ -51,6 +48,7 @@
 
     function LeaderboardTable() {
       const [data, setData] = React.useState(null);
+      const wrapRef = React.useRef(null);
 
       React.useEffect(() => {
         fetch('leaderboard.json').then(r => r.json()).then(d => {
@@ -63,12 +61,18 @@
         });
       }, []);
 
+      React.useEffect(() => {
+        if (data && wrapRef.current) {
+          wrapRef.current.scrollLeft = wrapRef.current.scrollWidth;
+        }
+      }, [data]);
+
       if (!data) return null;
 
       const { days, users, scores, user_stats, day_stats } = data;
 
       return (
-        <div className="table-wrap">
+        <div className="table-wrap" ref={wrapRef}>
           <table className="results-table">
             <thead>
               <tr>
@@ -120,57 +124,6 @@
 
     ReactDOM.createRoot(document.getElementById('leaderboard')).render(<LeaderboardTable />);
 
-    // ── SimilarityTable ───────────────────────────────────────────────────────
-
-    function simBg(s) {
-      return { backgroundColor: `hsl(${Math.round(s * 120)}, 70%, 68%)` };
-    }
-
-    function SimilarityTable() {
-      const [rows, setRows] = React.useState([]);
-
-      React.useEffect(() => {
-        fetch('similarity.csv')
-          .then(r => r.text())
-          .then(text => {
-            const lines = text.trim().split('\n').slice(1);
-            setRows(lines.map(l => {
-              const [user1, user2, similarity, days] = l.split(',');
-              return { user1, user2, similarity: parseFloat(similarity), days: parseInt(days) };
-            }));
-          });
-      }, []);
-
-      if (rows.length === 0) return null;
-
-      return (
-        <div className="table-wrap">
-          <table className="results-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Pair</th>
-                <th>Similarity</th>
-                <th>Days in common</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr key={i}>
-                  <td>{i + 1}</td>
-                  <td>{row.user1} & {row.user2}</td>
-                  <td style={simBg(row.similarity)}>{row.similarity.toFixed(2)}</td>
-                  <td>{row.days}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      );
-    }
-
-    ReactDOM.createRoot(document.getElementById('similarity-breakdown')).render(<SimilarityTable />);
-
     // ── GuessBreakdown ────────────────────────────────────────────────────────
 
     function hammingDist(a, b) {
@@ -180,6 +133,19 @@
         if (a[i] !== b[i]) dist++;
       }
       return dist;
+    }
+
+    function bestPull(records, dayAnswers) {
+      if (!dayAnswers.length) return null;
+      let bestArticle = null, bestUrl = '', bestPlayers = null;
+      for (let i = 0; i < dayAnswers.length; i++) {
+        const players = records.filter(r => r.guesses[i] > 0).map(r => r.username);
+        if (players.length === 0 || (bestPlayers !== null && players.length >= bestPlayers.length)) continue;
+        bestPlayers = players;
+        bestArticle = dayAnswers[i].article_name;
+        bestUrl = dayAnswers[i].wikipedia_url;
+      }
+      return bestArticle ? { article_name: bestArticle, wikipedia_url: bestUrl, players: bestPlayers } : null;
     }
 
     function mostInSync(records) {
@@ -204,14 +170,16 @@
     }
 
     function GuessBreakdown() {
-      const [allDays, setAllDays] = React.useState([]);
-      const [dayMap,  setDayMap]  = React.useState({});
-      const [idx,     setIdx]     = React.useState(0);
+      const [allDays,     setAllDays]     = React.useState([]);
+      const [dayMap,      setDayMap]      = React.useState({});
+      const [answersMap,  setAnswersMap]  = React.useState({});
+      const [idx,         setIdx]         = React.useState(0);
+      const [showAnswers, setShowAnswers] = React.useState(false);
+      const [dayInput,    setDayInput]    = React.useState('');
 
       React.useEffect(() => {
-        fetch('data.json')
-          .then(r => r.json())
-          .then(data => {
+        Promise.all([fetch('data.json').then(r => r.json()), fetch('answers.json').then(r => r.json())])
+          .then(([data, answers]) => {
             const map = {};
             data.forEach(rec => {
               const guesses = typeof rec.guesses === 'string' ? JSON.parse(rec.guesses) : rec.guesses;
@@ -222,31 +190,68 @@
             setDayMap(map);
             setAllDays(days);
             setIdx(days.length - 1);
+            setAnswersMap(answers);
           });
       }, []);
 
+      const day = allDays[idx];
+
+      React.useEffect(() => { if (day !== undefined) setDayInput(String(day)); }, [day]);
+
       if (allDays.length === 0) return null;
 
-      const day        = allDays[idx];
+      function commitDayInput() {
+        const n = parseInt(dayInput);
+        if (isNaN(n)) { setDayInput(String(day)); return; }
+        const exact = allDays.indexOf(n);
+        if (exact !== -1) { setIdx(exact); return; }
+        // Jump to nearest day with results
+        let nearest = 0, minDist = Infinity;
+        allDays.forEach((d, i) => { const dist = Math.abs(d - n); if (dist < minDist) { minDist = dist; nearest = i; } });
+        setIdx(nearest);
+      }
       const records    = [...dayMap[day]].sort((a, b) => b.score - a.score);
       const numGuesses = Math.max(...records.map(r => r.guesses.length));
       const syncPair   = mostInSync(records);
+      const dayAnswers = answersMap[day] ?? [];
 
       return (
         <>
           <div id="day-nav">
             <button onClick={() => setIdx(i => i - 1)} disabled={idx === 0}>←</button>
             <span id="day-label">
-              <a href={`https://catfishing.net/game/${day}`} target="_blank">#{day}</a>
+              #<input
+                id="day-input"
+                type="number"
+                value={dayInput}
+                onChange={e => setDayInput(e.target.value)}
+                onBlur={commitDayInput}
+                onKeyDown={e => { if (e.key === 'Enter') { commitDayInput(); e.target.blur(); } }}
+                onFocus={e => e.target.select()}
+              />
             </span>
             <button onClick={() => setIdx(i => i + 1)} disabled={idx === allDays.length - 1}>→</button>
+            <a href={`https://catfishing.net/game/${day}`} target="_blank" id="day-link">open on catfishing.net</a>
+            <label className="show-answers-label">
+              <input type="checkbox" checked={showAnswers} onChange={e => setShowAnswers(e.target.checked)} />
+              {' '}show answers
+            </label>
           </div>
           <div className="table-wrap">
             <table className="guess-table">
               <thead>
                 <tr>
                   <th className="col-user"></th>
-                  {Array.from({ length: numGuesses }, (_, i) => <th key={i}>{i + 1}</th>)}
+                  {Array.from({ length: numGuesses }, (_, i) => {
+                    const ans = dayAnswers[i];
+                    return (
+                      <th key={i} className={showAnswers ? 'col-answer' : ''}>
+                        {showAnswers && ans
+                          ? <a href={ans.wikipedia_url} target="_blank">{ans.article_name}</a>
+                          : i + 1}
+                      </th>
+                    );
+                  })}
                   <th className="col-sep">Score</th>
                 </tr>
               </thead>
@@ -266,8 +271,23 @@
             </table>
           </div>
           {syncPair && (
-            <p className="most-in-sync">Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
+            <p className="most-in-sync">🤝 Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
           )}
+          {(() => {
+            const pull = bestPull(records, dayAnswers);
+            if (!pull) return null;
+            return (
+              <p className="best-pull">
+                🤔🎣 Best pull:{' '}
+                <span className={showAnswers ? '' : 'spoiler'}>
+                  {showAnswers
+                    ? <a href={pull.wikipedia_url} target="_blank">{pull.article_name}</a>
+                    : pull.article_name}
+                </span>
+                {' '}({pull.players.map((p, i) => <React.Fragment key={p}>{i > 0 ? ', ' : ''}<strong>{p}</strong></React.Fragment>)})
+              </p>
+            );
+          })()}
         </>
       );
     }

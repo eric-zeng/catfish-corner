@@ -1,7 +1,9 @@
+// One-shot script that fetches all channel history back to the CUTOFF date and inserts any valid
+// catfishing.net results into SQLite. Run this to seed the database before starting the bot.
 import 'dotenv/config';
 import { Client, GatewayIntentBits, TextChannel } from 'discord.js';
-import { initDb, closeDb } from './db';
-import { syncChannel, CUTOFF } from './sync';
+import { initDb, closeDb } from './lib/db';
+import { syncChannel, CUTOFF } from './lib/sync';
 
 const CHANNEL_ID = process.argv[2] ?? process.env.DISCORD_CHANNEL_ID;
 if (!CHANNEL_ID) {

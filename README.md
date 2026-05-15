@@ -68,6 +68,19 @@ npm run deploy
 
 Configure GitHub Pages in your repo settings to serve from the `gh-pages` branch.
 
+### Scrape answer metadata
+
+The per-day breakdown table shows article names and Wikipedia links as column headers. These are scraped from catfishing.net and stored in the `answers` table. Run this whenever new days are missing answer metadata:
+
+```bash
+npm run scrape                 # auto-play mode (default): skips through each question to reveal answers
+npm run scrape -- --results    # results mode: uploads a stats export file, then scrapes the results page
+```
+
+**Auto-play mode** navigates to each unplayed day, clicks "Skip" on every question, and reads the answer screen. No account or stats file required.
+
+**Results mode** uploads a catfishing.net stats export (`.gz` file) to `catfishing.net/settings`, then scrapes the already-played results page for each day. Requires updating `STATS_FILE` in `src/scrape_answers.ts` to point to your export.
+
 ### Daily summary
 
 The bot automatically posts a summary to the channel at 9pm ET each day. To post one manually:

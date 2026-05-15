@@ -1,12 +1,15 @@
+// Persistent Discord bot that listens for catfishing.net results posted in the configured channel.
+// Inserts new results into SQLite, reacts with a score-based emoji, triggers a site deploy, and
+// posts a daily summary at 11:59pm PT.
 import 'dotenv/config';
 import { exec } from 'child_process';
 import path from 'path';
 import { Client, GatewayIntentBits, TextChannel, type Message } from 'discord.js';
-import { initDb, insertResult } from './db';
-import { parseMessage } from './parser';
-import { syncChannel } from './sync';
-import { scheduleDailySummary } from './summary';
-import { reactToScore } from './reactions';
+import { initDb, insertResult } from './lib/db';
+import { parseMessage } from './lib/parser';
+import { syncChannel } from './lib/sync';
+import { scheduleDailySummary } from './lib/summary';
+import { reactToScore } from './lib/reactions';
 
 const ROOT = path.join(__dirname, '..');
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID ?? '';
@@ -25,6 +28,16 @@ function deploy(): void {
       console.error(`Deploy failed: ${stderr}`);
     } else {
       console.log(`Deploy complete: ${stdout.trim()}`);
+    }
+  });
+}
+
+function runScrape(): void {
+  exec('npx tsx src/scrape_answers.ts --headless', { cwd: ROOT }, (err, stdout, stderr) => {
+    if (err) {
+      console.error(`Scrape failed: ${stderr}`);
+    } else {
+      console.log(`Scrape complete: ${stdout.trim()}`);
     }
   });
 }
@@ -48,6 +61,7 @@ async function runSync(): Promise<void> {
   if (inserted > 0) {
     console.log(`Sync: ${inserted} new results — deploying...`);
     deploy();
+    runScrape();
   } else {
     console.log('Sync: up to date');
   }
@@ -84,6 +98,7 @@ client.on('messageCreate', async (message: Message) => {
 
   await reactToScore(message, result.score);
   deploy();
+  runScrape();
 });
 
 client.login(process.env.DISCORD_BOT_TOKEN);
