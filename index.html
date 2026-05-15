@@ -48,6 +48,7 @@
 
     function LeaderboardTable() {
       const [data, setData] = React.useState(null);
+      const wrapRef = React.useRef(null);
 
       React.useEffect(() => {
         fetch('leaderboard.json').then(r => r.json()).then(d => {
@@ -60,12 +61,18 @@
         });
       }, []);
 
+      React.useEffect(() => {
+        if (data && wrapRef.current) {
+          wrapRef.current.scrollLeft = wrapRef.current.scrollWidth;
+        }
+      }, [data]);
+
       if (!data) return null;
 
       const { days, users, scores, user_stats, day_stats } = data;
 
       return (
-        <div className="table-wrap">
+        <div className="table-wrap" ref={wrapRef}>
           <table className="results-table">
             <thead>
               <tr>
@@ -128,6 +135,19 @@
       return dist;
     }
 
+    function bestPull(records, dayAnswers) {
+      if (!dayAnswers.length) return null;
+      let bestArticle = null, bestUrl = '', bestPlayers = null;
+      for (let i = 0; i < dayAnswers.length; i++) {
+        const players = records.filter(r => r.guesses[i] > 0).map(r => r.username);
+        if (players.length === 0 || (bestPlayers !== null && players.length >= bestPlayers.length)) continue;
+        bestPlayers = players;
+        bestArticle = dayAnswers[i].article_name;
+        bestUrl = dayAnswers[i].wikipedia_url;
+      }
+      return bestArticle ? { article_name: bestArticle, wikipedia_url: bestUrl, players: bestPlayers } : null;
+    }
+
     function mostInSync(records) {
       let best = null, bestDist = Infinity;
       for (let i = 0; i < records.length; i++) {
@@ -150,10 +170,12 @@
     }
 
     function GuessBreakdown() {
-      const [allDays,    setAllDays]    = React.useState([]);
-      const [dayMap,     setDayMap]     = React.useState({});
-      const [answersMap, setAnswersMap] = React.useState({});
-      const [idx,        setIdx]        = React.useState(0);
+      const [allDays,     setAllDays]     = React.useState([]);
+      const [dayMap,      setDayMap]      = React.useState({});
+      const [answersMap,  setAnswersMap]  = React.useState({});
+      const [idx,         setIdx]         = React.useState(0);
+      const [showAnswers, setShowAnswers] = React.useState(false);
+      const [dayInput,    setDayInput]    = React.useState('');
 
       React.useEffect(() => {
         Promise.all([fetch('data.json').then(r => r.json()), fetch('answers.json').then(r => r.json())])
@@ -172,9 +194,22 @@
           });
       }, []);
 
+      const day = allDays[idx];
+
+      React.useEffect(() => { if (day !== undefined) setDayInput(String(day)); }, [day]);
+
       if (allDays.length === 0) return null;
 
-      const day        = allDays[idx];
+      function commitDayInput() {
+        const n = parseInt(dayInput);
+        if (isNaN(n)) { setDayInput(String(day)); return; }
+        const exact = allDays.indexOf(n);
+        if (exact !== -1) { setIdx(exact); return; }
+        // Jump to nearest day with results
+        let nearest = 0, minDist = Infinity;
+        allDays.forEach((d, i) => { const dist = Math.abs(d - n); if (dist < minDist) { minDist = dist; nearest = i; } });
+        setIdx(nearest);
+      }
       const records    = [...dayMap[day]].sort((a, b) => b.score - a.score);
       const numGuesses = Math.max(...records.map(r => r.guesses.length));
       const syncPair   = mostInSync(records);
@@ -185,9 +220,22 @@
           <div id="day-nav">
             <button onClick={() => setIdx(i => i - 1)} disabled={idx === 0}>←</button>
             <span id="day-label">
-              <a href={`https://catfishing.net/game/${day}`} target="_blank">#{day}</a>
+              #<input
+                id="day-input"
+                type="number"
+                value={dayInput}
+                onChange={e => setDayInput(e.target.value)}
+                onBlur={commitDayInput}
+                onKeyDown={e => { if (e.key === 'Enter') { commitDayInput(); e.target.blur(); } }}
+                onFocus={e => e.target.select()}
+              />
             </span>
             <button onClick={() => setIdx(i => i + 1)} disabled={idx === allDays.length - 1}>→</button>
+            <a href={`https://catfishing.net/game/${day}`} target="_blank" id="day-link">open on catfishing.net</a>
+            <label className="show-answers-label">
+              <input type="checkbox" checked={showAnswers} onChange={e => setShowAnswers(e.target.checked)} />
+              {' '}show answers
+            </label>
           </div>
           <div className="table-wrap">
             <table className="guess-table">
@@ -197,8 +245,8 @@
                   {Array.from({ length: numGuesses }, (_, i) => {
                     const ans = dayAnswers[i];
                     return (
-                      <th key={i} className="col-answer">
-                        {ans
+                      <th key={i} className={showAnswers ? 'col-answer' : ''}>
+                        {showAnswers && ans
                           ? <a href={ans.wikipedia_url} target="_blank">{ans.article_name}</a>
                           : i + 1}
                       </th>
@@ -223,8 +271,23 @@
             </table>
           </div>
           {syncPair && (
-            <p className="most-in-sync">Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
+            <p className="most-in-sync">🤝 Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
           )}
+          {(() => {
+            const pull = bestPull(records, dayAnswers);
+            if (!pull) return null;
+            return (
+              <p className="best-pull">
+                🤔🎣 Best pull:{' '}
+                <span className={showAnswers ? '' : 'spoiler'}>
+                  {showAnswers
+                    ? <a href={pull.wikipedia_url} target="_blank">{pull.article_name}</a>
+                    : pull.article_name}
+                </span>
+                {' '}({pull.players.map((p, i) => <React.Fragment key={p}>{i > 0 ? ', ' : ''}<strong>{p}</strong></React.Fragment>)})
+              </p>
+            );
+          })()}
         </>
       );
     }
