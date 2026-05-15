@@ -1222,5 +1222,23 @@
     "score": 4.5,
     "total": 10,
     "guesses": "[1,0,0,0,0.5,0,1,1,1,0]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-15T07:18:09.616Z",
+    "day_number": 690,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,0,1,1,0,1,1,0,1,1]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-05-15T07:19:25.865Z",
+    "day_number": 691,
+    "score": 5.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,0,1,0,0,0,1]"
   }
 ]
