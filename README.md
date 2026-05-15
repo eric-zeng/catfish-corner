@@ -6,27 +6,22 @@ Leaderboard for catfishing.net for me and my friends
 
 Here are the main components of the project:
 
-**Discord bot** (`src/bot.ts`) — A persistent [discord.js](https://discord.js.org) process that listens for catfishing.net results in configured channels and writes them to a local SQLite database. On startup and every hour it backfills any messages missed while offline.
+**Discord bot** (`src/bot.ts`) — A persistent [discord.js](https://discord.js.org) process that listens for catfishing.net results in a configured channel and writes them to a local SQLite database. On startup and every hour it backfills any messages missed while offline. It also reacts to each result with an emoji based on the score, and posts a daily summary at 9pm ET.
 
-**Database** (`data/catfish.db`) — SQLite database -- where all of the raw results are stored. The bot writes to this, it can also be populated by the backfill script.
+**Database** (`data/catfish.db`) — SQLite database where all raw results are stored. The bot writes to this; it can also be populated by the backfill script.
 
-**Python analysis pipeline** (`pipeline/`) — Scripts here compute aggregate stats and
-generate HTML or other outputs for the frontend. The entry point is `pipeline/generate.py`.
+**Python analysis pipeline** (`pipeline/`) — Scripts that compute aggregate stats and generate JSON outputs for the frontend. The entry point is `pipeline/run.py`.
 
-**Templates** (`templates/`) — Jinja2 templates for rendering the site.
-
-**Static site** (`site/`) — This directory contains the generated static site, and is pushed to the `gh-pages` branch on every update. The pipeline and deploy are triggered automatically by the bot whenever new results are written.
+**Static site** (`site/`) — Contains the generated static site, pushed to the `gh-pages` branch on every update. Uses React 18 + Babel Standalone loaded from CDN — no build step. The pipeline and deploy are triggered automatically by the bot whenever new results are written.
 
 ### Pipeline
 
-Here's how it all fits together:
-
 1. Bot listens for new catfishing.net posts
-2. New post is parsed and inserted into the SQLite database
+2. New post is parsed, inserted into SQLite, and the bot reacts with a score-based emoji
 3. Bot triggers the Python pipeline to regenerate the site
-4. Pipeline reads from the database, aggregates and computes stats, and renders HTML templates
+4. Pipeline reads from the database, aggregates stats, and writes JSON to `site/`
 5. Updated static site is deployed to GitHub Pages
-
+6. At 9pm ET, the bot posts a daily summary to the channel (skipped if no results were posted that day)
 
 ## How to run
 
@@ -43,7 +38,7 @@ Here's how it all fits together:
 npm install
 pip install -r requirements.txt
 cp .env.example .env
-# fill in DISCORD_BOT_TOKEN and DISCORD_CHANNEL_IDS in .env
+# fill in DISCORD_BOT_TOKEN and DISCORD_CHANNEL_ID in .env
 ```
 
 ### Populate the database
@@ -54,12 +49,12 @@ Before starting the bot for the first time, run the backfill script to pull in e
 npm run backfill
 ```
 
-This fetches all messages from the configured channels back to the initial cutoff date and inserts any valid results into the database.
+This fetches all messages from the configured channel back to the initial cutoff date and inserts any valid results into the database.
 
 ### Preview the site locally
 
 ```bash
-npm run generate   # build site/index.html from the current database
+npm run generate   # regenerate site/ from the current database
 npm run serve      # serve at http://localhost:8080
 ```
 
@@ -73,19 +68,26 @@ npm run deploy
 
 Configure GitHub Pages in your repo settings to serve from the `gh-pages` branch.
 
+### Daily summary
+
+The bot automatically posts a summary to the channel at 9pm ET each day. To post one manually:
+
+```bash
+npm run summary          # summarizes the most recent day
+npm run summary -- 42    # summarizes a specific day number
+```
+
 ### Running the bot
 
-The discord bot listens for new messages, updates the database, and triggers a site regeneration and deployment whenever new results are added. It also performs an hourly sync to catch any missed messages.
+The bot listens for new messages, updates the database, reacts to results, and triggers a deploy whenever new results are added. It also performs an hourly sync to catch any missed messages.
 
 #### Locally
 
 ```bash
-npm run start
+npm start
 ```
 
 #### As a daemon with pm2
-I use this to keep the bot running on my laptop 24/7. It's a hobby project so it's okay
-if I close the lid.
 
 ```bash
 pm2 start ecosystem.config.cjs
