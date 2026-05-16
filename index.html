@@ -273,6 +273,20 @@
                     <td className="col-sep">{rec.score}/{rec.total}</td>
                   </tr>
                 ))}
+                {(() => {
+                  const groupGuesses = Array.from({ length: numGuesses }, (_, i) =>
+                    Math.max(...records.map(r => i < r.guesses.length ? r.guesses[i] : 0))
+                  );
+                  const groupScore = groupGuesses.reduce((s, g) => s + g, 0);
+                  const groupTotal = records[0]?.total ?? numGuesses;
+                  return (
+                    <tr className="row-sep">
+                      <th className="col-user">Collective Score</th>
+                      {groupGuesses.map((g, i) => <GuessCell key={i} g={g} />)}
+                      <td className="col-sep">{groupScore}/{groupTotal}</td>
+                    </tr>
+                  );
+                })()}
               </tbody>
             </table>
           </div>
