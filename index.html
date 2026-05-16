@@ -400,6 +400,54 @@
       );
     }
 
+    // ── MoggingTable ─────────────────────────────────────────────────────────
+
+    function MoggingTable({ onSelectDay }) {
+      const [rows, setRows] = React.useState(null);
+
+      React.useEffect(() => {
+        fetch('mogging.csv').then(r => r.text()).then(text => {
+          const [header, ...lines] = text.trim().split('\n');
+          const keys = header.split(',');
+          setRows(lines.map(line => {
+            const vals = line.split(',');
+            return Object.fromEntries(keys.map((k, i) => [k, vals[i]]));
+          }));
+        }).catch(() => setRows([]));
+      }, []);
+
+      if (!rows || rows.length === 0) return null;
+
+      return (
+        <div className="table-wrap">
+          <table className="results-table mogging-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Player</th>
+                <th>Score</th>
+                <th>Rest Avg</th>
+                <th>Margin</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map(r => (
+                <tr key={r.day}>
+                  <td>
+                    <button className="day-select-btn" onClick={() => onSelectDay(Number(r.day))}>#{r.day}</button>
+                  </td>
+                  <td>{r.player}</td>
+                  <td>{r.score}</td>
+                  <td>{r.rest_avg}</td>
+                  <td>{r.margin}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
     // ── App ───────────────────────────────────────────────────────────────────
 
     function App() {
@@ -416,8 +464,14 @@
         <>
           <h2>leaderboard</h2>
           <LeaderboardTable onSelectDay={setSelectedDay} />
-          <h2 ref={perDayRef}>per-day results</h2>
+          <h2 ref={perDayRef}>daily results</h2>
           <GuessBreakdown selectedDay={selectedDay} />
+          <h2>biggest moggings</h2>
+          <p className="small-text">
+            Days where the top player outscored the mean of the rest of the
+            players by the largest margin
+          </p>
+          <MoggingTable onSelectDay={setSelectedDay} />
           <h2>7-day rolling average leaderboard</h2>
           <RollingAverageChart />
         </>

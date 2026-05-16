@@ -235,6 +235,9 @@ h2 {
   }
 }
 
+.mogging-table tbody tr:nth-child(even) { background: #fff8f0; }
+.mogging-table tbody tr:nth-child(odd)  { background: #ffffff; }
+
 .chart-wrap {
   max-width: 860px;
   margin-bottom: 2rem;
@@ -255,4 +258,9 @@ table.guess-table thead th.col-answer {
   padding: 0.5rem 0.4rem;
   vertical-align: bottom;
   font-size: 0.8rem;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #7a4a1e;
 }
