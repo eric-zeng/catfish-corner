@@ -130,15 +130,20 @@
 
     function bestPull(records, dayAnswers) {
       if (!dayAnswers.length) return null;
-      let bestArticle = null, bestUrl = '', bestPlayers = null;
+      let minCount = Infinity;
+      const tied = [];
       for (let i = 0; i < dayAnswers.length; i++) {
         const players = records.filter(r => r.guesses[i] > 0).map(r => r.username);
-        if (players.length === 0 || (bestPlayers !== null && players.length >= bestPlayers.length)) continue;
-        bestPlayers = players;
-        bestArticle = dayAnswers[i].article_name;
-        bestUrl = dayAnswers[i].wikipedia_url;
+        if (players.length === 0) continue;
+        if (players.length < minCount) {
+          minCount = players.length;
+          tied.length = 0;
+          tied.push({ article_name: dayAnswers[i].article_name, wikipedia_url: dayAnswers[i].wikipedia_url, players });
+        } else if (players.length === minCount) {
+          tied.push({ article_name: dayAnswers[i].article_name, wikipedia_url: dayAnswers[i].wikipedia_url, players });
+        }
       }
-      return bestArticle ? { article_name: bestArticle, wikipedia_url: bestUrl, players: bestPlayers } : null;
+      return tied.length > 0 ? tied : null;
     }
 
     function mostInSync(records) {
@@ -275,17 +280,22 @@
             <p className="most-in-sync">🤝 Most in sync: <strong>{syncPair[0]}</strong> and <strong>{syncPair[1]}</strong></p>
           )}
           {(() => {
-            const pull = bestPull(records, dayAnswers);
-            if (!pull) return null;
+            const pulls = bestPull(records, dayAnswers);
+            if (!pulls) return null;
             return (
               <p className="best-pull">
-                🤔🎣 Best pull:{' '}
-                <span className={showAnswers ? '' : 'spoiler'} onClick={showAnswers ? undefined : () => setShowAnswers(true)}>
-                  {showAnswers
-                    ? <a href={pull.wikipedia_url} target="_blank">{pull.article_name}</a>
-                    : pull.article_name}
-                </span>
-                {' '}({pull.players.map((p, i) => <React.Fragment key={p}>{i > 0 ? ', ' : ''}<strong>{p}</strong></React.Fragment>)})
+                {pulls.length > 1 ? '🤔🎣 Rarest pulls:' : '🤔🎣 Rarest pull:'}{' '}
+                {pulls.map((pull, i) => (
+                  <React.Fragment key={pull.article_name}>
+                    {i > 0 ? ', ' : ''}
+                    <span className={showAnswers ? '' : 'spoiler'} onClick={showAnswers ? undefined : () => setShowAnswers(true)}>
+                      {showAnswers
+                        ? <a href={pull.wikipedia_url} target="_blank">{pull.article_name}</a>
+                        : pull.article_name}
+                    </span>
+                    {' '}({pull.players.map((p, j) => <React.Fragment key={p}>{j > 0 ? ', ' : ''}<strong>{p}</strong></React.Fragment>)})
+                  </React.Fragment>
+                ))}
               </p>
             );
           })()}
