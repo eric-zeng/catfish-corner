@@ -11,6 +11,9 @@ export function initDb(): void {
 
   db = new Database(path.join(dataDir, 'catfish.db'));
   db.pragma('journal_mode = WAL');
+  try {
+    db.exec(`ALTER TABLE answers ADD COLUMN wikipedia_summary TEXT NOT NULL DEFAULT ''`);
+  } catch { /* column already exists */ }
   db.exec(`
     CREATE TABLE IF NOT EXISTS results (
       username   TEXT NOT NULL,
@@ -23,11 +26,12 @@ export function initDb(): void {
       PRIMARY KEY (user_id, day_number)
     );
     CREATE TABLE IF NOT EXISTS answers (
-      day_id          INTEGER NOT NULL,
-      answer_index    INTEGER NOT NULL,
-      article_name    TEXT NOT NULL,
-      categories_list TEXT NOT NULL,
-      wikipedia_url   TEXT NOT NULL,
+      day_id             INTEGER NOT NULL,
+      answer_index       INTEGER NOT NULL,
+      article_name       TEXT NOT NULL,
+      categories_list    TEXT NOT NULL,
+      wikipedia_url      TEXT NOT NULL,
+      wikipedia_summary  TEXT NOT NULL DEFAULT '',
       PRIMARY KEY (day_id, answer_index)
     );
   `);

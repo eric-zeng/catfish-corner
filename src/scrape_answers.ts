@@ -3,6 +3,7 @@
 // stats export file, or without flags to auto-play (skip through questions) on unplayed days.
 import puppeteer, { type Page } from 'puppeteer';
 import Database from 'better-sqlite3';
+import wiki from 'wikipedia';
 import path from 'path';
 
 const DB_PATH   = path.join(__dirname, '..', 'data', 'catfish.db');
@@ -14,6 +15,7 @@ interface Answer {
   article_name: string;
   wikipedia_url: string;
   categories: string[];
+  wikipedia_summary: string;
 }
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
@@ -22,14 +24,20 @@ function initDb() {
   const db = new Database(DB_PATH);
   db.exec(`
     CREATE TABLE IF NOT EXISTS answers (
-      day_id          INTEGER NOT NULL,
-      answer_index    INTEGER NOT NULL,
-      article_name    TEXT NOT NULL,
-      categories_list TEXT NOT NULL,
-      wikipedia_url   TEXT NOT NULL,
+      day_id             INTEGER NOT NULL,
+      answer_index       INTEGER NOT NULL,
+      article_name       TEXT NOT NULL,
+      categories_list    TEXT NOT NULL,
+      wikipedia_url      TEXT NOT NULL,
+      wikipedia_summary  TEXT NOT NULL DEFAULT '',
       PRIMARY KEY (day_id, answer_index)
     )
   `);
+  try {
+    db.exec(`ALTER TABLE answers ADD COLUMN wikipedia_summary TEXT NOT NULL DEFAULT ''`);
+  } catch {
+    // column already exists
+  }
   return db;
 }
 
@@ -43,15 +51,34 @@ function getMissingDays(db: Database.Database): number[] {
 
 function makeInserter(db: Database.Database) {
   const stmt = db.prepare(`
-    INSERT OR IGNORE INTO answers (day_id, answer_index, article_name, categories_list, wikipedia_url)
-    VALUES (?, ?, ?, ?, ?)
+    INSERT OR IGNORE INTO answers (day_id, answer_index, article_name, categories_list, wikipedia_url, wikipedia_summary)
+    VALUES (?, ?, ?, ?, ?, ?)
   `);
   return (dayNumber: number, answers: Answer[]) =>
     db.transaction(() => {
-      for (const { answer_index, article_name, wikipedia_url, categories } of answers) {
-        stmt.run(dayNumber, answer_index, article_name, JSON.stringify(categories), wikipedia_url);
+      for (const { answer_index, article_name, wikipedia_url, categories, wikipedia_summary } of answers) {
+        stmt.run(dayNumber, answer_index, article_name, JSON.stringify(categories), wikipedia_url, wikipedia_summary);
       }
     })();
+}
+
+async function fetchWikiSummary(wikipediaUrl: string): Promise<string> {
+  try {
+    const title = decodeURIComponent(wikipediaUrl.split('/wiki/')[1] ?? '');
+    const summary = await wiki.summary(title);
+    const sentences = summary.extract.match(/[^.!?]+[.!?]+/g) ?? [];
+    return sentences.slice(0, 3).join(' ').trim();
+  } catch (err) {
+    console.warn(`  Summary fetch failed for ${wikipediaUrl}: ${err}`);
+    return '';
+  }
+}
+
+async function fetchSummaries(answers: Answer[]): Promise<void> {
+  for (const answer of answers) {
+    answer.wikipedia_summary = await fetchWikiSummary(answer.wikipedia_url);
+    console.log(`  Fetched summary for: ${answer.article_name}`);
+  }
 }
 
 // ── Auto-play mode ────────────────────────────────────────────────────────────
@@ -72,7 +99,7 @@ async function scrapeAnswerScreen(page: Page, index: number): Promise<Answer> {
       .map(a => a.textContent?.trim() ?? '')
       .filter(Boolean);
 
-    return { answer_index: i, article_name, wikipedia_url, categories };
+    return { answer_index: i, article_name, wikipedia_url, categories, wikipedia_summary: '' };
   }, index);
 }
 
@@ -114,6 +141,7 @@ async function runAutoPlay(days: number[], page: Page, insert: ReturnType<typeof
       }
 
       const answers = await autoPlayDay(page);
+      await fetchSummaries(answers);
       insert(day, answers);
       console.log(`Day ${day}: auto-played, scraped ${answers.length} answers.`);
 
@@ -172,7 +200,7 @@ async function runResults(days: number[], page: Page, insert: ReturnType<typeof 
       await page.click('input[name="alwaysExpand"]');
       await page.waitForSelector('a[href*="/wiki/Category:"]', { timeout: 5000 });
 
-      const answers = await page.evaluate(() => {
+      const answers: Answer[] = await page.evaluate(() => {
         const container = document.querySelector('div.divide-y.divide-dotted.divide-emerald-900');
         if (!container) return [];
         return Array.from(container.children)
@@ -184,11 +212,12 @@ async function runResults(days: number[], page: Page, insert: ReturnType<typeof 
             const categories = Array.from(row.querySelectorAll('a[href*="/wiki/Category:"]'))
               .map(a => a.textContent?.trim() ?? '')
               .filter(Boolean);
-            return { answer_index: index, article_name, wikipedia_url, categories };
+            return { answer_index: index, article_name, wikipedia_url, categories, wikipedia_summary: '' };
           })
           .filter(a => a.article_name !== '');
       });
 
+      await fetchSummaries(answers);
       insert(day, answers);
       console.log(`Day ${day}: scraped ${answers.length} answers from results page.`);
 

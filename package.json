@@ -8,13 +8,15 @@
     "serve": "python3 -m http.server 8080 --directory site",
     "deploy": "npm run generate && gh-pages -d site",
     "summary": "tsx src/post_summary.ts",
-    "scrape": "tsx src/scrape_answers.ts"
+    "scrape": "tsx src/scrape_answers.ts",
+    "backfill-summaries": "tsx src/backfill_summaries.ts"
   },
   "dependencies": {
     "better-sqlite3": "^11.0.0",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.7",
-    "puppeteer": "^24.0.0"
+    "puppeteer": "^24.0.0",
+    "wikipedia": "^2.5.0"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.0",
