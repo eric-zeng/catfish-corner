@@ -235,6 +235,17 @@ h2 {
   }
 }
 
+.chart-wrap {
+  max-width: 860px;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.chart-inner {
+  min-height: 400px;
+  position: relative;
+}
+
 /* Rotated article-name headers in the guess breakdown table */
 table.guess-table thead th.col-answer {
   writing-mode: vertical-lr;

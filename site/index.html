@@ -11,6 +11,7 @@
   <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <h1>🐟 bront and friends' catfish corner 🐈</h1>
@@ -317,6 +318,88 @@
       );
     }
 
+    // ── RollingAverageChart ───────────────────────────────────────────────────
+
+    const PLAYER_COLORS = [
+      '#e07b39', '#5b9bd5', '#70b870', '#c96fad',
+      '#d4b84a', '#7b6fd4', '#5bbdb8',
+    ];
+
+    const PLAYER_SHAPES = [
+      'circle', 'triangle', 'rect', 'star',
+      'crossRot', 'rectRot', 'dash',
+    ];
+
+    function RollingAverageChart() {
+      const canvasRef  = React.useRef(null);
+      const chartRef   = React.useRef(null);
+      const [numDays, setNumDays] = React.useState(23);
+
+      React.useEffect(() => {
+        fetch('leaderboard.json').then(r => r.json()).then(({ days, users, scores }) => {
+          setNumDays(days.length);
+          function rollingAvg(userScores, window = 7) {
+            return days.map((d, i) => {
+              const start = Math.max(0, i - window + 1);
+              const vals  = days.slice(start, i + 1)
+                .map(day => userScores[day])
+                .filter(v => v !== null && v !== undefined);
+              return vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+            });
+          }
+
+          const avgsByUser = users.map(user => rollingAvg(scores[user]));
+
+          const datasets = users.map((user, i) => ({
+            label:            user,
+            data:             avgsByUser[i],
+            borderColor:      PLAYER_COLORS[i % PLAYER_COLORS.length],
+            backgroundColor:  PLAYER_COLORS[i % PLAYER_COLORS.length],
+            tension:          0.35,
+            pointStyle:       PLAYER_SHAPES[i % PLAYER_SHAPES.length],
+            pointRadius:      4,
+            pointHoverRadius: 6,
+            borderWidth:      2,
+            spanGaps:         true,
+          }));
+
+          if (chartRef.current) chartRef.current.destroy();
+
+          chartRef.current = new Chart(canvasRef.current, {
+            type: 'line',
+            data: { labels: days.map(d => `#${d}`), datasets },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              interaction: { mode: 'index', intersect: false },
+              plugins: {
+                legend: { position: 'bottom', labels: { usePointStyle: true, padding: 16 } },
+                tooltip: {
+                  callbacks: {
+                    label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y !== null ? ctx.parsed.y.toFixed(2) : '—'}`,
+                  },
+                },
+              },
+              scales: {
+                x: { ticks: { maxTicksLimit: 12, maxRotation: 0 } },
+                y: { min: 2.5, max: 8.5, title: { display: true, text: '7-day rolling average score' } },
+              },
+            },
+          });
+        });
+
+        return () => { if (chartRef.current) chartRef.current.destroy(); };
+      }, []);
+
+      return (
+        <div className="chart-wrap">
+          <div className="chart-inner" style={{ minWidth: `${Math.max(560, numDays * 32)}px` }}>
+            <canvas ref={canvasRef}></canvas>
+          </div>
+        </div>
+      );
+    }
+
     // ── App ───────────────────────────────────────────────────────────────────
 
     function App() {
@@ -335,6 +418,8 @@
           <LeaderboardTable onSelectDay={setSelectedDay} />
           <h2 ref={perDayRef}>per-day results</h2>
           <GuessBreakdown selectedDay={selectedDay} />
+          <h2>7-day rolling average leaderboard</h2>
+          <RollingAverageChart />
         </>
       );
     }
