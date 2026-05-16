@@ -22,18 +22,24 @@ function bestPullLine(dayNumber: number): string | null {
   if (answers.length === 0) return null;
   const allGuesses = getDayGuesses(dayNumber);
 
-  let bestArticle: string | null = null;
-  let bestPlayers: string[] = [];
+  let minCount = Infinity;
+  const tied: { article_name: string; players: string[] }[] = [];
+
   for (const { answer_index, article_name } of answers) {
     const players = allGuesses.filter(g => g.guesses[answer_index] > 0).map(g => g.username);
-    if (players.length === 0 || players.length >= (bestPlayers.length || Infinity)) continue;
-    bestPlayers = players;
-    bestArticle = article_name;
+    if (players.length === 0) continue;
+    if (players.length < minCount) {
+      minCount = players.length;
+      tied.length = 0;
+      tied.push({ article_name, players });
+    } else if (players.length === minCount) {
+      tied.push({ article_name, players });
+    }
   }
 
-  return bestArticle
-    ? `🤔🎣 Best pull: ${bestArticle} (${bestPlayers.join(', ')})`
-    : null;
+  if (tied.length === 0) return null;
+  const parts = tied.map(t => `${t.article_name} (${t.players.join(', ')})`).join(', ');
+  return `🤔🎣 Rarest ${tied.length > 1 ? 'pulls' : 'pull'}: ${parts}`;
 }
 
 function buildMessage(dayNumber: number): string | null {
