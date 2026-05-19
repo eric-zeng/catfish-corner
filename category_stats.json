@@ -1,9 +1,9 @@
 {
   "_positron": {
     "Mythology & Religion": {
-      "attempts": 12,
+      "attempts": 13,
       "score": 6.0,
-      "proportion": 0.5
+      "proportion": 0.4615
     },
     "Literature & Fiction": {
       "attempts": 45,
@@ -16,39 +16,39 @@
       "proportion": 0.3333
     },
     "History": {
-      "attempts": 32,
-      "score": 16.0,
-      "proportion": 0.5
+      "attempts": 36,
+      "score": 17.0,
+      "proportion": 0.4722
     },
     "Food & Drink": {
-      "attempts": 8,
+      "attempts": 9,
       "score": 5.0,
-      "proportion": 0.625
-    },
-    "Architecture & Infrastructure": {
-      "attempts": 11,
-      "score": 6.0,
-      "proportion": 0.5455
-    },
-    "Pop Culture": {
-      "attempts": 15,
-      "score": 13.0,
-      "proportion": 0.8667
-    },
-    "Geography & Places": {
-      "attempts": 18,
-      "score": 10.0,
       "proportion": 0.5556
     },
+    "Architecture & Infrastructure": {
+      "attempts": 12,
+      "score": 7.0,
+      "proportion": 0.5833
+    },
+    "Pop Culture": {
+      "attempts": 16,
+      "score": 14.0,
+      "proportion": 0.875
+    },
+    "Geography & Places": {
+      "attempts": 19,
+      "score": 11.0,
+      "proportion": 0.5789
+    },
     "Music": {
-      "attempts": 26,
-      "score": 11.5,
-      "proportion": 0.4423
+      "attempts": 27,
+      "score": 12.5,
+      "proportion": 0.463
     },
     "Film & TV": {
-      "attempts": 20,
+      "attempts": 21,
       "score": 9.0,
-      "proportion": 0.45
+      "proportion": 0.4286
     },
     "Nature & Biology": {
       "attempts": 10,
@@ -93,9 +93,9 @@
       "proportion": 0.5333
     },
     "History": {
-      "attempts": 32,
+      "attempts": 33,
       "score": 15.5,
-      "proportion": 0.4844
+      "proportion": 0.4697
     },
     "Food & Drink": {
       "attempts": 8,
@@ -170,9 +170,9 @@
       "proportion": 0.6667
     },
     "History": {
-      "attempts": 32,
+      "attempts": 33,
       "score": 20.0,
-      "proportion": 0.625
+      "proportion": 0.6061
     },
     "Food & Drink": {
       "attempts": 8,
@@ -324,9 +324,9 @@
       "proportion": 0.4
     },
     "History": {
-      "attempts": 35,
+      "attempts": 36,
       "score": 16.0,
-      "proportion": 0.4571
+      "proportion": 0.4444
     },
     "Food & Drink": {
       "attempts": 9,
@@ -386,9 +386,9 @@
   },
   "mezaros": {
     "History": {
-      "attempts": 24,
+      "attempts": 25,
       "score": 16.0,
-      "proportion": 0.6667
+      "proportion": 0.64
     },
     "Mythology & Religion": {
       "attempts": 9,
@@ -478,9 +478,9 @@
       "proportion": 0.25
     },
     "History": {
-      "attempts": 32,
+      "attempts": 33,
       "score": 14.0,
-      "proportion": 0.4375
+      "proportion": 0.4242
     },
     "Food & Drink": {
       "attempts": 7,
