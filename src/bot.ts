@@ -32,12 +32,23 @@ function deploy(): void {
   });
 }
 
+function runClassify(): void {
+  exec('npx tsx src/classify_answers.ts', { cwd: ROOT }, (err, stdout, stderr) => {
+    if (err) {
+      console.warn(`Classify failed (non-fatal): ${stderr.trim() || err.message}`);
+    } else {
+      console.log(`Classify complete: ${stdout.trim()}`);
+    }
+  });
+}
+
 function runScrape(): void {
   exec('npx tsx src/scrape_answers.ts --headless', { cwd: ROOT }, (err, stdout, stderr) => {
     if (err) {
       console.error(`Scrape failed: ${stderr}`);
     } else {
       console.log(`Scrape complete: ${stdout.trim()}`);
+      runClassify();
     }
   });
 }

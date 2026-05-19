@@ -249,6 +249,30 @@ h2 {
   position: relative;
 }
 
+/* ── Category charts ─────────────────────────── */
+
+.cat-charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.cat-chart-wrap {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  padding: 0.75rem 1rem 0.5rem;
+}
+
+.cat-chart-title {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #7a4a1e;
+  margin: 0 0 0.5rem;
+}
+
 /* Rotated article-name headers in the guess breakdown table */
 table.guess-table thead th.col-answer {
   writing-mode: vertical-lr;

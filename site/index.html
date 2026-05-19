@@ -12,6 +12,7 @@
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2/dist/chartjs-plugin-datalabels.min.js"></script>
 </head>
 <body>
   <h1>🐟 bront and friends' catfish corner 🐈</h1>
@@ -19,6 +20,8 @@
   <div id="app"></div>
 
   <script type="text/babel">
+    Chart.register(ChartDataLabels);
+
     // ── Shared helpers ────────────────────────────────────────────────────────
 
     function hslColor(val) {
@@ -373,6 +376,7 @@
               maintainAspectRatio: false,
               interaction: { mode: 'index', intersect: false },
               plugins: {
+                datalabels: false,
                 legend: { position: 'bottom', labels: { usePointStyle: true, padding: 16 } },
                 tooltip: {
                   callbacks: {
@@ -448,6 +452,103 @@
       );
     }
 
+    // ── CategoryCharts ────────────────────────────────────────────────────────
+
+    function CategoryChart({ category, usersInCat, userColor }) {
+      const canvasRef = React.useRef(null);
+      const chartRef  = React.useRef(null);
+
+      React.useEffect(() => {
+        if (!canvasRef.current) return;
+        if (chartRef.current) chartRef.current.destroy();
+
+        const labels  = usersInCat.map(u => u.username);
+        const values  = usersInCat.map(u => u.proportion);
+        const colors  = usersInCat.map(u => userColor[u.username]);
+
+        chartRef.current = new Chart(canvasRef.current, {
+          type: 'bar',
+          data: {
+            labels,
+            datasets: [{
+              data:            values,
+              backgroundColor: colors,
+              borderColor:     colors,
+              borderWidth:     1,
+              borderRadius:    4,
+            }],
+          },
+          options: {
+            indexAxis: 'y',
+            responsive:          true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend:     { display: false },
+              tooltip:    { enabled: false },
+              datalabels: {
+                anchor:    'end',
+                align:     'end',
+                formatter: v => Math.round(v * 100) + '%',
+                font:      { size: 11, family: "'Comic Sans MS', 'Chalkboard SE', 'Comic Neue'" },
+                color:     '#7a4a1e',
+              },
+            },
+            scales: {
+              x: {
+                min: 0,
+                max: 1,
+                ticks: { callback: v => Math.round(v * 100) + '%', maxTicksLimit: 5 },
+                grid: { color: '#f5cfa0' },
+              },
+              y: { grid: { display: false } },
+            },
+            layout: { padding: { right: 36 } },
+          },
+        });
+
+        return () => { if (chartRef.current) chartRef.current.destroy(); };
+      }, []);
+
+      return (
+        <div className="cat-chart-wrap">
+          <h3 className="cat-chart-title">{category}</h3>
+          <div style={{ height: `${usersInCat.length * 38 + 24}px`, position: 'relative' }}>
+            <canvas ref={canvasRef}></canvas>
+          </div>
+        </div>
+      );
+    }
+
+    function CategoryCharts() {
+      const [stats, setStats] = React.useState(null);
+
+      React.useEffect(() => {
+        fetch('category_stats.json').then(r => r.json()).then(setStats);
+      }, []);
+
+      if (!stats) return null;
+
+      const allUsers  = Object.keys(stats).sort();
+      const userColor = Object.fromEntries(
+        allUsers.map((u, i) => [u, PLAYER_COLORS[i % PLAYER_COLORS.length]])
+      );
+      const categories = [...new Set(Object.values(stats).flatMap(u => Object.keys(u)))].sort();
+
+      return (
+        <div className="cat-charts-grid">
+          {categories.map(cat => {
+            const usersInCat = allUsers
+              .filter(u => stats[u][cat])
+              .map(u => ({ username: u, ...stats[u][cat] }))
+              .sort((a, b) => b.proportion - a.proportion);
+            return (
+              <CategoryChart key={cat} category={cat} usersInCat={usersInCat} userColor={userColor} />
+            );
+          })}
+        </div>
+      );
+    }
+
     // ── App ───────────────────────────────────────────────────────────────────
 
     function App() {
@@ -474,6 +575,8 @@
           <MoggingTable onSelectDay={setSelectedDay} />
           <h2>7-day rolling average leaderboard</h2>
           <RollingAverageChart />
+          <h2>performance by category</h2>
+          <CategoryCharts />
         </>
       );
     }
