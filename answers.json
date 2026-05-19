@@ -1350,5 +1350,57 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shrek",
       "knowledge_area": "Film & TV"
     }
+  ],
+  "695": [
+    {
+      "article_name": "Stonewall Inn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stonewall_Inn",
+      "knowledge_area": "History"
+    },
+    {
+      "article_name": "Straight Outta Compton",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Straight_Outta_Compton",
+      "knowledge_area": "Music"
+    },
+    {
+      "article_name": "Orville Redenbacher",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orville_Redenbacher",
+      "knowledge_area": "Food & Drink"
+    },
+    {
+      "article_name": "Medell\u00edn Cartel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Medell%C3%ADn_Cartel",
+      "knowledge_area": "History"
+    },
+    {
+      "article_name": "Jason",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jason",
+      "knowledge_area": "Mythology & Religion"
+    },
+    {
+      "article_name": "Interstate Highway System",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Interstate_Highway_System",
+      "knowledge_area": "Architecture & Infrastructure"
+    },
+    {
+      "article_name": "Scooby-Doo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scooby-Doo_(character)",
+      "knowledge_area": "Pop Culture"
+    },
+    {
+      "article_name": "Monrovia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monrovia",
+      "knowledge_area": "Geography & Places"
+    },
+    {
+      "article_name": "Scythe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scythe",
+      "knowledge_area": "History"
+    },
+    {
+      "article_name": "Raging Bull",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raging_Bull",
+      "knowledge_area": "Film & TV"
+    }
   ]
 }
