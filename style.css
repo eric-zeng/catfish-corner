@@ -249,6 +249,86 @@ h2 {
   position: relative;
 }
 
+/* ── Modal ───────────────────────────────────── */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background: #fef9f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 1.25rem 1.5rem 1.5rem;
+  max-width: 560px;
+  width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #7a4a1e;
+  margin-bottom: 1rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #7a4a1e;
+  padding: 0 0.25rem;
+}
+
+.modal-close:hover { color: #d4621a; }
+
+.modal-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.5rem;
+}
+
+.modal-col-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #7a4a1e;
+  margin: 0 0 0.5rem;
+}
+
+.modal-article {
+  font-size: 0.88rem;
+  margin-bottom: 0.3rem;
+}
+
+.modal-article a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.modal-article a:hover { text-decoration: underline; }
+
+.modal-partial {
+  font-size: 0.78rem;
+  color: #999;
+}
+
+.modal-empty {
+  font-size: 0.88rem;
+  color: #bbb;
+  font-style: italic;
+}
+
 /* ── Category charts ─────────────────────────── */
 
 .cat-charts-grid {
