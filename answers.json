@@ -1402,5 +1402,57 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Raging_Bull",
       "knowledge_area": "Film & TV"
     }
+  ],
+  "696": [
+    {
+      "article_name": "Hans Gruber",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hans_Gruber",
+      "knowledge_area": "Film & TV"
+    },
+    {
+      "article_name": "Balatro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balatro",
+      "knowledge_area": "Sports & Games"
+    },
+    {
+      "article_name": "Grok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grok",
+      "knowledge_area": "Literature & Fiction"
+    },
+    {
+      "article_name": "Empire of the Sun",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Empire_of_the_Sun_(film)",
+      "knowledge_area": "Film & TV"
+    },
+    {
+      "article_name": "Aretha Franklin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "knowledge_area": "Music"
+    },
+    {
+      "article_name": "Lake Baikal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Baikal",
+      "knowledge_area": "Geography & Places"
+    },
+    {
+      "article_name": "Gustav Klimt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustav_Klimt",
+      "knowledge_area": "Visual Art"
+    },
+    {
+      "article_name": "Mount Pinatubo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Pinatubo",
+      "knowledge_area": "Nature & Biology"
+    },
+    {
+      "article_name": "Niccol\u00f2 Paganini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Paganini",
+      "knowledge_area": "Music"
+    },
+    {
+      "article_name": "Ken Jennings",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ken_Jennings",
+      "knowledge_area": "Pop Culture"
+    }
   ]
 }
