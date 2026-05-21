@@ -232,24 +232,24 @@
   },
   "hemlor": {
     "Literature & Fiction": {
-      "attempts": 38,
-      "score": 23.0,
-      "proportion": 0.6053
+      "attempts": 40,
+      "score": 25.0,
+      "proportion": 0.625
     },
     "Geography & Places": {
-      "attempts": 13,
-      "score": 7.0,
-      "proportion": 0.5385
+      "attempts": 15,
+      "score": 9.0,
+      "proportion": 0.6
     },
     "Music": {
-      "attempts": 23,
-      "score": 10.0,
-      "proportion": 0.4348
+      "attempts": 25,
+      "score": 11.0,
+      "proportion": 0.44
     },
     "History": {
-      "attempts": 31,
-      "score": 19.5,
-      "proportion": 0.629
+      "attempts": 34,
+      "score": 21.5,
+      "proportion": 0.6324
     },
     "Film & TV": {
       "attempts": 21,
@@ -277,9 +277,9 @@
       "proportion": 0.5385
     },
     "Science & Mathematics": {
-      "attempts": 20,
-      "score": 6.0,
-      "proportion": 0.3
+      "attempts": 21,
+      "score": 7.0,
+      "proportion": 0.3333
     },
     "Mythology & Religion": {
       "attempts": 12,
