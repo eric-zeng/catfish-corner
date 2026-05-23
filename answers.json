@@ -671,7 +671,9 @@
       "article_name": "Blackbeard",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Blackbeard",
       "knowledge_area": "History",
-      "fun_labels": []
+      "fun_labels": [
+        "Boat Names"
+      ]
     },
     {
       "article_name": "Rust",
@@ -1157,7 +1159,9 @@
       "article_name": "Pablo Neruda",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pablo_Neruda",
       "knowledge_area": "Literature & Fiction",
-      "fun_labels": []
+      "fun_labels": [
+        "Medieval / Renaissance Bullshit"
+      ]
     },
     {
       "article_name": "Geraldine Ferraro",
