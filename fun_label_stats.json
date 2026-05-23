@@ -1,79 +1,79 @@
 {
   "_positron": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 19,
-      "score": 1.0,
-      "proportion": 0.0526
+      "attempts": 25,
+      "score": 2.5,
+      "proportion": 0.1
     },
     "Boat Names": {
-      "attempts": 1,
-      "score": 0.0,
-      "proportion": 0.0
+      "attempts": 2,
+      "score": 0.5,
+      "proportion": 0.25
     }
   },
   "croton140": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 19,
-      "score": 3.5,
-      "proportion": 0.1842
+      "attempts": 25,
+      "score": 5.5,
+      "proportion": 0.22
     },
     "Boat Names": {
-      "attempts": 1,
-      "score": 0.0,
-      "proportion": 0.0
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
     }
   },
   "ghuggles": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 19,
-      "score": 9.0,
-      "proportion": 0.4737
+      "attempts": 25,
+      "score": 12.0,
+      "proportion": 0.48
     },
     "Boat Names": {
-      "attempts": 1,
-      "score": 1.0,
+      "attempts": 2,
+      "score": 2.0,
       "proportion": 1.0
     }
   },
   "hemlor": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 16,
-      "score": 5.0,
-      "proportion": 0.3125
+      "attempts": 21,
+      "score": 10.0,
+      "proportion": 0.4762
     },
     "Boat Names": {
-      "attempts": 1,
-      "score": 0.0,
-      "proportion": 0.0
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
     }
   },
   "le_roi": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 19,
-      "score": 4.0,
-      "proportion": 0.2105
+      "attempts": 25,
+      "score": 6.0,
+      "proportion": 0.24
     },
     "Boat Names": {
-      "attempts": 1,
-      "score": 0.0,
-      "proportion": 0.0
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
     }
   },
   "mezaros": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 15,
-      "score": 5.0,
-      "proportion": 0.3333
+      "attempts": 17,
+      "score": 6.0,
+      "proportion": 0.3529
     }
   },
   "optic_chiasm": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 17,
-      "score": 6.0,
-      "proportion": 0.3529
+      "attempts": 22,
+      "score": 7.0,
+      "proportion": 0.3182
     },
     "Boat Names": {
-      "attempts": 1,
+      "attempts": 2,
       "score": 0.0,
       "proportion": 0.0
     }
