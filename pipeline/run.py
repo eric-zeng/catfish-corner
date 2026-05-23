@@ -3,9 +3,11 @@ from render import render
 from similarity import compute_similarity
 from mogging import main as compute_mogging
 from category_stats import compute_category_stats
+from fun_label_stats import compute_fun_label_stats
 
 extract()
 render()
 compute_similarity()
 compute_mogging()
 compute_category_stats()
+compute_fun_label_stats()
