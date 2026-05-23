@@ -569,61 +569,71 @@
       );
     }
 
-    function CategoryCharts() {
-      const [stats,    setStats]    = React.useState(null);
-      const [rawData,  setRawData]  = React.useState(null);
-      const [answers,  setAnswers]  = React.useState(null);
-      const [modal,    setModal]    = React.useState(null);
+    function PerformanceCharts() {
+      const [allData, setAllData] = React.useState(null);
+      const [modal,   setModal]   = React.useState(null);
 
       React.useEffect(() => {
         Promise.all([
           fetch('category_stats.json').then(r => r.json()),
+          fetch('fun_label_stats.json').then(r => r.json()).catch(() => ({})),
           fetch('data.json').then(r => r.json()),
           fetch('answers.json').then(r => r.json()),
-        ]).then(([s, d, a]) => { setStats(s); setRawData(d); setAnswers(a); });
+        ]).then(([catStats, funStats, rawData, answers]) => {
+          setAllData({ catStats, funStats, rawData, answers });
+        });
       }, []);
 
-      if (!stats || !rawData || !answers) return null;
+      if (!allData) return null;
+      const { catStats, funStats, rawData, answers } = allData;
 
-      const allUsers  = Object.keys(stats).sort();
+      const allUsers  = [...new Set([...Object.keys(catStats), ...Object.keys(funStats)])].sort();
       const userColor = Object.fromEntries(
         allUsers.map((u, i) => [u, PLAYER_COLORS[i % PLAYER_COLORS.length]])
       );
-      const categories = [...new Set(Object.values(stats).flatMap(u => Object.keys(u)))].sort();
 
-      function handleBarClick(category, { username }) {
+      const catKeys = [...new Set(Object.values(catStats).flatMap(u => Object.keys(u)))].sort();
+      const funKeys = [...new Set(Object.values(funStats).flatMap(u => Object.keys(u)))].sort();
+
+      const charts = [
+        ...catKeys.map(key => ({ key, stats: catStats, match: ans => ans.knowledge_area === key })),
+        ...funKeys.map(key => ({ key, stats: funStats, match: ans => (ans.fun_labels ?? []).includes(key) })),
+      ];
+
+      function handleBarClick(match, key, { username }) {
         const correct = [], incorrect = [];
         for (const rec of rawData) {
           if (rec.username !== username) continue;
-          const guesses  = typeof rec.guesses === 'string' ? JSON.parse(rec.guesses) : rec.guesses;
+          const guesses    = typeof rec.guesses === 'string' ? JSON.parse(rec.guesses) : rec.guesses;
           const dayAnswers = answers[rec.day_number] ?? [];
           dayAnswers.forEach((ans, idx) => {
-            if (ans.knowledge_area !== category) return;
+            if (!match(ans)) return;
             const score = guesses[idx] ?? null;
             if (score === null) return;
             const entry = { article_name: ans.article_name, wikipedia_url: ans.wikipedia_url, score, day: rec.day_number };
-            (score === 1 ? correct : incorrect).push(entry);
+            (score > 0 ? correct : incorrect).push(entry);
           });
         }
-        setModal({ username, category, correct, incorrect });
+        setModal({ username, category: key, correct, incorrect });
       }
 
       return (
         <>
           {modal && <CategoryModal data={modal} onClose={() => setModal(null)} />}
           <div className="cat-charts-grid">
-            {categories.map(cat => {
+            {charts.map(({ key, stats, match }) => {
               const usersInCat = allUsers
-                .filter(u => stats[u][cat])
-                .map(u => ({ username: u, ...stats[u][cat] }))
+                .filter(u => stats[u]?.[key])
+                .map(u => ({ username: u, ...stats[u][key] }))
                 .sort((a, b) => b.proportion - a.proportion);
+              if (usersInCat.length === 0) return null;
               return (
                 <CategoryChart
-                  key={cat}
-                  category={cat}
+                  key={key}
+                  category={key}
                   usersInCat={usersInCat}
                   userColor={userColor}
-                  onBarClick={u => handleBarClick(cat, u)}
+                  onBarClick={u => handleBarClick(match, key, u)}
                 />
               );
             })}
@@ -659,7 +669,7 @@
           <h2>7-day rolling average leaderboard</h2>
           <RollingAverageChart />
           <h2>performance by category</h2>
-          <CategoryCharts />
+          <PerformanceCharts />
         </>
       );
     }
