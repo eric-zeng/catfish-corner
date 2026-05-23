@@ -1319,7 +1319,9 @@
       "article_name": "The Starry Night",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Starry_Night",
       "knowledge_area": "Visual Art",
-      "fun_labels": []
+      "fun_labels": [
+        "Medieval / Renaissance Bullshit"
+      ]
     },
     {
       "article_name": "Stand by Me",
@@ -1928,61 +1930,61 @@
     {
       "article_name": "Shinkansen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shinkansen",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "fun_labels": []
     },
     {
       "article_name": "Harem",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harem",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "fun_labels": []
     },
     {
       "article_name": "Marilyn Monroe",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Marilyn_Monroe",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "fun_labels": []
     },
     {
       "article_name": "Frida Kahlo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frida_Kahlo",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "fun_labels": []
     },
     {
       "article_name": "Romeo and Juliet",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Romeo_and_Juliet",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "fun_labels": []
     },
     {
       "article_name": "Henri Cartier-Bresson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Henri_Cartier-Bresson",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "fun_labels": []
     },
     {
       "article_name": "Zipf's law",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zipf's_law",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "fun_labels": []
     },
     {
       "article_name": "Graceland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Graceland",
-      "knowledge_area": "",
+      "knowledge_area": "Architecture",
       "fun_labels": []
     },
     {
       "article_name": "Tiger Woods",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tiger_Woods",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "fun_labels": []
     },
     {
       "article_name": "Zen and the Art of Motorcycle Maintenance",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "fun_labels": []
     }
   ]
