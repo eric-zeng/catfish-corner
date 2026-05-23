@@ -1,9 +1,9 @@
 {
   "_positron": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 26,
+      "attempts": 27,
       "score": 2.5,
-      "proportion": 0.0962
+      "proportion": 0.0926
     },
     "Boat Names": {
       "attempts": 3,
@@ -13,9 +13,9 @@
   },
   "croton140": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 26,
+      "attempts": 27,
       "score": 5.5,
-      "proportion": 0.2115
+      "proportion": 0.2037
     },
     "Boat Names": {
       "attempts": 3,
@@ -25,9 +25,9 @@
   },
   "ghuggles": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 26,
+      "attempts": 27,
       "score": 13.0,
-      "proportion": 0.5
+      "proportion": 0.4815
     },
     "Boat Names": {
       "attempts": 3,
@@ -37,9 +37,9 @@
   },
   "hemlor": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 22,
-      "score": 10.0,
-      "proportion": 0.4545
+      "attempts": 23,
+      "score": 11.0,
+      "proportion": 0.4783
     },
     "Boat Names": {
       "attempts": 3,
@@ -49,9 +49,9 @@
   },
   "le_roi": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 26,
+      "attempts": 27,
       "score": 6.0,
-      "proportion": 0.2308
+      "proportion": 0.2222
     },
     "Boat Names": {
       "attempts": 3,
@@ -61,9 +61,9 @@
   },
   "mezaros": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 18,
+      "attempts": 19,
       "score": 7.0,
-      "proportion": 0.3889
+      "proportion": 0.3684
     },
     "Boat Names": {
       "attempts": 1,
@@ -73,9 +73,9 @@
   },
   "optic_chiasm": {
     "Medieval / Renaissance Bullshit": {
-      "attempts": 23,
+      "attempts": 24,
       "score": 8.0,
-      "proportion": 0.3478
+      "proportion": 0.3333
     },
     "Boat Names": {
       "attempts": 3,
