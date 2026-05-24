@@ -71,6 +71,43 @@
       "proportion": 0.5
     }
   },
+  "cagetron8000": {
+    "Technology and Engineering": {
+      "attempts": 1,
+      "score": 1.0,
+      "proportion": 1.0
+    },
+    "Science and Nature": {
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
+    },
+    "Film & TV": {
+      "attempts": 1,
+      "score": 0.0,
+      "proportion": 0.0
+    },
+    "Visual Art": {
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
+    },
+    "Literature & Fiction": {
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
+    },
+    "Architecture": {
+      "attempts": 1,
+      "score": 1.0,
+      "proportion": 1.0
+    },
+    "Sports": {
+      "attempts": 1,
+      "score": 1.0,
+      "proportion": 1.0
+    }
+  },
   "croton140": {
     "Mythology & Religion": {
       "attempts": 16,

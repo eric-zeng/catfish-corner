@@ -43,6 +43,23 @@
       return Number(x).toFixed(2);
     }
 
+    function loadJSON(file) {
+      return fetch(file).then(r => r.json());
+    }
+
+    function useChart() {
+      const canvasRef = React.useRef(null);
+      const chartRef  = React.useRef(null);
+      React.useEffect(() => {
+        return () => { if (chartRef.current) chartRef.current.destroy(); };
+      }, []);
+      function setChart(config) {
+        if (chartRef.current) chartRef.current.destroy();
+        if (canvasRef.current) chartRef.current = new Chart(canvasRef.current, config);
+      }
+      return { canvasRef, setChart };
+    }
+
     // ── LeaderboardTable ──────────────────────────────────────────────────────
 
     function LeaderboardTable({ onSelectDay }) {
@@ -50,7 +67,7 @@
       const wrapRef = React.useRef(null);
 
       React.useEffect(() => {
-        fetch('leaderboard.json').then(r => r.json()).then(d => {
+        loadJSON('leaderboard.json').then(d => {
           setData(d);
           const el = document.getElementById('updated-at');
           el.dateTime = d.updated_at;
@@ -180,7 +197,7 @@
       const [dayInput,    setDayInput]    = React.useState('');
 
       React.useEffect(() => {
-        Promise.all([fetch('data.json').then(r => r.json()), fetch('answers.json').then(r => r.json())])
+        Promise.all([loadJSON('data.json'), loadJSON('answers.json')])
           .then(([data, answers]) => {
             const map = {};
             data.forEach(rec => {
@@ -334,17 +351,16 @@
     ];
 
     function RollingAverageChart() {
-      const canvasRef  = React.useRef(null);
-      const chartRef   = React.useRef(null);
-      const [numDays, setNumDays] = React.useState(23);
+      const { canvasRef, setChart } = useChart();
+      const [days, setDays] = React.useState([]);
 
       React.useEffect(() => {
-        fetch('leaderboard.json').then(r => r.json()).then(({ days, users, scores }) => {
-          setNumDays(days.length);
+        loadJSON('leaderboard.json').then(({ days: fetchedDays, users, scores }) => {
+          setDays(fetchedDays);
           function rollingAvg(userScores, window = 7) {
-            return days.map((d, i) => {
+            return fetchedDays.map((d, i) => {
               const start = Math.max(0, i - window + 1);
-              const vals  = days.slice(start, i + 1)
+              const vals  = fetchedDays.slice(start, i + 1)
                 .map(day => userScores[day])
                 .filter(v => v !== null && v !== undefined);
               return vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
@@ -352,7 +368,6 @@
           }
 
           const avgsByUser = users.map(user => rollingAvg(scores[user]));
-
           const datasets = users.map((user, i) => ({
             label:            user,
             data:             avgsByUser[i],
@@ -366,11 +381,9 @@
             spanGaps:         true,
           }));
 
-          if (chartRef.current) chartRef.current.destroy();
-
-          chartRef.current = new Chart(canvasRef.current, {
+          setChart({
             type: 'line',
-            data: { labels: days.map(d => `#${d}`), datasets },
+            data: { labels: fetchedDays.map(d => `#${d}`), datasets },
             options: {
               responsive: true,
               maintainAspectRatio: false,
@@ -391,13 +404,11 @@
             },
           });
         });
-
-        return () => { if (chartRef.current) chartRef.current.destroy(); };
       }, []);
 
       return (
         <div className="chart-wrap">
-          <div className="chart-inner" style={{ minWidth: `${Math.max(560, numDays * 32)}px` }}>
+          <div className="chart-inner" style={{ minWidth: `${Math.max(560, days.length * 32)}px` }}>
             <canvas ref={canvasRef}></canvas>
           </div>
         </div>
@@ -495,18 +506,14 @@
     }
 
     function CategoryChart({ category, usersInCat, userColor, onBarClick }) {
-      const canvasRef = React.useRef(null);
-      const chartRef  = React.useRef(null);
+      const { canvasRef, setChart } = useChart();
 
       React.useEffect(() => {
-        if (!canvasRef.current) return;
-        if (chartRef.current) chartRef.current.destroy();
+        const labels = usersInCat.map(u => u.username);
+        const values = usersInCat.map(u => u.proportion);
+        const colors = usersInCat.map(u => userColor[u.username]);
 
-        const labels  = usersInCat.map(u => u.username);
-        const values  = usersInCat.map(u => u.proportion);
-        const colors  = usersInCat.map(u => userColor[u.username]);
-
-        chartRef.current = new Chart(canvasRef.current, {
+        setChart({
           type: 'bar',
           data: {
             labels,
@@ -555,8 +562,6 @@
             layout: { padding: { right: 36 } },
           },
         });
-
-        return () => { if (chartRef.current) chartRef.current.destroy(); };
       }, []);
 
       return (
@@ -575,10 +580,10 @@
 
       React.useEffect(() => {
         Promise.all([
-          fetch('category_stats.json').then(r => r.json()),
-          fetch('fun_label_stats.json').then(r => r.json()).catch(() => ({})),
-          fetch('data.json').then(r => r.json()),
-          fetch('answers.json').then(r => r.json()),
+          loadJSON('category_stats.json'),
+          loadJSON('label_stats.json').catch(() => ({})),
+          loadJSON('data.json'),
+          loadJSON('answers.json'),
         ]).then(([catStats, funStats, rawData, answers]) => {
           setAllData({ catStats, funStats, rawData, answers });
         });
@@ -597,7 +602,7 @@
 
       const charts = [
         ...catKeys.map(key => ({ key, stats: catStats, match: ans => ans.knowledge_area === key })),
-        ...funKeys.map(key => ({ key, stats: funStats, match: ans => (ans.fun_labels ?? []).includes(key) })),
+        ...funKeys.map(key => ({ key, stats: funStats, match: ans => (ans.labels ?? []).includes(key) })),
       ];
 
       function handleBarClick(match, key, { username }) {
