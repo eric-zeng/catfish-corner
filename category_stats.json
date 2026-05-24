@@ -408,29 +408,29 @@
       "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 28,
-      "score": 12.0,
-      "proportion": 0.4286
+      "attempts": 30,
+      "score": 13.0,
+      "proportion": 0.4333
     },
     "Technology and Engineering": {
-      "attempts": 16,
-      "score": 10.0,
-      "proportion": 0.625
+      "attempts": 17,
+      "score": 11.0,
+      "proportion": 0.6471
     },
     "Visual Art": {
-      "attempts": 7,
-      "score": 5.5,
-      "proportion": 0.7857
+      "attempts": 9,
+      "score": 6.5,
+      "proportion": 0.7222
     },
     "Sports": {
-      "attempts": 9,
-      "score": 6.0,
-      "proportion": 0.6667
+      "attempts": 10,
+      "score": 7.0,
+      "proportion": 0.7
     },
     "Film & TV": {
-      "attempts": 21,
-      "score": 9.5,
-      "proportion": 0.4524
+      "attempts": 22,
+      "score": 10.5,
+      "proportion": 0.4773
     },
     "Geography & Places": {
       "attempts": 18,
@@ -458,14 +458,14 @@
       "proportion": 0.3913
     },
     "Science and Nature": {
-      "attempts": 17,
-      "score": 7.0,
-      "proportion": 0.4118
+      "attempts": 19,
+      "score": 8.0,
+      "proportion": 0.4211
     },
     "Architecture": {
-      "attempts": 9,
-      "score": 5.5,
-      "proportion": 0.6111
+      "attempts": 10,
+      "score": 6.5,
+      "proportion": 0.65
     }
   },
   "optic_chiasm": {
