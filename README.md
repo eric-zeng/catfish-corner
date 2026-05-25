@@ -16,12 +16,12 @@ Here are the main components of the project:
 
 ### Pipeline
 
-1. Bot listens for new catfishing.net posts
-2. New post is parsed, inserted into SQLite, and the bot reacts with a score-based emoji
-3. Bot triggers the Python pipeline to regenerate the site
-4. Pipeline reads from the database, aggregates stats, and writes JSON to `site/`
+1. Bot listens for new catfishing.net scores posted in Discord
+2. Score is saved to the database
+3. Python pipeline is triggered, computes aggregated stats, and if needed, scrapes answer metadata and categorizes answers
+4. Pipeline generates static site and data files in `site/`
 5. Updated static site is deployed to GitHub Pages
-6. At 9pm ET, the bot posts a daily summary to the channel (skipped if no results were posted that day)
+6. At the end of the day, or after every recent player submits a score, the bot posts a daily summary to the Discord channel
 
 ## How to run
 
@@ -31,6 +31,7 @@ Here are the main components of the project:
 - Python 3.10+
 - A Discord bot token ([discord.com/developers](https://discord.com/developers))
 - [pm2](https://pm2.keymetrics.io) for running the bot as a daemon (`npm install -g pm2`)
+- An Ollama instance running an LLM (for article classification)
 
 ### Setup
 
@@ -38,7 +39,7 @@ Here are the main components of the project:
 npm install
 pip install -r requirements.txt
 cp .env.example .env
-# fill in DISCORD_BOT_TOKEN and DISCORD_CHANNEL_ID in .env
+# fill in DISCORD_BOT_TOKEN, DISCORD_CHANNEL_ID, OLLAMA_URL, and OLLAMA_MODEL in .env
 ```
 
 ### Populate the database
@@ -68,7 +69,7 @@ npm run deploy
 
 Configure GitHub Pages in your repo settings to serve from the `gh-pages` branch.
 
-### Scrape answer metadata
+### Scrape article metadata
 
 The per-day breakdown table shows article names and Wikipedia links as column headers. These are scraped from catfishing.net and stored in the `answers` table. Run this whenever new days are missing answer metadata:
 
@@ -80,6 +81,19 @@ npm run scrape -- --results    # results mode: uploads a stats export file, then
 **Auto-play mode** navigates to each unplayed day, clicks "Skip" on every question, and reads the answer screen. No account or stats file required.
 
 **Results mode** uploads a catfishing.net stats export (`.gz` file) to `catfishing.net/settings`, then scrapes the already-played results page for each day. Requires updating `STATS_FILE` in `src/scrape_answers.ts` to point to your export.
+
+### Categorize and label articles
+
+After scraping, articles are categorized into knowledge areas (e.g. Science, History) and tagged with additional labels (e.g. fun stuff like "boat names" that are not mutually exclusive from knowledge areas).
+
+To manually trigger categorization and labeling for any uncategorized answers:
+
+```bash
+npm run categorize   # classify each answer into a knowledge area (e.g. Science, History)
+npm run label        # tag each answer with applicable labels (e.g. "person", "place")
+```
+
+Article classification requires a running Ollama instance — configure its URL and model in `.env` (`OLLAMA_URL`, `OLLAMA_MODEL`).
 
 ### Daily summary
 
