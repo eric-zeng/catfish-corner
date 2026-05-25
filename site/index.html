@@ -47,6 +47,16 @@
       return fetch(file).then(r => r.json());
     }
 
+    function rollingAvg(userScores, days, window = 7) {
+      return days.map((d, i) => {
+        const start = Math.max(0, i - window + 1);
+        const vals  = days.slice(start, i + 1)
+          .map(day => userScores[day])
+          .filter(v => v !== null && v !== undefined);
+        return vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+      });
+    }
+
     function useChart() {
       const canvasRef = React.useRef(null);
       const chartRef  = React.useRef(null);
@@ -98,7 +108,8 @@
                     <button className="day-select-btn" onClick={() => onSelectDay(d)}>#{d}</button>
                   </th>
                 ))}
-                <th className="col-sep">Mean</th>
+                <th className="col-sep">7d Mean</th>
+                <th>Mean</th>
                 <th>Std Dev</th>
               </tr>
             </thead>
@@ -110,7 +121,10 @@
                     const val = scores[user][d];
                     return <td key={d} style={val !== null ? hslBg(val) : {}}>{fmtScore(val)}</td>;
                   })}
-                  <td className="col-sep" style={hslBg(user_stats[user].mean)}>
+                  <td className="col-sep" style={hslBg(user_stats[user].rolling_avg)}>
+                    {fmtStat(user_stats[user].rolling_avg)}
+                  </td>
+                  <td style={hslBg(user_stats[user].mean)}>
                     {fmtStat(user_stats[user].mean)}
                   </td>
                   <td>{fmtStat(user_stats[user].std)}</td>
@@ -123,6 +137,7 @@
                 ))}
                 <td className="col-sep"></td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <th className="col-user">Daily Std Dev</th>
@@ -130,6 +145,7 @@
                   <td key={d}>{fmtStat(day_stats.std[d])}</td>
                 ))}
                 <td className="col-sep"></td>
+                <td></td>
                 <td></td>
               </tr>
             </tbody>
@@ -366,20 +382,11 @@
       React.useEffect(() => {
         loadJSON('leaderboard.json').then(({ days: fetchedDays, users, scores }) => {
           setDays(fetchedDays);
-          function rollingAvg(userScores, window = 7) {
-            return fetchedDays.map((d, i) => {
-              const start = Math.max(0, i - window + 1);
-              const vals  = fetchedDays.slice(start, i + 1)
-                .map(day => userScores[day])
-                .filter(v => v !== null && v !== undefined);
-              return vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
-            });
-          }
 
           const sortedUsers = [...users].sort();
           const datasets = sortedUsers.map((user, i) => ({
             label:            user,
-            data:             rollingAvg(scores[user]),
+            data:             rollingAvg(scores[user], fetchedDays),
             borderColor:      PLAYER_COLORS[i % PLAYER_COLORS.length],
             backgroundColor:  PLAYER_COLORS[i % PLAYER_COLORS.length],
             tension:          0.35,

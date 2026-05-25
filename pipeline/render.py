@@ -26,8 +26,9 @@ def render() -> None:
 
     days = [int(d) for d in pivot.columns]
 
-    user_mean = pivot.mean(axis=1).round(2)
-    user_std  = pivot.std(axis=1).round(2)
+    user_mean    = pivot.mean(axis=1).round(2)
+    user_std     = pivot.std(axis=1).round(2)
+    user_rolling = pivot.T.rolling(7, min_periods=1).mean().T.iloc[:, -1].round(2)
     users = user_mean.sort_values(ascending=False).index.tolist()
 
     scores = {
@@ -36,7 +37,11 @@ def render() -> None:
     }
 
     user_stats = {
-        user: {"mean": _clean(float(user_mean[user])), "std": _clean(float(user_std[user]))}
+        user: {
+            "mean":        _clean(float(user_mean[user])),
+            "std":         _clean(float(user_std[user])),
+            "rolling_avg": _clean(float(user_rolling[user])),
+        }
         for user in users
     }
 
