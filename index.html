@@ -485,6 +485,7 @@
                 {data.correct.map(a => (
                   <div key={a.article_name + a.day} className="modal-article">
                     <a href={a.wikipedia_url} target="_blank">{a.article_name}</a>
+                    {a.score === 0.5 && <span className="modal-partial"> (partial)</span>}
                   </div>
                 ))}
                 {data.correct.length === 0 && <div className="modal-empty">none</div>}
