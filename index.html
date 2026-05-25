@@ -341,13 +341,22 @@
     // ── RollingAverageChart ───────────────────────────────────────────────────
 
     const PLAYER_COLORS = [
-      '#e07b39', '#5b9bd5', '#70b870', '#c96fad',
-      '#d4b84a', '#7b6fd4', '#5bbdb8',
+      '#82c6e2', // light blue
+      '#d65f5f', // red
+      '#4878d0', // blue
+      '#d5bb67', // yellow
+      '#ee854a', // orange
+      '#6acc64', // green
+      '#956cb4', // purple
+      '#dc7ec0', // pink
+      '#4daf8d', // teal
+      '#8c613c', // brown
     ];
 
     const PLAYER_SHAPES = [
       'circle', 'triangle', 'rect', 'star',
-      'crossRot', 'rectRot', 'dash',
+      'crossRot', 'rectRot', 'dash', 'rectRounded',
+      'line', 'cross', 'circle', 'triangle',
     ];
 
     function RollingAverageChart() {
@@ -367,10 +376,10 @@
             });
           }
 
-          const avgsByUser = users.map(user => rollingAvg(scores[user]));
-          const datasets = users.map((user, i) => ({
+          const sortedUsers = [...users].sort();
+          const datasets = sortedUsers.map((user, i) => ({
             label:            user,
-            data:             avgsByUser[i],
+            data:             rollingAvg(scores[user]),
             borderColor:      PLAYER_COLORS[i % PLAYER_COLORS.length],
             backgroundColor:  PLAYER_COLORS[i % PLAYER_COLORS.length],
             tension:          0.35,
