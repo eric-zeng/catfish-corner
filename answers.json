@@ -1958,5 +1958,67 @@
       "knowledge_area": "Literature & Fiction",
       "labels": []
     }
+  ],
+  "700": [
+    {
+      "article_name": "7 Seconds",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/7_Seconds_(song)",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Blake's 7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blake's_7",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "7-Eleven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/7-Eleven",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "Dance of the Seven Veils",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dance_of_the_Seven_Veils",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "GoldenEye 007",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/GoldenEye_007",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "A Knight of the Seven Kingdoms",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Knight_of_the_Seven_Kingdoms_(TV_series)",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "The Seven Husbands of Evelyn Hugo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Seven_Husbands_of_Evelyn_Hugo",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Seven Bridges of K\u00f6nigsberg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Lockheed F-117 Nighthawk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lockheed_F-117_Nighthawk",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "Seven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_(1995_film)",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    }
   ]
 }
