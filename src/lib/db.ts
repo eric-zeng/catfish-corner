@@ -14,6 +14,9 @@ export function initDb(): void {
   try {
     db.exec(`ALTER TABLE answers ADD COLUMN wikipedia_summary TEXT NOT NULL DEFAULT ''`);
   } catch { /* column already exists */ }
+  try {
+    db.exec(`ALTER TABLE answers ADD COLUMN knowledge_area TEXT NOT NULL DEFAULT ''`);
+  } catch { /* column already exists */ }
   db.exec(`
     CREATE TABLE IF NOT EXISTS results (
       username   TEXT NOT NULL,
@@ -32,8 +35,13 @@ export function initDb(): void {
       categories_list    TEXT NOT NULL,
       wikipedia_url      TEXT NOT NULL,
       wikipedia_summary  TEXT NOT NULL DEFAULT '',
+      knowledge_area     TEXT NOT NULL DEFAULT '',
       PRIMARY KEY (day_id, answer_index)
     );
+    CREATE TABLE IF NOT EXISTS summary_posts (
+      day_number INTEGER PRIMARY KEY
+    );
+    INSERT OR IGNORE INTO summary_posts (day_number) VALUES (700);
   `);
 }
 
@@ -70,9 +78,9 @@ export function getDayResults(dayNumber: number): DayResult[] {
   return db.prepare('SELECT username, user_id, score FROM results WHERE day_number = ?').all(dayNumber) as DayResult[];
 }
 
-export function getDayGuesses(dayNumber: number): { username: string; guesses: number[] }[] {
-  const rows = db.prepare('SELECT username, guesses FROM results WHERE day_number = ?').all(dayNumber) as { username: string; guesses: string }[];
-  return rows.map(r => ({ username: r.username, guesses: JSON.parse(r.guesses) as number[] }));
+export function getDayGuesses(dayNumber: number): { username: string; user_id: string; guesses: number[] }[] {
+  const rows = db.prepare('SELECT username, user_id, guesses FROM results WHERE day_number = ?').all(dayNumber) as { username: string; user_id: string; guesses: string }[];
+  return rows.map(r => ({ username: r.username, user_id: r.user_id, guesses: JSON.parse(r.guesses) as number[] }));
 }
 
 export interface AnswerRow {
@@ -87,11 +95,31 @@ export function getDayAnswers(dayNumber: number): AnswerRow[] {
   ).all(dayNumber) as AnswerRow[];
 }
 
+export function getWeeklyActiveUserIds(beforeDay: number): string[] {
+  const rows = db.prepare(
+    'SELECT DISTINCT user_id FROM results WHERE day_number >= ? AND day_number < ?'
+  ).all(beforeDay - 7, beforeDay) as { user_id: string }[];
+  return rows.map(r => r.user_id);
+}
+
 export function getUserBestScoreExcluding(userId: string, dayNumber: number): number | null {
   const row = db.prepare(
     'SELECT MAX(score) as best FROM results WHERE user_id = ? AND day_number != ?'
   ).get(userId, dayNumber) as { best: number | null };
   return row.best;
+}
+
+export function hasSummaryBeenPosted(dayNumber: number): boolean {
+  const row = db.prepare('SELECT 1 FROM summary_posts WHERE day_number = ?').get(dayNumber);
+  return row !== undefined;
+}
+
+export function markSummaryPosted(dayNumber: number): void {
+  db.prepare('INSERT OR IGNORE INTO summary_posts (day_number) VALUES (?)').run(dayNumber);
+}
+
+export function getDb(): Database.Database {
+  return db;
 }
 
 export function closeDb(): void {

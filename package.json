@@ -10,7 +10,8 @@
     "summary": "tsx src/post_summary.ts",
     "scrape": "tsx src/scrape_answers.ts",
     "backfill-summaries": "tsx src/backfill_summaries.ts",
-    "classify": "tsx src/classify_answers.ts"
+    "categorize": "tsx src/categorize_answers.ts",
+    "label": "tsx src/label_answers.ts"
   },
   "dependencies": {
     "@types/cli-progress": "^3.11.6",

@@ -2,12 +2,11 @@
 // for any days in the results table that are missing answer metadata. Run with --results to use a
 // stats export file, or without flags to auto-play (skip through questions) on unplayed days.
 import puppeteer, { type Page } from 'puppeteer';
-import Database from 'better-sqlite3';
-import wiki from 'wikipedia';
-import path from 'path';
+import type Database from 'better-sqlite3';
+import { initDb, getDb } from './lib/db';
+import { fetchWikiSummary } from './lib/wikipedia';
 
-const DB_PATH   = path.join(__dirname, '..', 'data', 'catfish.db');
-const STATS_FILE = path.join(__dirname, '..', 'samples', 'catfishing_export_1778736854.gz');
+const STATS_FILE = require('path').join(__dirname, '..', 'samples', 'catfishing_export_1778736854.gz');
 const DELAY_MS  = 300;
 
 interface Answer {
@@ -19,27 +18,6 @@ interface Answer {
 }
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
-
-function initDb() {
-  const db = new Database(DB_PATH);
-  db.exec(`
-    CREATE TABLE IF NOT EXISTS answers (
-      day_id             INTEGER NOT NULL,
-      answer_index       INTEGER NOT NULL,
-      article_name       TEXT NOT NULL,
-      categories_list    TEXT NOT NULL,
-      wikipedia_url      TEXT NOT NULL,
-      wikipedia_summary  TEXT NOT NULL DEFAULT '',
-      PRIMARY KEY (day_id, answer_index)
-    )
-  `);
-  try {
-    db.exec(`ALTER TABLE answers ADD COLUMN wikipedia_summary TEXT NOT NULL DEFAULT ''`);
-  } catch {
-    // column already exists
-  }
-  return db;
-}
 
 function getMissingDays(db: Database.Database): number[] {
   return (db.prepare(`
@@ -60,18 +38,6 @@ function makeInserter(db: Database.Database) {
         stmt.run(dayNumber, answer_index, article_name, JSON.stringify(categories), wikipedia_url, wikipedia_summary);
       }
     })();
-}
-
-async function fetchWikiSummary(wikipediaUrl: string): Promise<string> {
-  try {
-    const title = decodeURIComponent(wikipediaUrl.split('/wiki/')[1] ?? '');
-    const summary = await wiki.summary(title);
-    const sentences = summary.extract.match(/[^.!?]+[.!?]+/g) ?? [];
-    return sentences.slice(0, 3).join(' ').trim();
-  } catch (err) {
-    console.warn(`  Summary fetch failed for ${wikipediaUrl}: ${err}`);
-    return '';
-  }
 }
 
 async function fetchSummaries(answers: Answer[]): Promise<void> {
@@ -230,33 +196,9 @@ async function runResults(days: number[], page: Page, insert: ReturnType<typeof 
 
 // ── Entry point ───────────────────────────────────────────────────────────────
 
-async function main() {
-  if (process.argv.includes('--help') || process.argv.includes('-h')) {
-    console.log(`
-Usage: npm run scrape [-- <flag>]
-
-Scrapes catfishing.net answer metadata (article names, Wikipedia URLs, categories)
-for any days present in the results table but missing from the answers table.
-
-Flags:
-  (none)      Auto-play mode (default): navigates to each unplayed day, clicks Skip
-              on every question, and reads the answer screen. No account required.
-
-  --results   Results mode: uploads a stats export file to catfishing.net/settings,
-              then scrapes the completed results page for each day. Requires updating
-              STATS_FILE in src/scrape_answers.ts to point to your .gz export.
-
-  --headless   Run the browser in headless mode (used when called from the bot daemon).
-
-  --help, -h  Show this help message.
-`.trim());
-    return;
-  }
-
-  const mode     = process.argv.includes('--results') ? 'results' : 'autoplay';
-  const headless = process.argv.includes('--headless');
-
-  const db   = initDb();
+export async function runScrape({ headless = false, mode = 'autoplay' as 'autoplay' | 'results' } = {}): Promise<void> {
+  initDb();
+  const db   = getDb();
   const days = getMissingDays(db);
 
   if (days.length === 0) {
@@ -283,4 +225,35 @@ Flags:
   }
 }
 
-main().catch(console.error);
+async function main() {
+  if (process.argv.includes('--help') || process.argv.includes('-h')) {
+    console.log(`
+Usage: npm run scrape [-- <flag>]
+
+Scrapes catfishing.net answer metadata (article names, Wikipedia URLs, categories)
+for any days present in the results table but missing from the answers table.
+
+Flags:
+  (none)      Auto-play mode (default): navigates to each unplayed day, clicks Skip
+              on every question, and reads the answer screen. No account required.
+
+  --results   Results mode: uploads a stats export file to catfishing.net/settings,
+              then scrapes the completed results page for each day. Requires updating
+              STATS_FILE in src/scrape_answers.ts to point to your .gz export.
+
+  --headless   Run the browser in headless mode (used when called from the bot daemon).
+
+  --help, -h  Show this help message.
+`.trim());
+    return;
+  }
+
+  await runScrape({
+    mode:     process.argv.includes('--results') ? 'results' : 'autoplay',
+    headless: process.argv.includes('--headless'),
+  });
+}
+
+if (require.main === module) {
+  main().catch(console.error);
+}

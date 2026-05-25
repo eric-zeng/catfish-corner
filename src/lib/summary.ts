@@ -1,5 +1,5 @@
 import type { TextChannel } from 'discord.js';
-import { getLatestDayNumber, getDayResults, getDayGuesses, getDayAnswers, getUserBestScoreExcluding } from './db';
+import { getLatestDayNumber, getDayResults, getDayGuesses, getDayAnswers, getUserBestScoreExcluding, getWeeklyActiveUserIds, hasSummaryBeenPosted, markSummaryPosted } from './db';
 
 // Day 690 = 2026-05-14 (PT). Used to map calendar dates to day IDs.
 const ANCHOR_DAY_ID  = 690;
@@ -23,22 +23,23 @@ function bestPullLine(dayNumber: number): string | null {
   const allGuesses = getDayGuesses(dayNumber);
 
   let minCount = Infinity;
-  const tied: { article_name: string; players: string[] }[] = [];
+  const tied: { article_name: string; mentions: string[] }[] = [];
 
   for (const { answer_index, article_name } of answers) {
-    const players = allGuesses.filter(g => g.guesses[answer_index] > 0).map(g => g.username);
+    const players = allGuesses.filter(g => g.guesses[answer_index] > 0);
     if (players.length === 0) continue;
+    const mentions = players.map(g => `<@${g.user_id}>`);
     if (players.length < minCount) {
       minCount = players.length;
       tied.length = 0;
-      tied.push({ article_name, players });
+      tied.push({ article_name, mentions });
     } else if (players.length === minCount) {
-      tied.push({ article_name, players });
+      tied.push({ article_name, mentions });
     }
   }
 
   if (tied.length === 0) return null;
-  const parts = tied.map(t => `${t.article_name} (${t.players.join(', ')})`).join(', ');
+  const parts = tied.map(t => `${t.article_name} (${t.mentions.join(', ')})`).join(', ');
   return `🤔🎣 Rarest ${tied.length > 1 ? 'pulls' : 'pull'}: ${parts}`;
 }
 
@@ -50,16 +51,16 @@ function buildMessage(dayNumber: number): string | null {
   const topScorers = results.filter(r => r.score === maxScore);
   const average = results.reduce((sum, r) => sum + r.score, 0) / results.length;
 
-  const topLine = topScorers.map(r => r.username).join(', ') + ` ${maxScore}/10`;
+  const topLine = topScorers.map(r => `<@${r.user_id}>`).join(', ') + ` ${maxScore}/10`;
 
   const pbLines: string[] = [];
   for (const r of results) {
     const prevBest = getUserBestScoreExcluding(r.user_id, dayNumber);
     if (prevBest === null) continue;
     if (r.score > prevBest) {
-      pbLines.push(`🥳 ${r.username} set a new personal best! (${r.score}/10)`);
+      pbLines.push(`🥳 <@${r.user_id}> set a new personal best! (${r.score}/10)`);
     } else if (r.score === prevBest) {
-      pbLines.push(`👏 ${r.username} tied their personal best! (${r.score}/10)`);
+      pbLines.push(`👏 <@${r.user_id}> tied their personal best! (${r.score}/10)`);
     }
   }
 
@@ -121,17 +122,63 @@ function nextSummaryTime(): Date {
   return elevenFiftyNinePT(tomorrowStr);
 }
 
-export function scheduleDailySummary(getChannel: () => Promise<TextChannel | null>): void {
-  function schedule() {
-    const target = nextSummaryTime();
-    const delay = target.getTime() - Date.now();
-    console.log(`Daily summary scheduled for ${target.toISOString()} (${Math.round(delay / 60000)} min)`);
-    setTimeout(async () => {
-      const dayId = todayDayIdPT();
-      const channel = await getChannel();
-      if (channel) await postDailySummary(channel, dayId);
-      schedule();
-    }, delay);
+export interface SummarySchedule {
+  timeout: ReturnType<typeof setTimeout> | null;
+  getChannel: () => Promise<TextChannel | null>;
+}
+
+function scheduleNext(handle: SummarySchedule): void {
+  const target = nextSummaryTime();
+  const delay = target.getTime() - Date.now();
+  console.log(`Daily summary scheduled for ${target.toISOString()} (${Math.round(delay / 60000)} min)`);
+  handle.timeout = setTimeout(async () => {
+    const dayId = todayDayIdPT();
+    const channel = await handle.getChannel();
+    if (channel) {
+      await postDailySummary(channel, dayId);
+      markSummaryPosted(dayId);
+    }
+    handle.timeout = null;
+    scheduleNext(handle);
+  }, delay);
+}
+
+export function scheduleDailySummary(getChannel: () => Promise<TextChannel | null>): SummarySchedule {
+  const handle: SummarySchedule = { timeout: null, getChannel };
+  scheduleNext(handle);
+  return handle;
+}
+
+export async function checkAllPosted(handle: SummarySchedule): Promise<void> {
+  const dayId = todayDayIdPT();
+  if (hasSummaryBeenPosted(dayId)) {
+    console.log(`checkAllPosted: already posted for day ${dayId}`);
+    return;
   }
-  schedule();
+
+  const weeklyUsers = getWeeklyActiveUserIds(dayId);
+  if (weeklyUsers.length === 0) {
+    console.log('checkAllPosted: no weekly active users');
+    return;
+  }
+
+  const todayUserIds = new Set(getDayResults(dayId).map(r => r.user_id));
+  const missing = weeklyUsers.filter(uid => !todayUserIds.has(uid));
+  if (missing.length > 0) {
+    console.log(`checkAllPosted: waiting on ${missing.length} user(s): ${missing.join(', ')}`);
+    return;
+  }
+
+  console.log('All weekly active users posted — sending early summary');
+  if (handle.timeout !== null) {
+    clearTimeout(handle.timeout);
+    handle.timeout = null;
+  }
+
+  const channel = await handle.getChannel();
+  if (channel) {
+    await postDailySummary(channel, dayId);
+    markSummaryPosted(dayId);
+  }
+  scheduleNext(handle);
 }
