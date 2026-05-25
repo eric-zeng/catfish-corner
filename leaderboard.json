@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T01:52:15.954755+00:00",
+  "updated_at": "2026-05-25T02:01:17.700660+00:00",
   "days": [
     669,
     670,
@@ -321,35 +321,43 @@
   "user_stats": {
     "ghuggles": {
       "mean": 5.97,
-      "std": 1.57
+      "std": 1.57,
+      "rolling_avg": 5.71
     },
     "cagetron8000": {
       "mean": 5.5,
-      "std": 0.71
+      "std": 0.71,
+      "rolling_avg": 5.5
     },
     "hemlor": {
       "mean": 5.5,
-      "std": 1.78
+      "std": 1.78,
+      "rolling_avg": 5.5
     },
     "mezaros": {
       "mean": 5.24,
-      "std": 1.48
+      "std": 1.48,
+      "rolling_avg": 5.5
     },
     "croton140": {
       "mean": 4.91,
-      "std": 1.59
+      "std": 1.59,
+      "rolling_avg": 4.93
     },
     "_positron": {
       "mean": 4.55,
-      "std": 1.67
+      "std": 1.67,
+      "rolling_avg": 4.5
     },
     "optic_chiasm": {
       "mean": 4.55,
-      "std": 1.4
+      "std": 1.4,
+      "rolling_avg": 4.5
     },
     "le_roi": {
       "mean": 4.02,
-      "std": 1.51
+      "std": 1.51,
+      "rolling_avg": 3.43
     }
   },
   "day_stats": {
