@@ -2020,5 +2020,67 @@
       "knowledge_area": "Film & TV",
       "labels": []
     }
+  ],
+  "701": [
+    {
+      "article_name": "Chess",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chess",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "New Economic Policy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Economic_Policy",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Ian Thorpe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ian_Thorpe",
+      "knowledge_area": "Sports",
+      "labels": []
+    },
+    {
+      "article_name": "Saffron",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saffron",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Rijksmuseum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rijksmuseum",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    },
+    {
+      "article_name": "Titanic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Titanic",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "S\u00e1mi people",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A1mi_people",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Ghetto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ghetto",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Manifest destiny",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manifest_destiny",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Shere Khan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shere_Khan",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    }
   ]
 }
