@@ -1319,7 +1319,7 @@
     {
       "article_name": "Oktoberfest",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Oktoberfest",
-      "knowledge_area": "Pop Culture",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
@@ -1661,7 +1661,7 @@
     {
       "article_name": "Orville Redenbacher",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orville_Redenbacher",
-      "knowledge_area": "Science and Nature",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
@@ -1843,7 +1843,7 @@
     {
       "article_name": "Robert Moses",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Moses",
-      "knowledge_area": "Technology and Engineering",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
@@ -1905,7 +1905,7 @@
     {
       "article_name": "Harem",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Harem",
-      "knowledge_area": "Science and Nature",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
@@ -2175,7 +2175,7 @@
     {
       "article_name": "Toki Pona",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Toki_Pona",
-      "knowledge_area": "Science and Nature",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
