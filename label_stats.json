@@ -6,9 +6,9 @@
       "proportion": 0.2222
     },
     "Boat Names": {
-      "attempts": 3,
-      "score": 2.0,
-      "proportion": 0.6667
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
     }
   },
   "cagetron8000": {
@@ -18,9 +18,9 @@
       "proportion": 1.0
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 1,
       "score": 1.0,
-      "proportion": 0.5
+      "proportion": 1.0
     }
   },
   "croton140": {
@@ -30,9 +30,9 @@
       "proportion": 0.2778
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 2,
       "score": 1.0,
-      "proportion": 0.3333
+      "proportion": 0.5
     }
   },
   "ghuggles": {
@@ -42,9 +42,9 @@
       "proportion": 0.5
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 2,
       "score": 2.0,
-      "proportion": 0.6667
+      "proportion": 1.0
     }
   },
   "hemlor": {
@@ -54,9 +54,9 @@
       "proportion": 0.5
     },
     "Boat Names": {
-      "attempts": 3,
-      "score": 2.0,
-      "proportion": 0.6667
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
     }
   },
   "le_roi": {
@@ -66,9 +66,9 @@
       "proportion": 0.2222
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 2,
       "score": 1.0,
-      "proportion": 0.3333
+      "proportion": 0.5
     }
   },
   "mezaros": {
@@ -78,9 +78,9 @@
       "proportion": 0.3333
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 1,
       "score": 1.0,
-      "proportion": 0.5
+      "proportion": 1.0
     }
   },
   "optic_chiasm": {
@@ -90,7 +90,7 @@
       "proportion": 0.4062
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 1,
       "score": 0.0,
       "proportion": 0.0
     }
