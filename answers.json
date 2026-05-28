@@ -1040,7 +1040,9 @@
       "article_name": "House of Medici",
       "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Medici",
       "knowledge_area": "History",
-      "labels": []
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "The Brothers Karamazov",
@@ -1313,7 +1315,7 @@
     {
       "article_name": "Millard Fillmore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Millard_Fillmore",
-      "knowledge_area": "Politics and Contemporary History",
+      "knowledge_area": "History",
       "labels": []
     },
     {
@@ -1577,7 +1579,7 @@
     {
       "article_name": "Peter Kropotkin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_Kropotkin",
-      "knowledge_area": "Politics and Contemporary History",
+      "knowledge_area": "History",
       "labels": []
     }
   ],
@@ -1615,7 +1617,7 @@
     {
       "article_name": "Jean-Jacques Dessalines",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jean-Jacques_Dessalines",
-      "knowledge_area": "Politics and Contemporary History",
+      "knowledge_area": "History",
       "labels": []
     },
     {
