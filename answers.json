@@ -2206,5 +2206,67 @@
       "knowledge_area": "Film & TV",
       "labels": []
     }
+  ],
+  "704": [
+    {
+      "article_name": "Cat's Cradle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cat's_Cradle",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Ichabod Crane",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ichabod_Crane",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Dayton Agreement",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dayton_Agreement",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "My Sweet Lord",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/My_Sweet_Lord",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Bangkok",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bangkok",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Appetite for Destruction",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Appetite_for_Destruction",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Warren Buffett",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Vegemite",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vegemite",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Ayrton Senna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ayrton_Senna",
+      "knowledge_area": "Sports",
+      "labels": []
+    },
+    {
+      "article_name": "Rezs\u0151 Kasztner",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rezs%C5%91_Kasztner",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    }
   ]
 }
