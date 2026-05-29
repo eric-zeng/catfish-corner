@@ -6,9 +6,9 @@
       "proportion": 0.2105
     },
     "Boat Names": {
-      "attempts": 2,
-      "score": 1.0,
-      "proportion": 0.5
+      "attempts": 3,
+      "score": 2.0,
+      "proportion": 0.6667
     }
   },
   "cagetron8000": {
@@ -18,8 +18,8 @@
       "proportion": 1.0
     },
     "Boat Names": {
-      "attempts": 1,
-      "score": 1.0,
+      "attempts": 2,
+      "score": 2.0,
       "proportion": 1.0
     }
   },
@@ -30,9 +30,9 @@
       "proportion": 0.3158
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 3,
       "score": 1.0,
-      "proportion": 0.5
+      "proportion": 0.3333
     }
   },
   "ghuggles": {
@@ -42,8 +42,8 @@
       "proportion": 0.5263
     },
     "Boat Names": {
-      "attempts": 2,
-      "score": 2.0,
+      "attempts": 3,
+      "score": 3.0,
       "proportion": 1.0
     }
   },
@@ -54,9 +54,9 @@
       "proportion": 0.5333
     },
     "Boat Names": {
-      "attempts": 2,
-      "score": 1.0,
-      "proportion": 0.5
+      "attempts": 3,
+      "score": 2.0,
+      "proportion": 0.6667
     }
   },
   "le_roi": {
@@ -66,9 +66,9 @@
       "proportion": 0.2632
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 3,
       "score": 1.0,
-      "proportion": 0.5
+      "proportion": 0.3333
     }
   },
   "mezaros": {
