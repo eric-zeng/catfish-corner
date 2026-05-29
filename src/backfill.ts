@@ -1,13 +1,29 @@
 // One-shot script that fetches all channel history back to the CUTOFF date and inserts any valid
 // catfishing.net results into SQLite. Run this to seed the database before starting the bot.
 import 'dotenv/config';
+import commandLineArgs from 'command-line-args';
+import commandLineUsage, { type OptionDefinition } from 'command-line-usage';
 import { Client, GatewayIntentBits, TextChannel } from 'discord.js';
 import { initDb, closeDb } from './lib/db';
 import { syncChannel, CUTOFF } from './lib/sync';
 
-const CHANNEL_ID = process.argv[2] ?? process.env.DISCORD_CHANNEL_ID;
+const optionDefs: OptionDefinition[] = [
+  { name: 'channel', type: String, defaultOption: true, description: 'Discord channel ID to backfill (overrides DISCORD_CHANNEL_ID env var).' },
+  { name: 'help',    type: Boolean, defaultValue: false, description: 'Show this help message.', alias: 'h' },
+];
+const opts = commandLineArgs(optionDefs);
+
+if (opts['help']) {
+  console.log(commandLineUsage([
+    { header: 'npm run backfill', content: 'Fetches all channel history back to the cutoff date and inserts any valid catfishing.net results into SQLite.' },
+    { header: 'Options', optionList: optionDefs },
+  ]));
+  process.exit(0);
+}
+
+const CHANNEL_ID = opts['channel'] ?? process.env.DISCORD_CHANNEL_ID;
 if (!CHANNEL_ID) {
-  console.error('Usage: npx tsx src/backfill.ts <channel-id>');
+  console.error('Error: no channel ID provided. Pass it as an argument or set DISCORD_CHANNEL_ID.');
   process.exit(1);
 }
 

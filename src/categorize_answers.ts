@@ -71,13 +71,12 @@ async function runKnowledgeAreaPass(db: ReturnType<typeof getDb>): Promise<void>
 }
 
 export async function runCategorize(): Promise<void> {
-  initDb();
   const db = getDb();
   await runKnowledgeAreaPass(db);
   console.log('\nDone.');
-  db.close();
 }
 
 if (require.main === module) {
-  runCategorize().catch(console.log);
+  initDb();
+  runCategorize().then(() => getDb().close()).catch(console.log);
 }

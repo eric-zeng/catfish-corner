@@ -1,12 +1,16 @@
 // One-shot script that posts a daily summary message to the configured Discord channel.
 // Accepts an optional day number argument; defaults to the most recent day in the database.
 import 'dotenv/config';
+import commandLineArgs from 'command-line-args';
 import { Client, GatewayIntentBits, TextChannel } from 'discord.js';
 import { initDb } from './lib/db';
 import { postDailySummary } from './lib/summary';
 
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID ?? '';
-const dayArg = process.argv[2] ? parseInt(process.argv[2]) : undefined;
+const opts = commandLineArgs([
+  { name: 'day', type: Number, defaultOption: true },
+]);
+const dayArg: number | undefined = opts['day'];
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 

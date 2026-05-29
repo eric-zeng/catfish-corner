@@ -5,11 +5,10 @@ import 'dotenv/config';
 import { spawn } from 'child_process';
 import path from 'path';
 import { Client, GatewayIntentBits, TextChannel, type Message } from 'discord.js';
-import { initDb, insertResult } from './lib/db';
+import { initDb } from './lib/db';
 import { parseMessage } from './lib/parser';
 import { syncChannel } from './lib/sync';
 import { scheduleDailySummary, checkAllPosted, type SummarySchedule } from './lib/summary';
-import { reactToScore } from './lib/reactions';
 import { runScrape } from './scrape_answers';
 import { runCategorize } from './categorize_answers';
 
@@ -26,18 +25,22 @@ const client = new Client({
   ],
 });
 
-function deploy(): void {
+function deploy(): Promise<void> {
   const child = spawn('npm', ['run', 'deploy'], { cwd: ROOT });
   const out: string[] = [];
   const err: string[] = [];
   child.stdout.on('data', (d: Buffer) => out.push(d.toString()));
   child.stderr.on('data', (d: Buffer) => err.push(d.toString()));
-  child.on('close', (code) => {
-    if (code !== 0) {
-      console.error(`Deploy failed: ${err.join('').trim()}`);
-    } else {
-      console.log(`Deploy complete: ${out.join('').trim()}`);
-    }
+  return new Promise((resolve, reject) => {
+    child.on('close', (code) => {
+      if (code !== 0) {
+        console.error(`Deploy failed: ${err.join('').trim()}`);
+        reject(new Error('Deploy failed'));
+      } else {
+        console.log(`Deploy complete: ${out.join('').trim()}`);
+        resolve();
+      }
+    })
   });
 }
 
@@ -71,12 +74,18 @@ async function runSync(): Promise<void> {
     return;
   }
   const inserted = await syncChannel(channel);
+  console.log(`Sync: ${inserted} new results recorded`);
   if (inserted > 0) {
-    console.log(`Sync: ${inserted} new results — deploying...`);
-    deploy();
-    scrapeAndCategorize();
-    if (summarySchedule) {
-      await checkAllPosted(summarySchedule);
+    console.log('New results found — running scrape, categorize, and deploy...');
+    try {
+      await scrapeAndCategorize();
+      await deploy();
+      if (summarySchedule) {
+        await checkAllPosted(summarySchedule);
+      }
+    } catch (err) {
+      console.error(`Error running post-sync pipeline`);
+      console.error(err);
     }
   } else {
     console.log('Sync: up to date');
@@ -104,19 +113,9 @@ client.once('clientReady', async (c) => {
 
 client.on('messageCreate', async (message: Message) => {
   if (message.author.bot) return;
-
-  const result = parseMessage(message.content, message.author);
-  if (!result) return;
-
-  console.log(`${result.username} ${result.day_number}`);
-
-  const inserted = insertResult(result);
-  if (!inserted) return;
-
-  await reactToScore(message, result.score);
-  deploy();
-  scrapeAndCategorize();
-  if (summarySchedule) await checkAllPosted(summarySchedule);
+  if (!parseMessage(message.content, message.author)) return;
+  console.log(`onMessageCreate: New score posted by ${message.author.username}`);
+  await runSync();
 });
 
 client.login(process.env.DISCORD_BOT_TOKEN);
