@@ -2272,5 +2272,67 @@
       "knowledge_area": "Politics and Contemporary History",
       "labels": []
     }
+  ],
+  "705": [
+    {
+      "article_name": "Baltic Sea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baltic_Sea",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "CRISPR",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CRISPR",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Princess Leia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Leia",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "You'll Never Walk Alone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/You'll_Never_Walk_Alone",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Run Lola Run",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Run_Lola_Run",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Keir Hardie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keir_Hardie",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Gebhard Leberecht von Bl\u00fccher",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gebhard_Leberecht_von_Bl%C3%BCcher",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Hughes H-4 Hercules",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hughes_H-4_Hercules",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "S\u00f8ren Kierkegaard",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Dreyfus affair",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dreyfus_affair",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    }
   ]
 }
