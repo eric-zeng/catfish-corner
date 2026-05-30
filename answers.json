@@ -2336,5 +2336,67 @@
       "knowledge_area": "Politics and Contemporary History",
       "labels": []
     }
+  ],
+  "706": [
+    {
+      "article_name": "James Clerk Maxwell",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/James_Clerk_Maxwell",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Horses",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horses_(album)",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Paella",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paella",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Batman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Batman",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Marty Supreme",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marty_Supreme",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Mary Mallon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mary_Mallon",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Wardrobe malfunction",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wardrobe_malfunction",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Carlos the Jackal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carlos_the_Jackal",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "French Quarter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/French_Quarter",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Portrait of Madame X",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    }
   ]
 }
