@@ -2522,5 +2522,67 @@
       "knowledge_area": "Science and Nature",
       "labels": []
     }
+  ],
+  "709": [
+    {
+      "article_name": "The Souls of Black Folk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Souls_of_Black_Folk",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Dari\u00e9n Gap",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dari%C3%A9n_Gap",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "DEF CON",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/DEF_CON",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "Martin Heidegger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_Heidegger",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Eve Online",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eve_Online",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Romance of the Three Kingdoms",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romance_of_the_Three_Kingdoms",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Zoroastrianism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zoroastrianism",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Neil Armstrong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Neil_Armstrong",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "Semaglutide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Semaglutide",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Nancy Pelosi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nancy_Pelosi",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    }
   ]
 }
