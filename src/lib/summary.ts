@@ -43,6 +43,16 @@ function bestPullLine(dayNumber: number): string | null {
   return `🤔🎣 Rarest ${tied.length > 1 ? 'pulls' : 'pull'}: ${parts}`;
 }
 
+function moggingLine(results: { user_id: string; score: number }[]): string | null {
+  if (results.length < 2) return null;
+  const sorted  = [...results].sort((a, b) => b.score - a.score);
+  const top      = sorted[0];
+  const restAvg  = sorted.slice(1).reduce((sum, r) => sum + r.score, 0) / (sorted.length - 1);
+  const margin   = top.score - restAvg;
+  if (margin < 3) return null;
+  return `:disco: <@${top.user_id}> mogged the rest of the group (scored ${top.score}, average of the rest was ${restAvg.toFixed(1)})`;
+}
+
 function buildMessage(dayNumber: number): string | null {
   const results = getDayResults(dayNumber);
   if (results.length === 0) return null;
@@ -64,6 +74,7 @@ function buildMessage(dayNumber: number): string | null {
     }
   }
 
+  const mog  = moggingLine(results);
   const pull = bestPullLine(dayNumber);
 
   const lines = [
@@ -71,6 +82,7 @@ function buildMessage(dayNumber: number): string | null {
     `🏆 Top score: ${topLine}`,
     `🤝 Average score: ${average.toFixed(1)}/10`,
     ...pbLines,
+    ...(mog  ? [mog]  : []),
     ...(pull ? [pull] : []),
     'View leaderboard: https://eric-zeng.github.io/catfish-corner/',
   ];
