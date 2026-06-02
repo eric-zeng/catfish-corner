@@ -17,8 +17,7 @@ Summary: ${summary}
 Reply with only "yes" or "no". No explanation, no punctuation, nothing else.`;
 }
 
-async function main() {
-  initDb();
+export async function runLabel(): Promise<void> {
   const db = getDb();
 
   db.exec(`
@@ -51,7 +50,6 @@ async function main() {
 
   if (todo.length === 0) {
     console.log('Fun labels: all classified.');
-    db.close();
     return;
   }
 
@@ -83,9 +81,9 @@ async function main() {
   }
   bar.stop();
   console.log('\nDone.');
-  db.close();
 }
 
 if (require.main === module) {
-  main().catch(console.error);
+  initDb();
+  runLabel().then(() => getDb().close()).catch(console.error);
 }

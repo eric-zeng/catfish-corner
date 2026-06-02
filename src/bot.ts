@@ -11,6 +11,7 @@ import { syncChannel } from './lib/sync';
 import { scheduleDailySummary, checkAllPosted, type SummarySchedule } from './lib/summary';
 import { runScrape } from './scrape_answers';
 import { runCategorize } from './categorize_answers';
+import { runLabel } from './label_answers';
 
 const ROOT = path.join(__dirname, '..');
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID ?? '';
@@ -55,6 +56,11 @@ async function scrapeAndCategorize(): Promise<void> {
     await runCategorize();
   } catch (err) {
     console.warn(`Classify failed (non-fatal): ${err}`);
+  }
+  try {
+    await runLabel();
+  } catch (err) {
+    console.warn(`Label failed (non-fatal): ${err}`);
   }
 }
 
