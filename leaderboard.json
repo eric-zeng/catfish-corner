@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T20:46:30.635956+00:00",
+  "updated_at": "2026-06-02T21:02:36.227299+00:00",
   "days": [
     669,
     670,
@@ -44,8 +44,8 @@
     709
   ],
   "users": [
-    "1trilliongecs",
     "ghuggles",
+    "1trilliongecs",
     "hemlor",
     "mezaros",
     "croton140",
@@ -55,49 +55,6 @@
     "le_roi"
   ],
   "scores": {
-    "1trilliongecs": {
-      "669": null,
-      "670": null,
-      "671": null,
-      "672": null,
-      "673": null,
-      "674": null,
-      "675": null,
-      "676": null,
-      "677": null,
-      "678": null,
-      "679": null,
-      "680": null,
-      "681": null,
-      "682": null,
-      "683": null,
-      "684": null,
-      "685": null,
-      "686": null,
-      "687": null,
-      "688": null,
-      "689": null,
-      "690": null,
-      "691": null,
-      "692": null,
-      "693": null,
-      "694": null,
-      "695": null,
-      "696": null,
-      "697": null,
-      "698": null,
-      "699": null,
-      "700": null,
-      "701": null,
-      "702": null,
-      "703": null,
-      "704": null,
-      "705": 8.0,
-      "706": 5.0,
-      "707": null,
-      "708": null,
-      "709": null
-    },
     "ghuggles": {
       "669": 7.0,
       "670": 7.0,
@@ -140,6 +97,49 @@
       "707": 9.0,
       "708": 7.0,
       "709": 6.0
+    },
+    "1trilliongecs": {
+      "669": null,
+      "670": null,
+      "671": null,
+      "672": null,
+      "673": null,
+      "674": null,
+      "675": null,
+      "676": null,
+      "677": null,
+      "678": null,
+      "679": null,
+      "680": null,
+      "681": null,
+      "682": null,
+      "683": null,
+      "684": null,
+      "685": null,
+      "686": null,
+      "687": null,
+      "688": null,
+      "689": null,
+      "690": null,
+      "691": null,
+      "692": null,
+      "693": null,
+      "694": null,
+      "695": null,
+      "696": null,
+      "697": null,
+      "698": null,
+      "699": null,
+      "700": null,
+      "701": null,
+      "702": null,
+      "703": null,
+      "704": null,
+      "705": 8.0,
+      "706": 5.0,
+      "707": null,
+      "708": null,
+      "709": 4.0
     },
     "hemlor": {
       "669": null,
@@ -444,15 +444,15 @@
     }
   },
   "user_stats": {
-    "1trilliongecs": {
-      "mean": 6.5,
-      "std": 2.12,
-      "rolling_avg": 6.5
-    },
     "ghuggles": {
       "mean": 6.07,
       "std": 1.5,
       "rolling_avg": 6.57
+    },
+    "1trilliongecs": {
+      "mean": 5.67,
+      "std": 2.08,
+      "rolling_avg": 5.67
     },
     "hemlor": {
       "mean": 5.51,
@@ -532,7 +532,7 @@
       "706": 4.44,
       "707": 6.71,
       "708": 5.29,
-      "709": 6.0
+      "709": 5.71
     },
     "std": {
       "669": 1.22,
@@ -575,7 +575,7 @@
       "706": 1.59,
       "707": 1.5,
       "708": 1.38,
-      "709": 0.89
+      "709": 1.11
     }
   }
 }
