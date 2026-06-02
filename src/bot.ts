@@ -9,7 +9,7 @@ import { initDb } from './lib/db';
 import { parseMessage } from './lib/parser';
 import { syncChannel } from './lib/sync';
 import { scheduleDailySummary, checkAllPosted, type SummarySchedule } from './lib/summary';
-import { runScrape } from './scrape_answers';
+import { runFetch } from './fetch_answers';
 import { runCategorize } from './categorize_answers';
 import { runLabel } from './label_answers';
 
@@ -47,9 +47,9 @@ function deploy(): Promise<void> {
 
 async function scrapeAndCategorize(): Promise<void> {
   try {
-    await runScrape({ headless: true });
+    await runFetch();
   } catch (err) {
-    console.error(`Scrape failed: ${err}`);
+    console.error(`Fetch failed: ${err}`);
     return;
   }
   try {

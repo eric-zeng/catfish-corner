@@ -8,7 +8,7 @@
     "serve": "python3 -m http.server 8080 --directory site",
     "deploy": "npm run generate && gh-pages -d site",
     "summary": "tsx src/post_summary.ts",
-    "scrape": "tsx src/scrape_answers.ts",
+    "scrape": "tsx src/fetch_answers.ts",
     "backfill-summaries": "tsx src/backfill_summaries.ts",
     "categorize": "tsx src/categorize_answers.ts",
     "label": "tsx src/label_answers.ts"
