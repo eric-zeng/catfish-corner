@@ -73,14 +73,14 @@
   },
   "le_roi": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 19,
+      "attempts": 21,
       "score": 5.0,
-      "proportion": 0.2632
+      "proportion": 0.2381
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 4,
       "score": 1.0,
-      "proportion": 0.3333
+      "proportion": 0.25
     }
   },
   "mezaros": {
