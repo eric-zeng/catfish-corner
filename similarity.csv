@@ -1,6 +1,6 @@
 user1,user2,similarity,days
-cagetron8000,ghuggles,0.8128,9
-cagetron8000,hemlor,0.7853,9
-cagetron8000,croton140,0.7789,9
+cagetron8000,ghuggles,0.8045,10
+cagetron8000,croton140,0.7855,10
 ghuggles,hemlor,0.7756,36
 1trilliongecs,croton140,0.7647,3
+1trilliongecs,ghuggles,0.7647,3
