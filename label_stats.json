@@ -37,14 +37,14 @@
   },
   "croton140": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 19,
-      "score": 6.0,
-      "proportion": 0.3158
+      "attempts": 21,
+      "score": 7.0,
+      "proportion": 0.3333
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 4,
       "score": 1.0,
-      "proportion": 0.3333
+      "proportion": 0.25
     }
   },
   "ghuggles": {
