@@ -49,14 +49,14 @@
   },
   "ghuggles": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 19,
-      "score": 10.0,
-      "proportion": 0.5263
+      "attempts": 21,
+      "score": 11.0,
+      "proportion": 0.5238
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 4,
       "score": 3.0,
-      "proportion": 1.0
+      "proportion": 0.75
     }
   },
   "hemlor": {
