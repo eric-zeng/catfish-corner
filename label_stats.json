@@ -1,9 +1,14 @@
 {
   "1trilliongecs": {
     "Boat Names": {
-      "attempts": 1,
+      "attempts": 2,
       "score": 1.0,
-      "proportion": 1.0
+      "proportion": 0.5
+    },
+    "Medieval / Renaissance / Enlightenment Bullshit": {
+      "attempts": 2,
+      "score": 1.0,
+      "proportion": 0.5
     }
   },
   "_positron": {

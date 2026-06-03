@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T07:39:38.804262+00:00",
+  "updated_at": "2026-06-03T14:06:39.391318+00:00",
   "days": [
     669,
     670,
@@ -46,11 +46,11 @@
   ],
   "users": [
     "ghuggles",
-    "1trilliongecs",
     "hemlor",
     "mezaros",
     "croton140",
     "cagetron8000",
+    "1trilliongecs",
     "_positron",
     "optic_chiasm",
     "le_roi"
@@ -98,50 +98,6 @@
       "707": 9.0,
       "708": 7.0,
       "709": 6.0,
-      "710": null
-    },
-    "1trilliongecs": {
-      "669": null,
-      "670": null,
-      "671": null,
-      "672": null,
-      "673": null,
-      "674": null,
-      "675": null,
-      "676": null,
-      "677": null,
-      "678": null,
-      "679": null,
-      "680": null,
-      "681": null,
-      "682": null,
-      "683": null,
-      "684": null,
-      "685": null,
-      "686": null,
-      "687": null,
-      "688": null,
-      "689": null,
-      "690": null,
-      "691": null,
-      "692": null,
-      "693": null,
-      "694": null,
-      "695": null,
-      "696": null,
-      "697": null,
-      "698": null,
-      "699": null,
-      "700": null,
-      "701": null,
-      "702": null,
-      "703": null,
-      "704": null,
-      "705": 8.0,
-      "706": 5.0,
-      "707": null,
-      "708": null,
-      "709": 4.0,
       "710": null
     },
     "hemlor": {
@@ -320,6 +276,50 @@
       "709": 5.0,
       "710": null
     },
+    "1trilliongecs": {
+      "669": null,
+      "670": null,
+      "671": null,
+      "672": null,
+      "673": null,
+      "674": null,
+      "675": null,
+      "676": null,
+      "677": null,
+      "678": null,
+      "679": null,
+      "680": null,
+      "681": null,
+      "682": null,
+      "683": null,
+      "684": null,
+      "685": null,
+      "686": null,
+      "687": null,
+      "688": null,
+      "689": null,
+      "690": null,
+      "691": null,
+      "692": null,
+      "693": null,
+      "694": null,
+      "695": null,
+      "696": null,
+      "697": null,
+      "698": null,
+      "699": null,
+      "700": null,
+      "701": null,
+      "702": null,
+      "703": null,
+      "704": null,
+      "705": 8.0,
+      "706": 5.0,
+      "707": null,
+      "708": null,
+      "709": 4.0,
+      "710": 2.0
+    },
     "_positron": {
       "669": 4.0,
       "670": 7.0,
@@ -459,11 +459,6 @@
       "std": 1.5,
       "rolling_avg": 6.5
     },
-    "1trilliongecs": {
-      "mean": 5.67,
-      "std": 2.08,
-      "rolling_avg": 5.67
-    },
     "hemlor": {
       "mean": 5.5,
       "std": 1.67,
@@ -483,6 +478,11 @@
       "mean": 4.85,
       "std": 1.29,
       "rolling_avg": 4.92
+    },
+    "1trilliongecs": {
+      "mean": 4.75,
+      "std": 2.5,
+      "rolling_avg": 4.75
     },
     "_positron": {
       "mean": 4.64,
@@ -543,7 +543,7 @@
       "707": 6.71,
       "708": 5.29,
       "709": 5.44,
-      "710": 3.33
+      "710": 3.0
     },
     "std": {
       "669": 1.22,
@@ -587,7 +587,7 @@
       "707": 1.5,
       "708": 1.38,
       "709": 1.13,
-      "710": 1.53
+      "710": 1.41
     }
   }
 }
