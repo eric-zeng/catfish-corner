@@ -1,14 +1,14 @@
 {
   "1trilliongecs": {
     "Geography & Places": {
-      "attempts": 5,
-      "score": 2.0,
-      "proportion": 0.4
-    },
-    "Science and Nature": {
       "attempts": 6,
       "score": 3.0,
       "proportion": 0.5
+    },
+    "Science and Nature": {
+      "attempts": 7,
+      "score": 4.0,
+      "proportion": 0.5714
     },
     "Film & TV": {
       "attempts": 4,
@@ -16,14 +16,14 @@
       "proportion": 0.75
     },
     "Music": {
-      "attempts": 2,
-      "score": 2.0,
+      "attempts": 3,
+      "score": 3.0,
       "proportion": 1.0
     },
     "Politics and Contemporary History": {
-      "attempts": 4,
+      "attempts": 5,
       "score": 2.0,
-      "proportion": 0.5
+      "proportion": 0.4
     },
     "History": {
       "attempts": 3,
@@ -31,9 +31,9 @@
       "proportion": 0.3333
     },
     "Technology and Engineering": {
-      "attempts": 4,
-      "score": 1.0,
-      "proportion": 0.25
+      "attempts": 5,
+      "score": 2.0,
+      "proportion": 0.4
     },
     "Mythology & Religion": {
       "attempts": 2,
@@ -46,9 +46,9 @@
       "proportion": 1.0
     },
     "Pop Culture": {
-      "attempts": 4,
-      "score": 1.0,
-      "proportion": 0.25
+      "attempts": 7,
+      "score": 4.0,
+      "proportion": 0.5714
     },
     "Visual Art": {
       "attempts": 2,
@@ -56,9 +56,9 @@
       "proportion": 0.5
     },
     "Literature & Fiction": {
-      "attempts": 3,
-      "score": 0.0,
-      "proportion": 0.0
+      "attempts": 5,
+      "score": 1.0,
+      "proportion": 0.2
     }
   },
   "_positron": {

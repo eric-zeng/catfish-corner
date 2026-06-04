@@ -6,9 +6,9 @@
       "proportion": 0.5
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 2,
+      "attempts": 3,
       "score": 1.0,
-      "proportion": 0.5
+      "proportion": 0.3333
     }
   },
   "_positron": {
