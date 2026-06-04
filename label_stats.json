@@ -85,14 +85,14 @@
   },
   "mezaros": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 13,
-      "score": 5.0,
-      "proportion": 0.3846
+      "attempts": 15,
+      "score": 6.0,
+      "proportion": 0.4
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 3,
       "score": 1.5,
-      "proportion": 0.75
+      "proportion": 0.5
     }
   },
   "optic_chiasm": {
