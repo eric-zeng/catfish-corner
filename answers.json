@@ -2716,5 +2716,69 @@
       "knowledge_area": "Science and Nature",
       "labels": []
     }
+  ],
+  "712": [
+    {
+      "article_name": "Marianne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marianne",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "J. M. W. Turner",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/J._M._W._Turner",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    },
+    {
+      "article_name": "Wichita Lineman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wichita_Lineman",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Lysistrata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lysistrata",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Ang Lee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ang_Lee",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Manila",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manila",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Rosal\u00eda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosal%C3%ADa",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Orbit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orbit",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Samwise Gamgee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samwise_Gamgee",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Anders Celsius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anders_Celsius",
+      "knowledge_area": "Science and Nature",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    }
   ]
 }

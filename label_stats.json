@@ -49,9 +49,9 @@
   },
   "ghuggles": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 22,
-      "score": 11.0,
-      "proportion": 0.5
+      "attempts": 23,
+      "score": 12.0,
+      "proportion": 0.5217
     },
     "Boat Names": {
       "attempts": 4,
@@ -61,9 +61,9 @@
   },
   "hemlor": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 18,
-      "score": 10.0,
-      "proportion": 0.5556
+      "attempts": 19,
+      "score": 11.0,
+      "proportion": 0.5789
     },
     "Boat Names": {
       "attempts": 4,
@@ -73,9 +73,9 @@
   },
   "le_roi": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 22,
-      "score": 5.0,
-      "proportion": 0.2273
+      "attempts": 23,
+      "score": 6.0,
+      "proportion": 0.2609
     },
     "Boat Names": {
       "attempts": 4,
