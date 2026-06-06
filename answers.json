@@ -2780,5 +2780,67 @@
         "Medieval / Renaissance / Enlightenment Bullshit"
       ]
     }
+  ],
+  "713": [
+    {
+      "article_name": "Jack Kevorkian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_Kevorkian",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Orange Revolution",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orange_Revolution",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "A Few Good Men",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Few_Good_Men",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Wasabi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wasabi",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Takeshi's Castle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Takeshi's_Castle",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Oud",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oud",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Banach\u2013Tarski paradox",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Dancing mania",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dancing_mania",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Mount Vesuvius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Vesuvius",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Paper Planes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paper_Planes",
+      "knowledge_area": "Music",
+      "labels": []
+    }
   ]
 }
