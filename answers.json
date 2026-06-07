@@ -2842,5 +2842,69 @@
       "knowledge_area": "Music",
       "labels": []
     }
+  ],
+  "714": [
+    {
+      "article_name": "Gamal Abdel Nasser",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gamal_Abdel_Nasser",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Simlish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simlish",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Chiune Sugihara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiune_Sugihara",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Antoni Gaud\u00ed",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+      "knowledge_area": "Architecture",
+      "labels": []
+    },
+    {
+      "article_name": "Iago",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Iago",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Silk Road",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silk_Road",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "John Harrison",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Harrison",
+      "knowledge_area": "Science and Nature",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Satan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Satan",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Republic of Florence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Florence",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Pete \"Maverick\" Mitchell",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pete_%22Maverick%22_Mitchell",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    }
   ]
 }
