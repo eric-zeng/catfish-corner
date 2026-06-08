@@ -2906,5 +2906,69 @@
       "knowledge_area": "Film & TV",
       "labels": []
     }
+  ],
+  "715": [
+    {
+      "article_name": "Schroeder (Peanuts)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schroeder_(Peanuts)",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Miguel de Cervantes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Cardboard Cathedral",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cardboard_Cathedral",
+      "knowledge_area": "Architecture",
+      "labels": []
+    },
+    {
+      "article_name": "Squid Game",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Squid_Game",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Adrenaline",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adrenaline",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Pumpkin spice latte",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pumpkin_spice_latte",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Good Will Hunting",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Good_Will_Hunting",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Flamenco",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flamenco",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Chiaroscuro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiaroscuro",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    },
+    {
+      "article_name": "Old Firm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_Firm",
+      "knowledge_area": "Sports",
+      "labels": []
+    }
   ]
 }
