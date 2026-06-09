@@ -664,6 +664,131 @@
       );
     }
 
+    // ── ScoreHistogram ────────────────────────────────────────────────────────
+
+    function ScoreHistogram() {
+      const [data,    setData]    = React.useState(null);
+      const [user,    setUser]    = React.useState(null);
+      const [stats,   setStats]   = React.useState(null);
+      const { canvasRef, setChart } = useChart();
+
+      React.useEffect(() => {
+        loadJSON('leaderboard.json').then(d => {
+          setData(d);
+          setUser([...d.users].sort()[0]);
+        });
+      }, []);
+
+      React.useEffect(() => {
+        if (!data || !user) return;
+
+        const scores = Object.values(data.scores[user]).filter(v => v !== null);
+
+        const mean   = scores.reduce((a, b) => a + b, 0) / scores.length;
+        const sorted = [...scores].sort((a, b) => a - b);
+        const mid    = Math.floor(sorted.length / 2);
+        const median = sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+        const std    = Math.sqrt(scores.reduce((a, b) => a + (b - mean) ** 2, 0) / scores.length);
+        setStats({ mean, median, std });
+
+        const bins = [];
+        for (let v = 0; v <= 10; v += 0.5) bins.push(v);
+        const counts = bins.map(b => scores.filter(s => s === b).length);
+
+        const sortedUsers = [...data.users].sort();
+        const color = PLAYER_COLORS[sortedUsers.indexOf(user) % PLAYER_COLORS.length];
+
+        setChart({
+          type: 'bar',
+          data: {
+            labels: bins.map(fmtScore),
+            datasets: [{
+              data:            counts,
+              backgroundColor: color,
+              borderColor:     color,
+              borderWidth:     1,
+              borderRadius:    4,
+            }],
+          },
+          options: {
+            responsive:          true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              datalabels: {
+                anchor:    'end',
+                align:     'end',
+                formatter: v => v > 0 ? v : '',
+                font:      { size: 11, family: "'Comic Sans MS', 'Chalkboard SE', 'Comic Neue'" },
+                color:     '#7a4a1e',
+              },
+              tooltip: {
+                callbacks: {
+                  label: ctx => ` ${ctx.parsed.y} day${ctx.parsed.y !== 1 ? 's' : ''}`,
+                },
+              },
+            },
+            scales: {
+              x: {
+                title: { display: true, text: 'score' },
+                grid:  { color: '#f5cfa0' },
+              },
+              y: {
+                title:        { display: true, text: 'days' },
+                beginAtZero:  true,
+                max:          Math.max(...counts) + 1,
+                ticks:        { stepSize: 1 },
+                grid:         { color: '#f5cfa0' },
+              },
+            },
+          },
+        });
+      }, [data, user]);
+
+      if (!data) return null;
+
+      const sortedUsers = [...data.users].sort();
+
+      return (
+        <>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor="hist-player" style={{ marginRight: '0.5rem', color: '#7a4a1e', fontWeight: 700 }}>
+              player:
+            </label>
+            <select
+              id="hist-player"
+              value={user ?? ''}
+              onChange={e => setUser(e.target.value)}
+              style={{
+                fontFamily: 'inherit',
+                fontSize:   '0.95rem',
+                padding:    '0.25rem 0.5rem',
+                borderRadius: '6px',
+                border:     '1px solid #f5cfa0',
+                background: '#fff3e0',
+                color:      '#7a4a1e',
+                cursor:     'pointer',
+              }}
+            >
+              {sortedUsers.map(u => <option key={u} value={u}>{u}</option>)}
+            </select>
+          </div>
+          {stats && (
+            <p style={{ fontSize: '0.88rem', color: '#7a4a1e', margin: '0 0 0.6rem' }}>
+              mean: <strong>{fmtStat(stats.mean)}</strong>
+              {' · '}median: <strong>{fmtScore(stats.median)}</strong>
+              {' · '}std dev: <strong>{fmtStat(stats.std)}</strong>
+            </p>
+          )}
+          <div className="chart-wrap" style={{ maxWidth: '480px' }}>
+            <div className="chart-inner" style={{ minHeight: '300px' }}>
+              <canvas ref={canvasRef}></canvas>
+            </div>
+          </div>
+        </>
+      );
+    }
+
     // ── App ───────────────────────────────────────────────────────────────────
 
     function App() {
@@ -690,6 +815,8 @@
           <MoggingTable onSelectDay={setSelectedDay} />
           <h2>7-day rolling average leaderboard</h2>
           <RollingAverageChart />
+          <h2>score distribution</h2>
+          <ScoreHistogram />
           <h2>performance by category</h2>
           <PerformanceCharts />
         </>
