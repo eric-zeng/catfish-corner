@@ -3096,5 +3096,69 @@
       "knowledge_area": "Politics and Contemporary History",
       "labels": []
     }
+  ],
+  "718": [
+    {
+      "article_name": "All the President's Men",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/All_the_President's_Men",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "An Inconvenient Truth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/An_Inconvenient_Truth",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Martin Niem\u00f6ller",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_Niem%C3%B6ller",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Ali G",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ali_G",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Kalevala",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalevala",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Hawaii",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hawaii",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Weighted Companion Cube",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weighted_Companion_Cube",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Gilbert and Sullivan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gilbert_and_Sullivan",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Red Bull",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Bull",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Battleship Potemkin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battleship_Potemkin",
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Boat Names"
+      ]
+    }
   ]
 }
