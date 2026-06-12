@@ -78,14 +78,14 @@
       "proportion": 0.4286
     },
     "Literature & Fiction": {
-      "attempts": 68,
+      "attempts": 69,
       "score": 17.5,
-      "proportion": 0.2574
+      "proportion": 0.2536
     },
     "Film & TV": {
-      "attempts": 54,
-      "score": 23.5,
-      "proportion": 0.4352
+      "attempts": 55,
+      "score": 24.5,
+      "proportion": 0.4455
     },
     "Pop Culture": {
       "attempts": 26,
@@ -98,19 +98,19 @@
       "proportion": 0.4531
     },
     "Food & Drink": {
-      "attempts": 15,
-      "score": 10.0,
-      "proportion": 0.6667
+      "attempts": 16,
+      "score": 11.0,
+      "proportion": 0.6875
     },
     "Technology and Engineering": {
-      "attempts": 31,
-      "score": 25.0,
-      "proportion": 0.8065
+      "attempts": 33,
+      "score": 26.0,
+      "proportion": 0.7879
     },
     "Science and Nature": {
-      "attempts": 47,
-      "score": 20.5,
-      "proportion": 0.4362
+      "attempts": 51,
+      "score": 21.5,
+      "proportion": 0.4216
     },
     "Music": {
       "attempts": 47,
@@ -118,9 +118,9 @@
       "proportion": 0.3511
     },
     "Politics and Contemporary History": {
-      "attempts": 42,
+      "attempts": 43,
       "score": 23.5,
-      "proportion": 0.5595
+      "proportion": 0.5465
     },
     "Sports": {
       "attempts": 19,
@@ -294,14 +294,14 @@
       "proportion": 0.619
     },
     "Literature & Fiction": {
-      "attempts": 72,
-      "score": 37.0,
-      "proportion": 0.5139
+      "attempts": 73,
+      "score": 38.0,
+      "proportion": 0.5205
     },
     "Film & TV": {
-      "attempts": 59,
-      "score": 37.5,
-      "proportion": 0.6356
+      "attempts": 60,
+      "score": 38.5,
+      "proportion": 0.6417
     },
     "Pop Culture": {
       "attempts": 27,
@@ -314,19 +314,19 @@
       "proportion": 0.6364
     },
     "Food & Drink": {
-      "attempts": 17,
-      "score": 15.0,
-      "proportion": 0.8824
+      "attempts": 18,
+      "score": 16.0,
+      "proportion": 0.8889
     },
     "Technology and Engineering": {
-      "attempts": 32,
-      "score": 22.0,
-      "proportion": 0.6875
+      "attempts": 34,
+      "score": 24.0,
+      "proportion": 0.7059
     },
     "Science and Nature": {
-      "attempts": 48,
-      "score": 21.0,
-      "proportion": 0.4375
+      "attempts": 52,
+      "score": 22.0,
+      "proportion": 0.4231
     },
     "Music": {
       "attempts": 52,
@@ -334,9 +334,9 @@
       "proportion": 0.6731
     },
     "Politics and Contemporary History": {
-      "attempts": 47,
+      "attempts": 48,
       "score": 16.0,
-      "proportion": 0.3404
+      "proportion": 0.3333
     },
     "Sports": {
       "attempts": 19,

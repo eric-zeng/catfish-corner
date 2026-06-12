@@ -13,9 +13,9 @@
   },
   "_positron": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 25,
+      "attempts": 26,
       "score": 4.0,
-      "proportion": 0.16
+      "proportion": 0.1538
     },
     "Boat Names": {
       "attempts": 4,
@@ -49,9 +49,9 @@
   },
   "ghuggles": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 26,
-      "score": 14.0,
-      "proportion": 0.5385
+      "attempts": 27,
+      "score": 15.0,
+      "proportion": 0.5556
     },
     "Boat Names": {
       "attempts": 5,
