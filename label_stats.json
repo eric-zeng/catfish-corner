@@ -6,9 +6,9 @@
       "proportion": 0.6667
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 7,
-      "score": 3.0,
-      "proportion": 0.4286
+      "attempts": 8,
+      "score": 4.0,
+      "proportion": 0.5
     }
   },
   "_positron": {
@@ -25,9 +25,9 @@
   },
   "cagetron8000": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 4,
+      "attempts": 5,
       "score": 2.0,
-      "proportion": 0.5
+      "proportion": 0.4
     },
     "Boat Names": {
       "attempts": 2,
