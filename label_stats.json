@@ -61,14 +61,14 @@
   },
   "hemlor": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 23,
-      "score": 13.0,
-      "proportion": 0.5652
+      "attempts": 25,
+      "score": 15.0,
+      "proportion": 0.6
     },
     "Boat Names": {
-      "attempts": 5,
-      "score": 3.0,
-      "proportion": 0.6
+      "attempts": 6,
+      "score": 4.0,
+      "proportion": 0.6667
     }
   },
   "le_roi": {
