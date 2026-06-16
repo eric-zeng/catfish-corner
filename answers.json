@@ -3416,5 +3416,67 @@
       "knowledge_area": "Architecture",
       "labels": []
     }
+  ],
+  "723": [
+    {
+      "article_name": "Bloomsday",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bloomsday",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Cornell University",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cornell_University",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Marvin the Paranoid Android",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marvin_the_Paranoid_Android",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "White Anglo-Saxon Protestants",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/White_Anglo-Saxon_Protestants",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Freetown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Freetown",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Squash (sport)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Squash_(sport)",
+      "knowledge_area": "Sports",
+      "labels": []
+    },
+    {
+      "article_name": "Death of a Salesman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_a_Salesman",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Margot Fonteyn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Margot_Fonteyn",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Yo-Yo Ma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yo-Yo_Ma",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Greyhound Lines",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greyhound_Lines",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    }
   ]
 }
