@@ -29,7 +29,7 @@ def render() -> None:
     user_mean    = pivot.mean(axis=1).round(2)
     user_std     = pivot.std(axis=1).round(2)
     user_rolling = pivot.T.rolling(7, min_periods=1).mean().T.iloc[:, -1].round(2)
-    users = user_mean.sort_values(ascending=False).index.tolist()
+    users = user_rolling.sort_values(ascending=False).index.tolist()
 
     scores = {
         user: {int(d): _clean(float(pivot.loc[user, d])) for d in pivot.columns}
