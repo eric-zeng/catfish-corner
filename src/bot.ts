@@ -8,15 +8,13 @@ import { Client, GatewayIntentBits, TextChannel, type Message } from 'discord.js
 import { initDb } from './lib/db';
 import { parseMessage } from './lib/parser';
 import { syncChannel } from './lib/sync';
-import { scheduleDailySummary, checkAllPosted, type SummarySchedule } from './lib/summary';
+import { scheduleDailySummary } from './lib/summary';
 import { runFetch } from './fetch_answers';
 import { runCategorize } from './categorize_answers';
 import { runLabel } from './label_answers';
 
 const ROOT = path.join(__dirname, '..');
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID ?? '';
-
-let summarySchedule: SummarySchedule | null = null;
 
 const client = new Client({
   intents: [
@@ -86,9 +84,6 @@ async function runSync(): Promise<void> {
     try {
       await scrapeAndCategorize();
       await deploy();
-      if (summarySchedule) {
-        await checkAllPosted(summarySchedule);
-      }
     } catch (err) {
       console.error(`Error running post-sync pipeline`);
       console.error(err);
@@ -110,9 +105,8 @@ client.once('clientReady', async (c) => {
   if (!CHANNEL_ID) {
     console.warn('DISCORD_CHANNEL_ID not set — skipping sync');
   } else {
-    summarySchedule = scheduleDailySummary(getChannel);
+    scheduleDailySummary(getChannel);
     await runSync();
-    await checkAllPosted(summarySchedule);
     scheduleHourlySync();
   }
 });

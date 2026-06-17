@@ -49,7 +49,7 @@ export async function runLabel(): Promise<void> {
   }
 
   if (todo.length === 0) {
-    console.log('Fun labels: all classified.');
+    console.log('Labels: all answers annotated.');
     return;
   }
 

@@ -66,4 +66,8 @@ export const LABELS: { name: string; definition: string }[] = [
     name: 'Boat Names',
     definition: 'articles whose title is the name of a specific ship or vessel (historical, fictional, or disaster vessels), or a piece of shipboard equipment or component (e.g. anchors, rigging, naval aircraft). Also includes articles about events, battles, or books whose title contains a ship name. Excludes articles that are merely nautical in theme — the article title itself must contain a vessel name or shipboard component.',
   },
+  {
+    name: 'Britslop and Gaelicslop',
+    definition: 'articles about British, English, Welsh, Scottish and/or Irish culture, history, locations, or people'
+  }
 ];
