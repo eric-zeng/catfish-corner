@@ -1,5 +1,10 @@
 {
   "1trilliongecs": {
+    "Britslop and Gaelicslop": {
+      "attempts": 25,
+      "score": 17.5,
+      "proportion": 0.7
+    },
     "Boat Names": {
       "attempts": 4,
       "score": 2.0,
@@ -18,9 +23,9 @@
       "proportion": 0.1786
     },
     "Britslop and Gaelicslop": {
-      "attempts": 40,
-      "score": 13.5,
-      "proportion": 0.3375
+      "attempts": 70,
+      "score": 22.5,
+      "proportion": 0.3214
     },
     "Boat Names": {
       "attempts": 5,
@@ -29,6 +34,11 @@
     }
   },
   "cagetron8000": {
+    "Britslop and Gaelicslop": {
+      "attempts": 24,
+      "score": 10.0,
+      "proportion": 0.4167
+    },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 5,
       "score": 2.0,
@@ -47,9 +57,9 @@
       "proportion": 0.3448
     },
     "Britslop and Gaelicslop": {
-      "attempts": 40,
-      "score": 18.5,
-      "proportion": 0.4625
+      "attempts": 77,
+      "score": 34.0,
+      "proportion": 0.4416
     },
     "Boat Names": {
       "attempts": 6,
@@ -64,9 +74,9 @@
       "proportion": 0.5517
     },
     "Britslop and Gaelicslop": {
-      "attempts": 40,
-      "score": 26.0,
-      "proportion": 0.65
+      "attempts": 77,
+      "score": 46.0,
+      "proportion": 0.5974
     },
     "Boat Names": {
       "attempts": 6,
@@ -76,9 +86,9 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 32,
-      "score": 16.5,
-      "proportion": 0.5156
+      "attempts": 69,
+      "score": 33.5,
+      "proportion": 0.4855
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 25,
@@ -98,9 +108,9 @@
       "proportion": 0.2414
     },
     "Britslop and Gaelicslop": {
-      "attempts": 40,
-      "score": 12.0,
-      "proportion": 0.3
+      "attempts": 77,
+      "score": 22.5,
+      "proportion": 0.2922
     },
     "Boat Names": {
       "attempts": 6,
@@ -115,9 +125,9 @@
       "proportion": 0.4062
     },
     "Britslop and Gaelicslop": {
-      "attempts": 21,
-      "score": 8.5,
-      "proportion": 0.4048
+      "attempts": 33,
+      "score": 15.0,
+      "proportion": 0.4545
     },
     "Boat Names": {
       "attempts": 3,
@@ -132,9 +142,9 @@
       "proportion": 0.38
     },
     "Britslop and Gaelicslop": {
-      "attempts": 37,
-      "score": 18.5,
-      "proportion": 0.5
+      "attempts": 64,
+      "score": 32.5,
+      "proportion": 0.5078
     },
     "Boat Names": {
       "attempts": 3,
