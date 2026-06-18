@@ -3445,5 +3445,41 @@
     "score": 5.0,
     "total": 10,
     "guesses": "[0,0,1,0,1,1,1,0,1,0]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-06-18T13:48:52.795Z",
+    "day_number": 725,
+    "score": 8.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,1,1,1,1,1,0]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-06-18T13:14:09.421Z",
+    "day_number": 725,
+    "score": 4.0,
+    "total": 10,
+    "guesses": "[0,1,0,0,0,1,1,1,0,0]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-06-18T11:01:46.561Z",
+    "day_number": 725,
+    "score": 4.0,
+    "total": 10,
+    "guesses": "[1,1,0,0,1,1,0,0,0,0]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-06-18T11:04:17.038Z",
+    "day_number": 725,
+    "score": 3.0,
+    "total": 10,
+    "guesses": "[1,1,0,0,0,0,0,1,0,0]"
   }
 ]
