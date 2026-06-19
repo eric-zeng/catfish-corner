@@ -289,9 +289,9 @@
   },
   "ghuggles": {
     "Mythology & Religion": {
-      "attempts": 25,
-      "score": 16.0,
-      "proportion": 0.64
+      "attempts": 27,
+      "score": 18.0,
+      "proportion": 0.6667
     },
     "Literature & Fiction": {
       "attempts": 79,
@@ -299,9 +299,9 @@
       "proportion": 0.5316
     },
     "Film & TV": {
-      "attempts": 66,
-      "score": 43.5,
-      "proportion": 0.6591
+      "attempts": 67,
+      "score": 44.5,
+      "proportion": 0.6642
     },
     "Pop Culture": {
       "attempts": 31,
@@ -309,9 +309,9 @@
       "proportion": 0.7419
     },
     "History": {
-      "attempts": 36,
-      "score": 22.0,
-      "proportion": 0.6111
+      "attempts": 39,
+      "score": 25.0,
+      "proportion": 0.641
     },
     "Food & Drink": {
       "attempts": 20,
@@ -324,14 +324,14 @@
       "proportion": 0.7027
     },
     "Science and Nature": {
-      "attempts": 59,
-      "score": 27.0,
-      "proportion": 0.4576
+      "attempts": 62,
+      "score": 30.0,
+      "proportion": 0.4839
     },
     "Music": {
-      "attempts": 62,
+      "attempts": 63,
       "score": 40.0,
-      "proportion": 0.6452
+      "proportion": 0.6349
     },
     "Politics and Contemporary History": {
       "attempts": 51,
@@ -433,9 +433,9 @@
   },
   "le_roi": {
     "Mythology & Religion": {
-      "attempts": 25,
-      "score": 16.0,
-      "proportion": 0.64
+      "attempts": 27,
+      "score": 18.0,
+      "proportion": 0.6667
     },
     "Literature & Fiction": {
       "attempts": 79,
@@ -443,9 +443,9 @@
       "proportion": 0.3038
     },
     "Film & TV": {
-      "attempts": 66,
-      "score": 26.0,
-      "proportion": 0.3939
+      "attempts": 67,
+      "score": 27.0,
+      "proportion": 0.403
     },
     "Pop Culture": {
       "attempts": 31,
@@ -453,9 +453,9 @@
       "proportion": 0.7742
     },
     "History": {
-      "attempts": 36,
-      "score": 12.0,
-      "proportion": 0.3333
+      "attempts": 39,
+      "score": 15.0,
+      "proportion": 0.3846
     },
     "Food & Drink": {
       "attempts": 20,
@@ -468,14 +468,14 @@
       "proportion": 0.5405
     },
     "Science and Nature": {
-      "attempts": 59,
-      "score": 17.5,
-      "proportion": 0.2966
+      "attempts": 62,
+      "score": 20.5,
+      "proportion": 0.3306
     },
     "Music": {
-      "attempts": 62,
-      "score": 19.5,
-      "proportion": 0.3145
+      "attempts": 63,
+      "score": 20.5,
+      "proportion": 0.3254
     },
     "Politics and Contemporary History": {
       "attempts": 51,
