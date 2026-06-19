@@ -3750,5 +3750,69 @@
       "knowledge_area": "Sports",
       "labels": []
     }
+  ],
+  "726": [
+    {
+      "article_name": "Fight Club",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fight_Club",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Alea iacta est",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alea_iacta_est",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Kingdom of Hormuz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Hormuz",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "George Washington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Washington",
+      "knowledge_area": "History",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Tuskegee Syphilis Study",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuskegee_Syphilis_Study",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "P versus NP problem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Zeus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeus",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Black swan theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_swan_theory",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Helen of Troy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helen_of_Troy",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Annie (musical)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Annie_(musical)",
+      "knowledge_area": "Music",
+      "labels": []
+    }
   ]
 }
