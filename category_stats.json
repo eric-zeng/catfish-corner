@@ -577,19 +577,19 @@
   },
   "optic_chiasm": {
     "Mythology & Religion": {
-      "attempts": 22,
-      "score": 19.0,
-      "proportion": 0.8636
+      "attempts": 25,
+      "score": 22.0,
+      "proportion": 0.88
     },
     "Literature & Fiction": {
-      "attempts": 69,
-      "score": 44.5,
-      "proportion": 0.6449
+      "attempts": 70,
+      "score": 45.5,
+      "proportion": 0.65
     },
     "Film & TV": {
-      "attempts": 53,
-      "score": 32.0,
-      "proportion": 0.6038
+      "attempts": 56,
+      "score": 35.0,
+      "proportion": 0.625
     },
     "Pop Culture": {
       "attempts": 27,
@@ -602,14 +602,14 @@
       "proportion": 0.4118
     },
     "Food & Drink": {
-      "attempts": 16,
-      "score": 9.0,
-      "proportion": 0.5625
+      "attempts": 17,
+      "score": 10.0,
+      "proportion": 0.5882
     },
     "Technology and Engineering": {
-      "attempts": 33,
-      "score": 15.5,
-      "proportion": 0.4697
+      "attempts": 34,
+      "score": 16.5,
+      "proportion": 0.4853
     },
     "Science and Nature": {
       "attempts": 50,
@@ -637,9 +637,9 @@
       "proportion": 0.2821
     },
     "Visual Art": {
-      "attempts": 13,
+      "attempts": 14,
       "score": 5.0,
-      "proportion": 0.3846
+      "proportion": 0.3571
     },
     "Architecture": {
       "attempts": 15,
