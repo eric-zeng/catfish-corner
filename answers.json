@@ -3878,5 +3878,73 @@
       "knowledge_area": "Film & TV",
       "labels": []
     }
+  ],
+  "728": [
+    {
+      "article_name": "David Hume",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/David_Hume",
+      "knowledge_area": "Science and Nature",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Beloved (novel)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beloved_(novel)",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Nilometer",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nilometer",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "George Wallace",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Wallace",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Simone Giertz",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simone_Giertz",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Potato",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Potato",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Mekong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mekong",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Three Men in a Boat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Men_in_a_Boat",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Boat Names",
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Psycho Killer",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psycho_Killer",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Apartheid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    }
   ]
 }
