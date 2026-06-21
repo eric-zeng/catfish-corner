@@ -103,19 +103,19 @@
   },
   "le_roi": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 33,
+      "attempts": 34,
       "score": 9.0,
-      "proportion": 0.2727
+      "proportion": 0.2647
     },
     "Britslop and Gaelicslop": {
-      "attempts": 78,
+      "attempts": 80,
       "score": 23.5,
-      "proportion": 0.3013
+      "proportion": 0.2938
     },
     "Boat Names": {
-      "attempts": 6,
+      "attempts": 7,
       "score": 2.0,
-      "proportion": 0.3333
+      "proportion": 0.2857
     }
   },
   "mezaros": {
