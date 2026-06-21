@@ -222,9 +222,9 @@
       "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 80,
-      "score": 40.5,
-      "proportion": 0.5062
+      "attempts": 82,
+      "score": 41.5,
+      "proportion": 0.5061
     },
     "Film & TV": {
       "attempts": 70,
@@ -232,9 +232,9 @@
       "proportion": 0.5143
     },
     "Pop Culture": {
-      "attempts": 31,
+      "attempts": 32,
       "score": 20.0,
-      "proportion": 0.6452
+      "proportion": 0.625
     },
     "History": {
       "attempts": 39,
@@ -242,29 +242,29 @@
       "proportion": 0.4744
     },
     "Food & Drink": {
-      "attempts": 21,
-      "score": 14.5,
-      "proportion": 0.6905
+      "attempts": 22,
+      "score": 15.5,
+      "proportion": 0.7045
     },
     "Technology and Engineering": {
-      "attempts": 38,
+      "attempts": 39,
       "score": 17.0,
-      "proportion": 0.4474
+      "proportion": 0.4359
     },
     "Science and Nature": {
-      "attempts": 62,
-      "score": 17.0,
-      "proportion": 0.2742
+      "attempts": 63,
+      "score": 18.0,
+      "proportion": 0.2857
     },
     "Music": {
-      "attempts": 63,
-      "score": 32.5,
-      "proportion": 0.5159
+      "attempts": 64,
+      "score": 33.5,
+      "proportion": 0.5234
     },
     "Politics and Contemporary History": {
-      "attempts": 51,
-      "score": 23.5,
-      "proportion": 0.4608
+      "attempts": 53,
+      "score": 24.5,
+      "proportion": 0.4623
     },
     "Sports": {
       "attempts": 22,
@@ -272,9 +272,9 @@
       "proportion": 0.4545
     },
     "Geography & Places": {
-      "attempts": 49,
-      "score": 27.0,
-      "proportion": 0.551
+      "attempts": 50,
+      "score": 28.0,
+      "proportion": 0.56
     },
     "Visual Art": {
       "attempts": 19,
@@ -381,9 +381,9 @@
       "proportion": 0.3673
     },
     "Technology and Engineering": {
-      "attempts": 36,
-      "score": 21.0,
-      "proportion": 0.5833
+      "attempts": 37,
+      "score": 22.0,
+      "proportion": 0.5946
     },
     "History": {
       "attempts": 35,
