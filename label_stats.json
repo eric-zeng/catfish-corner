@@ -35,19 +35,19 @@
   },
   "cagetron8000": {
     "Britslop and Gaelicslop": {
-      "attempts": 24,
+      "attempts": 26,
       "score": 10.0,
-      "proportion": 0.4167
+      "proportion": 0.3846
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 6,
+      "attempts": 7,
       "score": 3.0,
-      "proportion": 0.5
+      "proportion": 0.4286
     },
     "Boat Names": {
-      "attempts": 2,
+      "attempts": 3,
       "score": 2.0,
-      "proportion": 1.0
+      "proportion": 0.6667
     }
   },
   "croton140": {
