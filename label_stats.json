@@ -35,9 +35,9 @@
   },
   "cagetron8000": {
     "Britslop and Gaelicslop": {
-      "attempts": 26,
-      "score": 10.0,
-      "proportion": 0.3846
+      "attempts": 28,
+      "score": 11.0,
+      "proportion": 0.3929
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 7,
@@ -45,9 +45,9 @@
       "proportion": 0.4286
     },
     "Boat Names": {
-      "attempts": 3,
+      "attempts": 4,
       "score": 2.0,
-      "proportion": 0.6667
+      "proportion": 0.5
     }
   },
   "croton140": {
@@ -86,9 +86,9 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 74,
-      "score": 35.5,
-      "proportion": 0.4797
+      "attempts": 76,
+      "score": 36.5,
+      "proportion": 0.4803
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 30,
