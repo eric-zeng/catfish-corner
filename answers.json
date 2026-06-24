@@ -4093,7 +4093,7 @@
     {
       "article_name": "Toothpaste",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Toothpaste",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
@@ -4105,7 +4105,7 @@
     {
       "article_name": "Exxon Valdez",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Exxon_Valdez",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": [
         "Boat Names"
       ]
