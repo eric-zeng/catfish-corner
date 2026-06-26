@@ -18,14 +18,14 @@
   },
   "_positron": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 35,
+      "attempts": 36,
       "score": 10.0,
-      "proportion": 0.2857
+      "proportion": 0.2778
     },
     "Britslop and Gaelicslop": {
-      "attempts": 79,
+      "attempts": 80,
       "score": 25.5,
-      "proportion": 0.3228
+      "proportion": 0.3187
     },
     "Boat Names": {
       "attempts": 8,
@@ -86,14 +86,14 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 78,
-      "score": 37.5,
-      "proportion": 0.4808
+      "attempts": 79,
+      "score": 38.5,
+      "proportion": 0.4873
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 32,
-      "score": 19.0,
-      "proportion": 0.5938
+      "attempts": 33,
+      "score": 20.0,
+      "proportion": 0.6061
     },
     "Boat Names": {
       "attempts": 9,
