@@ -4543,5 +4543,73 @@
       "knowledge_area": "Science and Nature",
       "labels": []
     }
+  ],
+  "738": [
+    {
+      "article_name": "British Ceylon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/British_Ceylon",
+      "knowledge_area": "",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Wicked (musical)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wicked_(musical)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Freyja",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Freyja",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Millennium Bridge, London",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Millennium_Bridge%2C_London",
+      "knowledge_area": "Geography & Places",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Kim (song)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kim_(song)",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Wu Zetian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wu_Zetian",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Beauty and the Beast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beauty_and_the_Beast",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Yuppie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuppie",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Strategic Defense Initiative",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strategic_Defense_Initiative",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Punch (monkey)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punch_(monkey)",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    }
   ]
 }
