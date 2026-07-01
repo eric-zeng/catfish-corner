@@ -262,9 +262,9 @@
       "proportion": 0.5338
     },
     "Politics and Contemporary History": {
-      "attempts": 64,
-      "score": 28.0,
-      "proportion": 0.4375
+      "attempts": 65,
+      "score": 29.0,
+      "proportion": 0.4462
     },
     "Sports": {
       "attempts": 26,
@@ -376,9 +376,9 @@
       "proportion": 0.5224
     },
     "Politics and Contemporary History": {
-      "attempts": 60,
+      "attempts": 61,
       "score": 24.5,
-      "proportion": 0.4083
+      "proportion": 0.4016
     },
     "Technology and Engineering": {
       "attempts": 42,
@@ -433,14 +433,14 @@
   },
   "le_roi": {
     "Mythology & Religion": {
-      "attempts": 33,
-      "score": 21.0,
-      "proportion": 0.6364
+      "attempts": 34,
+      "score": 22.0,
+      "proportion": 0.6471
     },
     "Literature & Fiction": {
-      "attempts": 91,
-      "score": 29.0,
-      "proportion": 0.3187
+      "attempts": 92,
+      "score": 30.0,
+      "proportion": 0.3261
     },
     "Film & TV": {
       "attempts": 81,
@@ -448,14 +448,14 @@
       "proportion": 0.3827
     },
     "Pop Culture": {
-      "attempts": 40,
-      "score": 31.0,
-      "proportion": 0.775
+      "attempts": 42,
+      "score": 33.0,
+      "proportion": 0.7857
     },
     "History": {
-      "attempts": 43,
+      "attempts": 44,
       "score": 18.0,
-      "proportion": 0.4186
+      "proportion": 0.4091
     },
     "Food & Drink": {
       "attempts": 27,
@@ -473,14 +473,14 @@
       "proportion": 0.3356
     },
     "Music": {
-      "attempts": 72,
-      "score": 21.5,
-      "proportion": 0.2986
+      "attempts": 74,
+      "score": 23.5,
+      "proportion": 0.3176
     },
     "Politics and Contemporary History": {
-      "attempts": 63,
-      "score": 16.5,
-      "proportion": 0.2619
+      "attempts": 65,
+      "score": 17.5,
+      "proportion": 0.2692
     },
     "Sports": {
       "attempts": 26,
@@ -488,9 +488,9 @@
       "proportion": 0.3846
     },
     "Geography & Places": {
-      "attempts": 58,
+      "attempts": 59,
       "score": 31.0,
-      "proportion": 0.5345
+      "proportion": 0.5254
     },
     "Visual Art": {
       "attempts": 21,
