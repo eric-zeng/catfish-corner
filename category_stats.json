@@ -1,14 +1,14 @@
 {
   "1trilliongecs": {
     "Geography & Places": {
-      "attempts": 29,
+      "attempts": 30,
       "score": 22.0,
-      "proportion": 0.7586
+      "proportion": 0.7333
     },
     "Science and Nature": {
-      "attempts": 39,
-      "score": 22.5,
-      "proportion": 0.5769
+      "attempts": 41,
+      "score": 23.5,
+      "proportion": 0.5732
     },
     "Film & TV": {
       "attempts": 39,
@@ -16,14 +16,14 @@
       "proportion": 0.7436
     },
     "Music": {
-      "attempts": 36,
-      "score": 27.0,
-      "proportion": 0.75
+      "attempts": 39,
+      "score": 30.0,
+      "proportion": 0.7692
     },
     "Politics and Contemporary History": {
-      "attempts": 33,
-      "score": 19.0,
-      "proportion": 0.5758
+      "attempts": 34,
+      "score": 20.0,
+      "proportion": 0.5882
     },
     "History": {
       "attempts": 19,
@@ -41,9 +41,9 @@
       "proportion": 0.7059
     },
     "Food & Drink": {
-      "attempts": 16,
-      "score": 12.5,
-      "proportion": 0.7812
+      "attempts": 17,
+      "score": 13.5,
+      "proportion": 0.7941
     },
     "Pop Culture": {
       "attempts": 26,
@@ -51,9 +51,9 @@
       "proportion": 0.7308
     },
     "Visual Art": {
-      "attempts": 10,
-      "score": 7.0,
-      "proportion": 0.7
+      "attempts": 12,
+      "score": 9.0,
+      "proportion": 0.75
     },
     "Literature & Fiction": {
       "attempts": 34,
