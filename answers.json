@@ -4673,5 +4673,69 @@
       "knowledge_area": "Pop Culture",
       "labels": []
     }
+  ],
+  "740": [
+    {
+      "article_name": "Sic semper tyrannis",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sic_semper_tyrannis",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Kinsey scale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kinsey_scale",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Absinthe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Absinthe",
+      "knowledge_area": "Food & Drink",
+      "labels": []
+    },
+    {
+      "article_name": "Never Gonna Give You Up",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Never_Gonna_Give_You_Up",
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Back in Black",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Back_in_Black",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Torino scale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Torino_scale",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Georgia O'Keeffe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Georgia_O'Keeffe",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    },
+    {
+      "article_name": "Waltzing Matilda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltzing_Matilda",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Checkpoint Charlie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Checkpoint_Charlie",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Hilma af Klint",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hilma_af_Klint",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    }
   ]
 }
