@@ -1,9 +1,9 @@
 {
   "1trilliongecs": {
     "Geography & Places": {
-      "attempts": 30,
+      "attempts": 31,
       "score": 22.0,
-      "proportion": 0.7333
+      "proportion": 0.7097
     },
     "Science and Nature": {
       "attempts": 41,
@@ -11,9 +11,9 @@
       "proportion": 0.5732
     },
     "Film & TV": {
-      "attempts": 39,
-      "score": 29.0,
-      "proportion": 0.7436
+      "attempts": 40,
+      "score": 30.0,
+      "proportion": 0.75
     },
     "Music": {
       "attempts": 39,
@@ -21,9 +21,9 @@
       "proportion": 0.7692
     },
     "Politics and Contemporary History": {
-      "attempts": 34,
-      "score": 20.0,
-      "proportion": 0.5882
+      "attempts": 36,
+      "score": 22.0,
+      "proportion": 0.6111
     },
     "History": {
       "attempts": 19,
@@ -31,14 +31,14 @@
       "proportion": 0.5526
     },
     "Technology and Engineering": {
-      "attempts": 18,
-      "score": 12.0,
-      "proportion": 0.6667
+      "attempts": 19,
+      "score": 13.0,
+      "proportion": 0.6842
     },
     "Mythology & Religion": {
-      "attempts": 17,
-      "score": 12.0,
-      "proportion": 0.7059
+      "attempts": 19,
+      "score": 13.0,
+      "proportion": 0.6842
     },
     "Food & Drink": {
       "attempts": 17,
@@ -46,9 +46,9 @@
       "proportion": 0.7941
     },
     "Pop Culture": {
-      "attempts": 26,
-      "score": 19.0,
-      "proportion": 0.7308
+      "attempts": 27,
+      "score": 20.0,
+      "proportion": 0.7407
     },
     "Visual Art": {
       "attempts": 12,
@@ -56,9 +56,9 @@
       "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 34,
-      "score": 23.0,
-      "proportion": 0.6765
+      "attempts": 36,
+      "score": 25.0,
+      "proportion": 0.6944
     },
     "Architecture": {
       "attempts": 6,
@@ -222,9 +222,9 @@
       "proportion": 0.7083
     },
     "Literature & Fiction": {
-      "attempts": 93,
-      "score": 50.5,
-      "proportion": 0.543
+      "attempts": 94,
+      "score": 51.5,
+      "proportion": 0.5479
     },
     "Film & TV": {
       "attempts": 84,
@@ -361,9 +361,9 @@
   },
   "hemlor": {
     "Literature & Fiction": {
-      "attempts": 86,
-      "score": 48.0,
-      "proportion": 0.5581
+      "attempts": 87,
+      "score": 49.0,
+      "proportion": 0.5632
     },
     "Science and Nature": {
       "attempts": 74,
@@ -438,9 +438,9 @@
       "proportion": 0.6389
     },
     "Literature & Fiction": {
-      "attempts": 93,
+      "attempts": 94,
       "score": 31.0,
-      "proportion": 0.3333
+      "proportion": 0.3298
     },
     "Film & TV": {
       "attempts": 84,
