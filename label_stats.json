@@ -137,19 +137,19 @@
   },
   "optic_chiasm": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 33,
+      "attempts": 34,
       "score": 14.5,
-      "proportion": 0.4394
+      "proportion": 0.4265
     },
     "Britslop and Gaelicslop": {
-      "attempts": 71,
-      "score": 34.5,
-      "proportion": 0.4859
+      "attempts": 73,
+      "score": 35.5,
+      "proportion": 0.4863
     },
     "Boat Names": {
-      "attempts": 5,
-      "score": 1.0,
-      "proportion": 0.2
+      "attempts": 7,
+      "score": 2.0,
+      "proportion": 0.2857
     }
   }
 }
