@@ -1,19 +1,19 @@
 {
   "1trilliongecs": {
     "Geography & Places": {
-      "attempts": 31,
+      "attempts": 32,
       "score": 22.0,
-      "proportion": 0.7097
+      "proportion": 0.6875
     },
     "Science and Nature": {
-      "attempts": 41,
-      "score": 23.5,
-      "proportion": 0.5732
+      "attempts": 42,
+      "score": 24.5,
+      "proportion": 0.5833
     },
     "Film & TV": {
-      "attempts": 40,
-      "score": 30.0,
-      "proportion": 0.75
+      "attempts": 42,
+      "score": 32.0,
+      "proportion": 0.7619
     },
     "Music": {
       "attempts": 39,
@@ -26,14 +26,14 @@
       "proportion": 0.6111
     },
     "History": {
-      "attempts": 19,
-      "score": 10.5,
-      "proportion": 0.5526
+      "attempts": 20,
+      "score": 11.5,
+      "proportion": 0.575
     },
     "Technology and Engineering": {
-      "attempts": 19,
-      "score": 13.0,
-      "proportion": 0.6842
+      "attempts": 22,
+      "score": 15.0,
+      "proportion": 0.6818
     },
     "Mythology & Religion": {
       "attempts": 19,
@@ -56,14 +56,14 @@
       "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 36,
-      "score": 25.0,
-      "proportion": 0.6944
+      "attempts": 37,
+      "score": 26.0,
+      "proportion": 0.7027
     },
     "Architecture": {
-      "attempts": 6,
-      "score": 4.0,
-      "proportion": 0.6667
+      "attempts": 7,
+      "score": 5.0,
+      "proportion": 0.7143
     },
     "Sports": {
       "attempts": 8,
