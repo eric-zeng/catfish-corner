@@ -4877,5 +4877,69 @@
       "knowledge_area": "Geography & Places",
       "labels": []
     }
+  ],
+  "743": [
+    {
+      "article_name": "Lion",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lion",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Salem witch trials",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salem_witch_trials",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Elizabeth B\u00e1thory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elizabeth_B%C3%A1thory",
+      "knowledge_area": "",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Mir",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mir",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "Erling Haaland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erling_Haaland",
+      "knowledge_area": "Sports",
+      "labels": []
+    },
+    {
+      "article_name": "Reichenbach Falls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reichenbach_Falls",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Unit 731",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unit_731",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Search for extraterrestrial intelligence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Search_for_extraterrestrial_intelligence",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Obelisk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Obelisk",
+      "knowledge_area": "Architecture",
+      "labels": []
+    },
+    {
+      "article_name": "Gout",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gout",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    }
   ]
 }
