@@ -4941,5 +4941,69 @@
       "knowledge_area": "Science and Nature",
       "labels": []
     }
+  ],
+  "744": [
+    {
+      "article_name": "Greta Thunberg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greta_Thunberg",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "Dreidel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dreidel",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Because the Night",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Because_the_Night",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "IMac G3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/IMac_G3",
+      "knowledge_area": "Technology and Engineering",
+      "labels": []
+    },
+    {
+      "article_name": "Triangle of Sadness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triangle_of_Sadness",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Dervish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dervish",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "Paddy field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paddy_field",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Entente Cordiale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entente_Cordiale",
+      "knowledge_area": "History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "The Bride (Kill Bill)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bride_(Kill_Bill)",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Pope",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pope",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    }
   ]
 }
