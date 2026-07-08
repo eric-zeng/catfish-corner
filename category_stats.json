@@ -11,14 +11,14 @@
       "proportion": 0.5667
     },
     "Film & TV": {
-      "attempts": 44,
-      "score": 34.0,
-      "proportion": 0.7727
+      "attempts": 45,
+      "score": 35.0,
+      "proportion": 0.7778
     },
     "Music": {
-      "attempts": 40,
-      "score": 31.0,
-      "proportion": 0.775
+      "attempts": 41,
+      "score": 32.0,
+      "proportion": 0.7805
     },
     "Politics and Contemporary History": {
       "attempts": 38,
@@ -26,14 +26,14 @@
       "proportion": 0.6316
     },
     "History": {
-      "attempts": 23,
-      "score": 13.5,
-      "proportion": 0.587
+      "attempts": 24,
+      "score": 14.5,
+      "proportion": 0.6042
     },
     "Technology and Engineering": {
-      "attempts": 24,
-      "score": 17.0,
-      "proportion": 0.7083
+      "attempts": 25,
+      "score": 18.0,
+      "proportion": 0.72
     },
     "Mythology & Religion": {
       "attempts": 22,
@@ -46,9 +46,9 @@
       "proportion": 0.7941
     },
     "Pop Culture": {
-      "attempts": 27,
-      "score": 20.0,
-      "proportion": 0.7407
+      "attempts": 28,
+      "score": 21.0,
+      "proportion": 0.75
     },
     "Visual Art": {
       "attempts": 12,
@@ -56,9 +56,9 @@
       "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 37,
-      "score": 26.0,
-      "proportion": 0.7027
+      "attempts": 40,
+      "score": 27.5,
+      "proportion": 0.6875
     },
     "Architecture": {
       "attempts": 8,
@@ -66,9 +66,9 @@
       "proportion": 0.75
     },
     "Sports": {
-      "attempts": 9,
-      "score": 5.0,
-      "proportion": 0.5556
+      "attempts": 11,
+      "score": 6.0,
+      "proportion": 0.5455
     }
   },
   "_positron": {
@@ -361,9 +361,9 @@
   },
   "hemlor": {
     "Literature & Fiction": {
-      "attempts": 90,
+      "attempts": 91,
       "score": 51.5,
-      "proportion": 0.5722
+      "proportion": 0.5659
     },
     "Science and Nature": {
       "attempts": 78,
@@ -391,9 +391,9 @@
       "proportion": 0.8111
     },
     "Film & TV": {
-      "attempts": 84,
+      "attempts": 85,
       "score": 56.5,
-      "proportion": 0.6726
+      "proportion": 0.6647
     },
     "Pop Culture": {
       "attempts": 44,
