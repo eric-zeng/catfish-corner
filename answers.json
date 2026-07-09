@@ -5075,5 +5075,67 @@
       "knowledge_area": "Literature & Fiction",
       "labels": []
     }
+  ],
+  "746": [
+    {
+      "article_name": "Avignon Papacy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Avignon_Papacy",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Tofu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tofu",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Olmecs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olmecs",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Poutine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poutine",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Skunk Works",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Skunk_Works",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Annie Oakley",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Annie_Oakley",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jesus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jesus",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Wine-dark sea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wine-dark_sea",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Punctuated equilibrium",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punctuated_equilibrium",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "All Quiet on the Western Front",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/All_Quiet_on_the_Western_Front",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
