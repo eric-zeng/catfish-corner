@@ -5080,61 +5080,61 @@
     {
       "article_name": "Avignon Papacy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Avignon_Papacy",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Tofu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tofu",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Olmecs",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Olmecs",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Poutine",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Poutine",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Skunk Works",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Skunk_Works",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Annie Oakley",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Annie_Oakley",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Jesus",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jesus",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Wine-dark sea",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wine-dark_sea",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Punctuated equilibrium",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Punctuated_equilibrium",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "All Quiet on the Western Front",
       "wikipedia_url": "https://en.wikipedia.org/wiki/All_Quiet_on_the_Western_Front",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     }
   ],
@@ -5142,61 +5142,129 @@
     {
       "article_name": "Pet Sounds",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pet_Sounds",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Frutiger Aero",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frutiger_Aero",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "David Goggins",
       "wikipedia_url": "https://en.wikipedia.org/wiki/David_Goggins",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Hikaru Nakamura",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hikaru_Nakamura",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Fleabag",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fleabag",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Guernica (Picasso)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     },
     {
       "article_name": "Portuguese language",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Portuguese_language",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Saint Valentine's Day Massacre",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Valentine's_Day_Massacre",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Enkidu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Enkidu",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Stagger Lee",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stagger_Lee",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
+      "labels": []
+    }
+  ],
+  "748": [
+    {
+      "article_name": "Biltmore Estate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biltmore_Estate",
+      "knowledge_area": "Architecture",
+      "labels": []
+    },
+    {
+      "article_name": "Peace of Westphalia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Bruno Mars",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bruno_Mars",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Southern belle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southern_belle",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Rock the Casbah",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rock_the_Casbah",
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Kuala Lumpur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kuala_Lumpur",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Grill (jewelry)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grill_(jewelry)",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "N. K. Jemisin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N._K._Jemisin",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Vita Sackville-West",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vita_Sackville-West",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Mount Elbrus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Elbrus",
+      "knowledge_area": "Geography & Places",
       "labels": []
     }
   ]

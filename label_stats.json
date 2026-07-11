@@ -1,9 +1,9 @@
 {
   "1trilliongecs": {
     "Britslop and Gaelicslop": {
-      "attempts": 54,
-      "score": 34.5,
-      "proportion": 0.6389
+      "attempts": 55,
+      "score": 35.5,
+      "proportion": 0.6455
     },
     "Boat Names": {
       "attempts": 9,
@@ -57,9 +57,9 @@
       "proportion": 0.4186
     },
     "Britslop and Gaelicslop": {
-      "attempts": 106,
-      "score": 48.0,
-      "proportion": 0.4528
+      "attempts": 107,
+      "score": 49.0,
+      "proportion": 0.4579
     },
     "Boat Names": {
       "attempts": 11,
@@ -74,9 +74,9 @@
       "proportion": 0.6047
     },
     "Britslop and Gaelicslop": {
-      "attempts": 106,
-      "score": 64.5,
-      "proportion": 0.6085
+      "attempts": 107,
+      "score": 65.5,
+      "proportion": 0.6121
     },
     "Boat Names": {
       "attempts": 11,
@@ -86,9 +86,9 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 98,
-      "score": 48.5,
-      "proportion": 0.4949
+      "attempts": 101,
+      "score": 49.5,
+      "proportion": 0.4901
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 39,
@@ -108,9 +108,9 @@
       "proportion": 0.3023
     },
     "Britslop and Gaelicslop": {
-      "attempts": 106,
+      "attempts": 107,
       "score": 32.5,
-      "proportion": 0.3066
+      "proportion": 0.3037
     },
     "Boat Names": {
       "attempts": 11,
