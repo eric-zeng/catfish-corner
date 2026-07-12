@@ -51,14 +51,14 @@
       "proportion": 0.7667
     },
     "Visual Art": {
-      "attempts": 13,
+      "attempts": 14,
       "score": 10.0,
-      "proportion": 0.7692
+      "proportion": 0.7143
     },
     "Literature & Fiction": {
-      "attempts": 45,
-      "score": 29.5,
-      "proportion": 0.6556
+      "attempts": 46,
+      "score": 30.5,
+      "proportion": 0.663
     },
     "Architecture": {
       "attempts": 9,
@@ -160,14 +160,14 @@
       "proportion": 0.5769
     },
     "Visual Art": {
-      "attempts": 8,
-      "score": 4.0,
-      "proportion": 0.5
+      "attempts": 9,
+      "score": 5.0,
+      "proportion": 0.5556
     },
     "Literature & Fiction": {
-      "attempts": 37,
+      "attempts": 38,
       "score": 10.0,
-      "proportion": 0.2703
+      "proportion": 0.2632
     },
     "Science and Nature": {
       "attempts": 35,
@@ -222,9 +222,9 @@
       "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 103,
+      "attempts": 104,
       "score": 55.5,
-      "proportion": 0.5388
+      "proportion": 0.5337
     },
     "Film & TV": {
       "attempts": 91,
@@ -277,9 +277,9 @@
       "proportion": 0.5147
     },
     "Visual Art": {
-      "attempts": 24,
-      "score": 10.0,
-      "proportion": 0.4167
+      "attempts": 25,
+      "score": 11.0,
+      "proportion": 0.44
     },
     "Architecture": {
       "attempts": 21,
@@ -289,19 +289,19 @@
   },
   "ghuggles": {
     "Mythology & Religion": {
-      "attempts": 41,
+      "attempts": 42,
       "score": 29.0,
-      "proportion": 0.7073
+      "proportion": 0.6905
     },
     "Literature & Fiction": {
-      "attempts": 102,
-      "score": 58.0,
-      "proportion": 0.5686
+      "attempts": 104,
+      "score": 59.0,
+      "proportion": 0.5673
     },
     "Film & TV": {
-      "attempts": 90,
+      "attempts": 91,
       "score": 63.5,
-      "proportion": 0.7056
+      "proportion": 0.6978
     },
     "Pop Culture": {
       "attempts": 48,
@@ -324,19 +324,19 @@
       "proportion": 0.6923
     },
     "Science and Nature": {
-      "attempts": 81,
-      "score": 42.0,
-      "proportion": 0.5185
+      "attempts": 83,
+      "score": 44.0,
+      "proportion": 0.5301
     },
     "Music": {
-      "attempts": 84,
-      "score": 55.0,
-      "proportion": 0.6548
+      "attempts": 85,
+      "score": 56.0,
+      "proportion": 0.6588
     },
     "Politics and Contemporary History": {
-      "attempts": 74,
-      "score": 31.0,
-      "proportion": 0.4189
+      "attempts": 75,
+      "score": 32.0,
+      "proportion": 0.4267
     },
     "Sports": {
       "attempts": 32,
@@ -344,14 +344,14 @@
       "proportion": 0.6562
     },
     "Geography & Places": {
-      "attempts": 67,
-      "score": 59.0,
-      "proportion": 0.8806
+      "attempts": 68,
+      "score": 60.0,
+      "proportion": 0.8824
     },
     "Visual Art": {
-      "attempts": 24,
-      "score": 11.0,
-      "proportion": 0.4583
+      "attempts": 25,
+      "score": 12.0,
+      "proportion": 0.48
     },
     "Architecture": {
       "attempts": 21,
@@ -361,9 +361,9 @@
   },
   "hemlor": {
     "Literature & Fiction": {
-      "attempts": 96,
+      "attempts": 97,
       "score": 54.5,
-      "proportion": 0.5677
+      "proportion": 0.5619
     },
     "Science and Nature": {
       "attempts": 82,
@@ -421,9 +421,9 @@
       "proportion": 0.8929
     },
     "Visual Art": {
-      "attempts": 24,
+      "attempts": 25,
       "score": 10.0,
-      "proportion": 0.4167
+      "proportion": 0.4
     },
     "Architecture": {
       "attempts": 17,
@@ -438,9 +438,9 @@
       "proportion": 0.6667
     },
     "Literature & Fiction": {
-      "attempts": 103,
+      "attempts": 104,
       "score": 34.5,
-      "proportion": 0.335
+      "proportion": 0.3317
     },
     "Film & TV": {
       "attempts": 91,
@@ -493,9 +493,9 @@
       "proportion": 0.5147
     },
     "Visual Art": {
-      "attempts": 24,
-      "score": 7.0,
-      "proportion": 0.2917
+      "attempts": 25,
+      "score": 8.0,
+      "proportion": 0.32
     },
     "Architecture": {
       "attempts": 21,
