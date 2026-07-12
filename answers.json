@@ -5267,5 +5267,75 @@
       "knowledge_area": "Geography & Places",
       "labels": []
     }
+  ],
+  "749": [
+    {
+      "article_name": "Gibraltar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gibraltar",
+      "knowledge_area": "Geography & Places",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Mario Vargas Llosa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mario_Vargas_Llosa",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Ghost of Kyiv",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ghost_of_Kyiv",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "The Three Musketeers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Three_Musketeers",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Vanilla Sky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vanilla_Sky",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Sotheby's",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sotheby's",
+      "knowledge_area": "",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Four color theorem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_color_theorem",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Tabula rasa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabula_rasa",
+      "knowledge_area": "Science and Nature",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Torii",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Torii",
+      "knowledge_area": "Mythology & Religion",
+      "labels": []
+    },
+    {
+      "article_name": "MF Doom",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/MF_Doom",
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    }
   ]
 }
