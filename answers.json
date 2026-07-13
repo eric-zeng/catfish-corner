@@ -5337,5 +5337,75 @@
         "Britslop and Gaelicslop"
       ]
     }
+  ],
+  "750": [
+    {
+      "article_name": "Of Mice and Men",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Of_Mice_and_Men",
+      "knowledge_area": "Literature & Fiction",
+      "labels": []
+    },
+    {
+      "article_name": "Bonn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bonn",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Alex (parrot)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alex_(parrot)",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Ted Hughes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Hughes",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Puss in Boots",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puss_in_Boots",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Hadestown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hadestown",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Flavor Flav",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flavor_Flav",
+      "knowledge_area": "Music",
+      "labels": []
+    },
+    {
+      "article_name": "Let them eat cake",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Let_them_eat_cake",
+      "knowledge_area": "History",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "Kes (film)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kes_(film)",
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "The Far Side",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Far_Side",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    }
   ]
 }
