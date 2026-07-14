@@ -1,9 +1,9 @@
 {
   "1trilliongecs": {
     "Britslop and Gaelicslop": {
-      "attempts": 62,
+      "attempts": 63,
       "score": 38.5,
-      "proportion": 0.621
+      "proportion": 0.6111
     },
     "Boat Names": {
       "attempts": 9,
@@ -11,9 +11,9 @@
       "proportion": 0.4444
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 27,
-      "score": 16.5,
-      "proportion": 0.6111
+      "attempts": 29,
+      "score": 17.5,
+      "proportion": 0.6034
     }
   },
   "_positron": {
