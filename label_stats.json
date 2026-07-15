@@ -74,14 +74,14 @@
       "proportion": 0.625
     },
     "Britslop and Gaelicslop": {
-      "attempts": 115,
-      "score": 69.5,
-      "proportion": 0.6043
+      "attempts": 116,
+      "score": 70.5,
+      "proportion": 0.6078
     },
     "Boat Names": {
-      "attempts": 11,
-      "score": 7.0,
-      "proportion": 0.6364
+      "attempts": 12,
+      "score": 8.0,
+      "proportion": 0.6667
     }
   },
   "hemlor": {
@@ -108,14 +108,14 @@
       "proportion": 0.3542
     },
     "Britslop and Gaelicslop": {
-      "attempts": 115,
+      "attempts": 116,
       "score": 34.5,
-      "proportion": 0.3
+      "proportion": 0.2974
     },
     "Boat Names": {
-      "attempts": 11,
-      "score": 4.0,
-      "proportion": 0.3636
+      "attempts": 12,
+      "score": 5.0,
+      "proportion": 0.4167
     }
   },
   "mezaros": {
