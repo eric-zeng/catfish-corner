@@ -1,14 +1,14 @@
 {
   "1trilliongecs": {
     "Britslop and Gaelicslop": {
-      "attempts": 63,
-      "score": 38.5,
-      "proportion": 0.6111
+      "attempts": 64,
+      "score": 39.5,
+      "proportion": 0.6172
     },
     "Boat Names": {
-      "attempts": 9,
-      "score": 4.0,
-      "proportion": 0.4444
+      "attempts": 10,
+      "score": 5.0,
+      "proportion": 0.5
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 29,
@@ -86,9 +86,9 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 107,
-      "score": 50.5,
-      "proportion": 0.472
+      "attempts": 108,
+      "score": 51.5,
+      "proportion": 0.4769
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 44,
@@ -96,9 +96,9 @@
       "proportion": 0.5909
     },
     "Boat Names": {
-      "attempts": 11,
-      "score": 6.5,
-      "proportion": 0.5909
+      "attempts": 12,
+      "score": 7.5,
+      "proportion": 0.625
     }
   },
   "le_roi": {

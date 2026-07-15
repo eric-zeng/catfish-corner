@@ -5475,5 +5475,71 @@
       "knowledge_area": "Mythology & Religion",
       "labels": []
     }
+  ],
+  "752": [
+    {
+      "article_name": "Thistle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thistle",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Black Mesa Research Facility",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Mesa_Research_Facility",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Appeasement",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Appeasement",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Clever Hans",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clever_Hans",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Sextant",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sextant",
+      "knowledge_area": "Technology and Engineering",
+      "labels": [
+        "Boat Names"
+      ]
+    },
+    {
+      "article_name": "C-SPAN",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/C-SPAN",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Gaza City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaza_City",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "What Is It Like to Be a Bat?",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/What_Is_It_Like_to_Be_a_Bat%3F",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Alexander Grothendieck",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_Grothendieck",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Black Lives Matter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Lives_Matter",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    }
   ]
 }
