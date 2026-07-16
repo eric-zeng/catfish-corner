@@ -1,9 +1,9 @@
 {
   "1trilliongecs": {
     "Britslop and Gaelicslop": {
-      "attempts": 64,
+      "attempts": 65,
       "score": 39.5,
-      "proportion": 0.6172
+      "proportion": 0.6077
     },
     "Boat Names": {
       "attempts": 10,
@@ -108,9 +108,9 @@
       "proportion": 0.3542
     },
     "Britslop and Gaelicslop": {
-      "attempts": 116,
+      "attempts": 117,
       "score": 34.5,
-      "proportion": 0.2974
+      "proportion": 0.2949
     },
     "Boat Names": {
       "attempts": 12,
