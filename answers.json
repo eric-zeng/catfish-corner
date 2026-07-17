@@ -5605,5 +5605,75 @@
       "knowledge_area": "Film & TV",
       "labels": []
     }
+  ],
+  "754": [
+    {
+      "article_name": "Gulliver's Travels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gulliver's_Travels",
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Cicero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cicero",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Quotations from Chairman Mao Tse-tung",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quotations_from_Chairman_Mao_Tse-tung",
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": []
+    },
+    {
+      "article_name": "The Pentagon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Pentagon",
+      "knowledge_area": "Architecture",
+      "labels": []
+    },
+    {
+      "article_name": "Battle of Thermopylae",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
+      "knowledge_area": "History",
+      "labels": []
+    },
+    {
+      "article_name": "Barney Fife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barney_Fife",
+      "knowledge_area": "Film & TV",
+      "labels": []
+    },
+    {
+      "article_name": "Pillars of Creation",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pillars_of_Creation",
+      "knowledge_area": "Science and Nature",
+      "labels": []
+    },
+    {
+      "article_name": "Azulejo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Azulejo",
+      "knowledge_area": "Visual Art",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
+    },
+    {
+      "article_name": "William Hogarth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_Hogarth",
+      "knowledge_area": "Visual Art",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
+    },
+    {
+      "article_name": "Paris Commune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Commune",
+      "knowledge_area": "History",
+      "labels": []
+    }
   ]
 }
