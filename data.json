@@ -5301,6 +5301,15 @@
     "guesses": "[1,1,1,1,1,1,1,0,0,1]"
   },
   {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-07-18T00:53:33.690Z",
+    "day_number": 754,
+    "score": 4.5,
+    "total": 10,
+    "guesses": "[0,0,1,1,1,0,0.5,0,0,1]"
+  },
+  {
     "username": "cagetron8000",
     "user_id": "772211264285835264",
     "date": "2026-07-17T16:09:41.233Z",
@@ -5308,6 +5317,15 @@
     "score": 3.0,
     "total": 10,
     "guesses": "[1,0,1,1,0,0,0,0,0,0]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-07-18T17:11:41.964Z",
+    "day_number": 754,
+    "score": 5.0,
+    "total": 10,
+    "guesses": "[1,0,1,1,1,0,0,0,0,1]"
   },
   {
     "username": "ghuggles",
@@ -5335,5 +5353,59 @@
     "score": 3.0,
     "total": 10,
     "guesses": "[1,1,0,0,0,1,0,0,0,0]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-07-18T17:56:07.337Z",
+    "day_number": 755,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[0,1,0,1,0,1,0,1,1,1]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-07-18T16:10:58.569Z",
+    "day_number": 755,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,1,0,0,1,0,1]"
+  },
+  {
+    "username": "cagetron8000",
+    "user_id": "772211264285835264",
+    "date": "2026-07-18T16:11:27.447Z",
+    "day_number": 755,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,1,0,0,1,0,1]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-07-18T17:09:03.902Z",
+    "day_number": 755,
+    "score": 5.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,0,0,0,1,0,1]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-07-18T17:12:07.302Z",
+    "day_number": 755,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,1,0,1,0,0,1]"
+  },
+  {
+    "username": "le_roi",
+    "user_id": "144369473732739072",
+    "date": "2026-07-18T08:47:31.919Z",
+    "day_number": 755,
+    "score": 3.0,
+    "total": 10,
+    "guesses": "[1,1,0,0,0,0,0,0,0,1]"
   }
 ]
