@@ -289,14 +289,14 @@
   },
   "ghuggles": {
     "Mythology & Religion": {
-      "attempts": 44,
-      "score": 30.0,
-      "proportion": 0.6818
+      "attempts": 45,
+      "score": 31.0,
+      "proportion": 0.6889
     },
     "Literature & Fiction": {
-      "attempts": 112,
-      "score": 64.0,
-      "proportion": 0.5714
+      "attempts": 114,
+      "score": 66.0,
+      "proportion": 0.5789
     },
     "Film & TV": {
       "attempts": 99,
@@ -324,19 +324,19 @@
       "proportion": 0.7037
     },
     "Science and Nature": {
-      "attempts": 90,
-      "score": 46.0,
-      "proportion": 0.5111
+      "attempts": 93,
+      "score": 48.0,
+      "proportion": 0.5161
     },
     "Music": {
-      "attempts": 88,
-      "score": 58.0,
-      "proportion": 0.6591
+      "attempts": 90,
+      "score": 59.0,
+      "proportion": 0.6556
     },
     "Politics and Contemporary History": {
-      "attempts": 81,
-      "score": 36.0,
-      "proportion": 0.4444
+      "attempts": 82,
+      "score": 37.0,
+      "proportion": 0.4512
     },
     "Sports": {
       "attempts": 33,
@@ -349,9 +349,9 @@
       "proportion": 0.8767
     },
     "Visual Art": {
-      "attempts": 28,
+      "attempts": 29,
       "score": 14.0,
-      "proportion": 0.5
+      "proportion": 0.4828
     },
     "Architecture": {
       "attempts": 23,
