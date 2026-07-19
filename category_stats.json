@@ -361,24 +361,24 @@
   },
   "hemlor": {
     "Literature & Fiction": {
-      "attempts": 105,
-      "score": 58.5,
-      "proportion": 0.5571
+      "attempts": 107,
+      "score": 60.5,
+      "proportion": 0.5654
     },
     "Science and Nature": {
-      "attempts": 89,
-      "score": 39.0,
-      "proportion": 0.4382
+      "attempts": 92,
+      "score": 41.0,
+      "proportion": 0.4457
     },
     "Music": {
-      "attempts": 81,
-      "score": 41.0,
-      "proportion": 0.5062
+      "attempts": 83,
+      "score": 42.0,
+      "proportion": 0.506
     },
     "Politics and Contemporary History": {
-      "attempts": 77,
+      "attempts": 78,
       "score": 33.5,
-      "proportion": 0.4351
+      "proportion": 0.4295
     },
     "Technology and Engineering": {
       "attempts": 52,
@@ -406,9 +406,9 @@
       "proportion": 0.6
     },
     "Mythology & Religion": {
-      "attempts": 42,
-      "score": 34.0,
-      "proportion": 0.8095
+      "attempts": 43,
+      "score": 35.0,
+      "proportion": 0.814
     },
     "Geography & Places": {
       "attempts": 66,
@@ -421,9 +421,9 @@
       "proportion": 0.8929
     },
     "Visual Art": {
-      "attempts": 28,
+      "attempts": 29,
       "score": 11.0,
-      "proportion": 0.3929
+      "proportion": 0.3793
     },
     "Architecture": {
       "attempts": 19,

@@ -86,19 +86,19 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 115,
-      "score": 54.5,
-      "proportion": 0.4739
+      "attempts": 118,
+      "score": 56.5,
+      "proportion": 0.4788
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 50,
-      "score": 29.0,
-      "proportion": 0.58
+      "attempts": 51,
+      "score": 30.0,
+      "proportion": 0.5882
     },
     "Boat Names": {
-      "attempts": 12,
+      "attempts": 13,
       "score": 7.5,
-      "proportion": 0.625
+      "proportion": 0.5769
     }
   },
   "le_roi": {
