@@ -5819,5 +5819,67 @@
       "knowledge_area": "Science and Nature",
       "labels": []
     }
+  ],
+  "757": [
+    {
+      "article_name": "Petronas Towers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Filet-O-Fish",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Filet-O-Fish",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Talented Mr. Ripley (film)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Talented_Mr._Ripley_(film)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jumping the shark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jumping_the_shark",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Greaser (subculture)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greaser_(subculture)",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "Mediterranean Sea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mediterranean_Sea",
+      "knowledge_area": "Geography & Places",
+      "labels": []
+    },
+    {
+      "article_name": "Canvas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canvas",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    },
+    {
+      "article_name": "Robert Capa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Capa",
+      "knowledge_area": "Visual Art",
+      "labels": []
+    },
+    {
+      "article_name": "Sailor Moon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sailor_Moon",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    },
+    {
+      "article_name": "6-7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/6-7",
+      "knowledge_area": "Pop Culture",
+      "labels": []
+    }
   ]
 }
