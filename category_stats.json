@@ -160,9 +160,9 @@
       "proportion": 0.5444
     },
     "Visual Art": {
-      "attempts": 11,
-      "score": 5.0,
-      "proportion": 0.4545
+      "attempts": 13,
+      "score": 6.0,
+      "proportion": 0.4615
     },
     "Literature & Fiction": {
       "attempts": 44,
@@ -190,9 +190,9 @@
       "proportion": 0.4516
     },
     "Pop Culture": {
-      "attempts": 20,
-      "score": 13.5,
-      "proportion": 0.675
+      "attempts": 23,
+      "score": 15.5,
+      "proportion": 0.6739
     },
     "Politics and Contemporary History": {
       "attempts": 35,
@@ -210,9 +210,9 @@
       "proportion": 0.4231
     },
     "Geography & Places": {
-      "attempts": 24,
-      "score": 11.0,
-      "proportion": 0.4583
+      "attempts": 25,
+      "score": 12.0,
+      "proportion": 0.48
     }
   },
   "croton140": {
