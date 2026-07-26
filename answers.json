@@ -6129,5 +6129,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "762": [
+    {
+      "article_name": "Andorra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Andorra",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Friend of Dorothy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Friend_of_Dorothy",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Second Life",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Life",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Theranos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theranos",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Hands Across America",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hands_Across_America",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Scopes trial",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scopes_trial",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Konrad Adenauer",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Konrad_Adenauer",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Black Jacobins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Black_Jacobins",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Back in the U.S.S.R.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Back_in_the_U.S.S.R.",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Vogon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vogon",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
