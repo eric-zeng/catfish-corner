@@ -6191,5 +6191,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "763": [
+    {
+      "article_name": "Chet Baker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chet_Baker",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Aoraki / Mount Cook",
+      "wikipedia_url": "",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Shell shock",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shell_shock",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Paul Celan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paul_Celan",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "James Webb Space Telescope",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mecca",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mecca",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Kardashev scale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kardashev_scale",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Ivan the Terrible",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Maastricht Treaty",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Treaty",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Tsar Bomba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tsar_Bomba",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
