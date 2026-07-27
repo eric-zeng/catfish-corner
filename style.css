@@ -249,6 +249,20 @@ h2 {
   position: relative;
 }
 
+.side-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+}
+
+.side-chart {
+  flex: 1 1 380px;
+}
+
+.side-chart .chart-wrap {
+  margin-bottom: 0;
+}
+
 /* ── Modal ───────────────────────────────────── */
 
 .modal-overlay {

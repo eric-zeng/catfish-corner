@@ -664,6 +664,172 @@
       );
     }
 
+    // ── AnswerTopicsChart ─────────────────────────────────────────────────────
+
+    function AnswerTopicsChart() {
+      const { canvasRef, setChart } = useChart();
+      const [counts, setCounts] = React.useState(null);
+
+      React.useEffect(() => {
+        loadJSON('answers.json').then(answers => {
+          const tally = {};
+          Object.values(answers).forEach(dayAnswers => {
+            dayAnswers.forEach(ans => {
+              const area = ans.knowledge_area;
+              if (!area) return;
+              tally[area] = (tally[area] || 0) + 1;
+            });
+          });
+          setCounts(Object.entries(tally).sort((a, b) => b[1] - a[1]));
+        });
+      }, []);
+
+      React.useEffect(() => {
+        if (!counts) return;
+        const total  = counts.reduce((s, [, c]) => s + c, 0);
+        const labels = counts.map(([area]) => area);
+        const values = counts.map(([, c]) => c);
+
+        setChart({
+          type: 'bar',
+          data: {
+            labels,
+            datasets: [{
+              data:            values,
+              backgroundColor: '#d4621a',
+              borderColor:     '#d4621a',
+              borderWidth:     1,
+              borderRadius:    4,
+            }],
+          },
+          options: {
+            indexAxis: 'y',
+            responsive:          true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: ctx => ` ${ctx.parsed.x} answer${ctx.parsed.x !== 1 ? 's' : ''} (${Math.round(ctx.parsed.x / total * 100)}%)`,
+                },
+              },
+              datalabels: {
+                anchor:    'end',
+                align:     'end',
+                formatter: v => v,
+                font:      { size: 11, family: "'Comic Sans MS', 'Chalkboard SE', 'Comic Neue'" },
+                color:     '#7a4a1e',
+              },
+            },
+            scales: {
+              x: {
+                beginAtZero: true,
+                title: { display: true, text: 'number of answers' },
+                grid:  { color: '#f5cfa0' },
+              },
+              y: { grid: { display: false } },
+            },
+            layout: { padding: { right: 36 } },
+          },
+        });
+      }, [counts]);
+
+      if (!counts) return null;
+
+      return (
+        <div className="chart-wrap">
+          <div className="chart-inner" style={{ height: `${counts.length * 32 + 40}px` }}>
+            <canvas ref={canvasRef}></canvas>
+          </div>
+        </div>
+      );
+    }
+
+    // ── CategoryDifficultyChart ───────────────────────────────────────────────
+
+    function CategoryDifficultyChart() {
+      const { canvasRef, setChart } = useChart();
+      const [rows, setRows] = React.useState(null);
+
+      React.useEffect(() => {
+        loadJSON('category_stats.json').then(catStats => {
+          const totals = {};
+          Object.values(catStats).forEach(userCats => {
+            Object.entries(userCats).forEach(([cat, { attempts, score }]) => {
+              const t = totals[cat] || (totals[cat] = { attempts: 0, score: 0 });
+              t.attempts += attempts;
+              t.score    += score;
+            });
+          });
+          const entries = Object.entries(totals)
+            .map(([cat, { attempts, score }]) => ({ cat, attempts, score, proportion: score / attempts }))
+            .sort((a, b) => a.proportion - b.proportion);
+          setRows(entries);
+        });
+      }, []);
+
+      React.useEffect(() => {
+        if (!rows) return;
+        const labels = rows.map(r => r.cat);
+        const values = rows.map(r => r.proportion);
+
+        setChart({
+          type: 'bar',
+          data: {
+            labels,
+            datasets: [{
+              data:            values,
+              backgroundColor: '#d4621a',
+              borderColor:     '#d4621a',
+              borderWidth:     1,
+              borderRadius:    4,
+            }],
+          },
+          options: {
+            indexAxis: 'y',
+            responsive:          true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: ctx => ` ${fmtStat(rows[ctx.dataIndex].score)} / ${rows[ctx.dataIndex].attempts} answers`,
+                },
+              },
+              datalabels: {
+                anchor:    'end',
+                align:     'end',
+                formatter: v => Math.round(v * 100) + '%',
+                font:      { size: 11, family: "'Comic Sans MS', 'Chalkboard SE', 'Comic Neue'" },
+                color:     '#7a4a1e',
+              },
+            },
+            scales: {
+              x: {
+                min: 0,
+                max: 1,
+                ticks: { callback: v => Math.round(v * 100) + '%', maxTicksLimit: 5 },
+                title: { display: true, text: 'average accuracy (all players)' },
+                grid:  { color: '#f5cfa0' },
+              },
+              y: { grid: { display: false } },
+            },
+            layout: { padding: { right: 36 } },
+          },
+        });
+      }, [rows]);
+
+      if (!rows) return null;
+
+      return (
+        <div className="chart-wrap">
+          <div className="chart-inner" style={{ height: `${rows.length * 32 + 40}px` }}>
+            <canvas ref={canvasRef}></canvas>
+          </div>
+        </div>
+      );
+    }
+
     // ── ScoreHistogram ────────────────────────────────────────────────────────
 
     function ScoreHistogram() {
@@ -815,10 +981,20 @@
           <MoggingTable onSelectDay={setSelectedDay} />
           <h2>7-day rolling average leaderboard</h2>
           <RollingAverageChart />
-          <h2>score distribution</h2>
+          <h2>score distribution by player</h2>
           <ScoreHistogram />
-          <h2>performance by category</h2>
+          <h2>player performance by area of knowledge</h2>
           <PerformanceCharts />
+          <div className="side-charts">
+            <div className="side-chart">
+              <h2>number of answers by area of knowledge</h2>
+              <AnswerTopicsChart />
+            </div>
+            <div className="side-chart">
+              <h2>difficulty by area of knowledge</h2>
+              <CategoryDifficultyChart />
+            </div>
+          </div>
         </>
       );
     }
