@@ -809,7 +809,7 @@
                 min: 0,
                 max: 1,
                 ticks: { callback: v => Math.round(v * 100) + '%', maxTicksLimit: 5 },
-                title: { display: true, text: 'overall accuracy' },
+                title: { display: true, text: 'average accuracy (all players)' },
                 grid:  { color: '#f5cfa0' },
               },
               y: { grid: { display: false } },
@@ -981,14 +981,20 @@
           <MoggingTable onSelectDay={setSelectedDay} />
           <h2>7-day rolling average leaderboard</h2>
           <RollingAverageChart />
-          <h2>score distribution</h2>
+          <h2>score distribution by player</h2>
           <ScoreHistogram />
-          <h2>performance by category</h2>
+          <h2>player performance by area of knowledge</h2>
           <PerformanceCharts />
-          <h2>answer topics</h2>
-          <AnswerTopicsChart />
-          <h2>category difficulty</h2>
-          <CategoryDifficultyChart />
+          <div className="side-charts">
+            <div className="side-chart">
+              <h2>number of answers by area of knowledge</h2>
+              <AnswerTopicsChart />
+            </div>
+            <div className="side-chart">
+              <h2>difficulty by area of knowledge</h2>
+              <CategoryDifficultyChart />
+            </div>
+          </div>
         </>
       );
     }
