@@ -6315,5 +6315,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "765": [
+    {
+      "article_name": "Steve Biko",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Steve_Biko",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Agent 47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Agent_47",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Oasis (band)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oasis_(band)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Alice's Adventures in Wonderland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alice's_Adventures_in_Wonderland",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "NIMBY",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/NIMBY",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Sylvia Plath",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sylvia_Plath",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Perfect Storm (film)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Perfect_Storm_(film)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Yevgeny Prigozhin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yevgeny_Prigozhin",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Military\u2013industrial complex",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Military%E2%80%93industrial_complex",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Daguerreotype",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daguerreotype",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
