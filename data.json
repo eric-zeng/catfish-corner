@@ -6109,5 +6109,32 @@
     "score": 9.0,
     "total": 10,
     "guesses": "[1,1,0,1,1,1,1,1,1,1]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-07-30T15:58:36.668Z",
+    "day_number": 767,
+    "score": 8.0,
+    "total": 10,
+    "guesses": "[1,0,1,1,1,0,1,1,1,1]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-07-30T16:58:16.150Z",
+    "day_number": 767,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,0,1,1,0,1,0,0,1,1]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-07-30T14:27:22.764Z",
+    "day_number": 767,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,0,1,0,1,1,0,0,1,1]"
   }
 ]

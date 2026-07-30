@@ -6439,5 +6439,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "767": [
+    {
+      "article_name": "Rashomon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rashomon",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Laffer curve",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laffer_curve",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Spinal Tap (band)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spinal_Tap_(band)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Ecosia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ecosia",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "September (song)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/September_(song)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Guam",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guam",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Cavern Club",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Cavern_Club",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Pens\u00e9es",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Caesars Palace",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caesars_Palace",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Stanford University",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stanford_University",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
