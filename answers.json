@@ -6501,5 +6501,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "768": [
+    {
+      "article_name": "Canel\u00e9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Canel%C3%A9",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jabberwocky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jabberwocky",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Walkman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Walkman",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Percival Lowell",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Percival_Lowell",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Imperial boomerang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imperial_boomerang",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Neuromancer",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Neuromancer",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Flappy Bird",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flappy_Bird",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Wimbledon Championships",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Last Temptation of Christ (film)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Temptation_of_Christ_(film)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Ludovico Einaudi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
