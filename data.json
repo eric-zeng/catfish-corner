@@ -6316,5 +6316,23 @@
     "score": 3.0,
     "total": 10,
     "guesses": "[1,1,0,0,0,0,0,0,1,0]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-08-04T14:01:49.950Z",
+    "day_number": 772,
+    "score": 8.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,1,0,1,1,0,1]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-04T17:14:44.061Z",
+    "day_number": 772,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,0,0,1,1,0,1]"
   }
 ]
