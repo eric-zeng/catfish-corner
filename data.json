@@ -6397,5 +6397,41 @@
     "score": 5.0,
     "total": 10,
     "guesses": "[0,1,0,0,1,1,0,0,1,1]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-08-06T14:22:46.838Z",
+    "day_number": 774,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,0,1,1,1,0,0,1]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-08-06T14:55:15.526Z",
+    "day_number": 774,
+    "score": 8.0,
+    "total": 10,
+    "guesses": "[0,1,1,1,1,1,1,1,0,1]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-06T17:14:10.183Z",
+    "day_number": 774,
+    "score": 8.0,
+    "total": 10,
+    "guesses": "[0,1,1,1,1,1,1,0,1,1]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-08-06T18:44:21.806Z",
+    "day_number": 774,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[0,1,0,1,1,1,0,0,1,1]"
   }
 ]
