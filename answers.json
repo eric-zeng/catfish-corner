@@ -6997,5 +6997,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "776": [
+    {
+      "article_name": "Asteroid City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Asteroid_City",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Heart of Darkness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heart_of_Darkness",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "This Is Your Brain on Drugs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/This_Is_Your_Brain_on_Drugs",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Looper (film)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Looper_(film)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Nico",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nico",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Zara Larsson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zara_Larsson",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mustang",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mustang",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Philip Larkin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_Larkin",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mad as a hatter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mad_as_a_hatter",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Krishna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Krishna",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
