@@ -6523,5 +6523,32 @@
     "score": 8.0,
     "total": 10,
     "guesses": "[1,1,1,1,1,0,1,0,1,1]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-09T18:36:53.437Z",
+    "day_number": 777,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,0,0,0,1,1,1,1]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-08-09T19:54:35.320Z",
+    "day_number": 777,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,0,1,0,0,1,1,0,1,1]"
+  },
+  {
+    "username": "optic_chiasm",
+    "user_id": "653328279020896297",
+    "date": "2026-08-09T17:14:11.712Z",
+    "day_number": 777,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,0,1,0,0,0,1,1,1,1]"
   }
 ]
