@@ -7679,5 +7679,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "787": [
+    {
+      "article_name": "Afrikaans",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afrikaans",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Russian roulette",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_roulette",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jaws (novel)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jaws_(novel)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Caroline Herschel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caroline_Herschel",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Blade Runner",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blade_Runner",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Time Warp (song)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Time_Warp_(song)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Huginn and Muninn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huginn_and_Muninn",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Anne Hathaway (wife of Shakespeare)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anne_Hathaway_(wife_of_Shakespeare)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Girl with the Dragon Tattoo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Girl_with_the_Dragon_Tattoo",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Quebec",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quebec",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
