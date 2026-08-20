@@ -7741,5 +7741,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "788": [
+    {
+      "article_name": "CFA franc",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CFA_franc",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Dreams from My Father",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dreams_from_My_Father",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Pugwash Conferences on Science and World Affairs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pugwash_Conferences_on_Science_and_World_Affairs",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Fragging",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fragging",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Reddit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reddit",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Gollum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gollum",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Charles Ponzi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Ponzi",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Ecce homo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ecce_homo",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Pillars of Hercules",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pillars_of_Hercules",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Ice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ice",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
