@@ -1,9 +1,9 @@
 {
   "1trilliongecs": {
     "Britslop and Gaelicslop": {
-      "attempts": 74,
-      "score": 45.5,
-      "proportion": 0.6149
+      "attempts": 118,
+      "score": 72.5,
+      "proportion": 0.6144
     },
     "Boat Names": {
       "attempts": 11,
@@ -11,21 +11,21 @@
       "proportion": 0.5455
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 36,
-      "score": 19.5,
-      "proportion": 0.5417
+      "attempts": 51,
+      "score": 28.5,
+      "proportion": 0.5588
     }
   },
   "_positron": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 49,
+      "attempts": 54,
       "score": 14.5,
-      "proportion": 0.2959
+      "proportion": 0.2685
     },
     "Britslop and Gaelicslop": {
-      "attempts": 110,
-      "score": 37.5,
-      "proportion": 0.3409
+      "attempts": 127,
+      "score": 43.5,
+      "proportion": 0.3425
     },
     "Boat Names": {
       "attempts": 12,
@@ -35,14 +35,14 @@
   },
   "cagetron8000": {
     "Britslop and Gaelicslop": {
-      "attempts": 53,
-      "score": 20.0,
-      "proportion": 0.3774
+      "attempts": 69,
+      "score": 27.0,
+      "proportion": 0.3913
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 22,
-      "score": 10.0,
-      "proportion": 0.4545
+      "attempts": 28,
+      "score": 11.0,
+      "proportion": 0.3929
     },
     "Boat Names": {
       "attempts": 6,
@@ -52,14 +52,14 @@
   },
   "croton140": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 55,
-      "score": 24.0,
-      "proportion": 0.4364
+      "attempts": 67,
+      "score": 28.0,
+      "proportion": 0.4179
     },
     "Britslop and Gaelicslop": {
-      "attempts": 126,
-      "score": 58.0,
-      "proportion": 0.4603
+      "attempts": 166,
+      "score": 78.0,
+      "proportion": 0.4699
     },
     "Boat Names": {
       "attempts": 13,
@@ -69,14 +69,14 @@
   },
   "ghuggles": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 55,
-      "score": 36.0,
-      "proportion": 0.6545
+      "attempts": 70,
+      "score": 44.0,
+      "proportion": 0.6286
     },
     "Britslop and Gaelicslop": {
-      "attempts": 126,
-      "score": 75.5,
-      "proportion": 0.5992
+      "attempts": 170,
+      "score": 100.5,
+      "proportion": 0.5912
     },
     "Boat Names": {
       "attempts": 13,
@@ -86,14 +86,14 @@
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 118,
-      "score": 56.5,
-      "proportion": 0.4788
+      "attempts": 162,
+      "score": 82.5,
+      "proportion": 0.5093
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 51,
-      "score": 30.0,
-      "proportion": 0.5882
+      "attempts": 66,
+      "score": 38.0,
+      "proportion": 0.5758
     },
     "Boat Names": {
       "attempts": 13,
@@ -103,14 +103,14 @@
   },
   "le_roi": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 55,
-      "score": 19.0,
-      "proportion": 0.3455
+      "attempts": 58,
+      "score": 20.0,
+      "proportion": 0.3448
     },
     "Britslop and Gaelicslop": {
-      "attempts": 126,
-      "score": 37.5,
-      "proportion": 0.2976
+      "attempts": 138,
+      "score": 40.0,
+      "proportion": 0.2899
     },
     "Boat Names": {
       "attempts": 13,
@@ -137,14 +137,14 @@
   },
   "optic_chiasm": {
     "Medieval / Renaissance / Enlightenment Bullshit": {
-      "attempts": 45,
-      "score": 22.5,
-      "proportion": 0.5
+      "attempts": 55,
+      "score": 29.5,
+      "proportion": 0.5364
     },
     "Britslop and Gaelicslop": {
-      "attempts": 91,
-      "score": 42.5,
-      "proportion": 0.467
+      "attempts": 121,
+      "score": 58.0,
+      "proportion": 0.4793
     },
     "Boat Names": {
       "attempts": 9,

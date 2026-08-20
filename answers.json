@@ -5824,25 +5824,25 @@
     {
       "article_name": "Petronas Towers",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
-      "knowledge_area": "",
+      "knowledge_area": "Architecture",
       "labels": []
     },
     {
       "article_name": "Filet-O-Fish",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Filet-O-Fish",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "The Talented Mr. Ripley (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Talented_Mr._Ripley_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Jumping the shark",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jumping_the_shark",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
@@ -5886,61 +5886,67 @@
     {
       "article_name": "Musica universalis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Musica_universalis",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "Mario Draghi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mario_Draghi",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Rachel Carson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rachel_Carson",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Moomins",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Moomins",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Charge of the Light Brigade",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charge_of_the_Light_Brigade",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Will Smith",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Will_Smith",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Take My Breath Away",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Take_My_Breath_Away",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Bushido",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bushido",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "The Picture of Dorian Gray",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Triage",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Triage",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     }
   ],
@@ -5948,185 +5954,196 @@
     {
       "article_name": "I know it when I see it",
       "wikipedia_url": "https://en.wikipedia.org/wiki/I_know_it_when_I_see_it",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Alberto Giacometti",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alberto_Giacometti",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     },
     {
       "article_name": "Pumpkin pie",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pumpkin_pie",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Prester John",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Prester_John",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Mythology & Religion",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "James Earl Ray",
       "wikipedia_url": "https://en.wikipedia.org/wiki/James_Earl_Ray",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Sea urchin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sea_urchin",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Oliver!",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Oliver!",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Carabao",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Carabao",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Kevin Mitnick",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kevin_Mitnick",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Lancelot",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lancelot",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Mythology & Religion",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     }
   ],
   "760": [
     {
       "article_name": "Seven Pillars of Wisdom",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Pillars_of_Wisdom",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Toto (Oz)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Toto_(Oz)",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Popemobile",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Popemobile",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "The Martian (Weir novel)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Martian_(Weir_novel)",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "James T. Kirk",
       "wikipedia_url": "https://en.wikipedia.org/wiki/James_T._Kirk",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Attention deficit hyperactivity disorder",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Carrom",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Carrom",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Carmen Miranda",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_Miranda",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Mad Men",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mad_Men",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Every Breath You Take",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Every_Breath_You_Take",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     }
   ],
   "761": [
     {
       "article_name": "Napalm",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Napalm",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Teenage Dirtbag",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Teenage_Dirtbag",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Onion Futures Act",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Onion_Futures_Act",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Baltimore Orioles",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore_Orioles",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Isis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Isis",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Amazon Kindle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Plato",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Plato",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Outlander (book series)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Outlander_(book_series)",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Murder, Inc.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Murder%2C_Inc.",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Brian Griffin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Brian_Griffin",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     }
   ],
@@ -6134,123 +6151,127 @@
     {
       "article_name": "Andorra",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Andorra",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Friend of Dorothy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Friend_of_Dorothy",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Second Life",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Life",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Theranos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theranos",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Hands Across America",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hands_Across_America",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Scopes trial",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Scopes_trial",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Konrad Adenauer",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Konrad_Adenauer",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "The Black Jacobins",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Black_Jacobins",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Back in the U.S.S.R.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Back_in_the_U.S.S.R.",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Vogon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vogon",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     }
   ],
   "763": [
     {
       "article_name": "Chet Baker",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chet_Baker",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Aoraki / Mount Cook",
       "wikipedia_url": "",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Shell shock",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shell_shock",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Paul Celan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Paul_Celan",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "James Webb Space Telescope",
       "wikipedia_url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Mecca",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mecca",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Kardashev scale",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kardashev_scale",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Ivan the Terrible",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Maastricht Treaty",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Maastricht_Treaty",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Tsar Bomba",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tsar_Bomba",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     }
   ],
@@ -6258,61 +6279,65 @@
     {
       "article_name": "John Bingham, 7th Earl of Lucan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_Bingham%2C_7th_Earl_of_Lucan",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Pop Culture",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Lethe",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lethe",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Boston cream pie",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_cream_pie",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Jazz Age",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jazz_Age",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Fertile Crescent",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fertile_Crescent",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Walter Sickert",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Walter_Sickert",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Visual Art",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Julian Casablancas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_Casablancas",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Naked Lunch (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Naked_Lunch_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Ulaanbaatar",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ulaanbaatar",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Matcha",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Matcha",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     }
   ],
@@ -6320,61 +6345,65 @@
     {
       "article_name": "Steve Biko",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Steve_Biko",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Agent 47",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Agent_47",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Oasis (band)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Oasis_(band)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Alice's Adventures in Wonderland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alice's_Adventures_in_Wonderland",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "NIMBY",
       "wikipedia_url": "https://en.wikipedia.org/wiki/NIMBY",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Sylvia Plath",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sylvia_Plath",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "The Perfect Storm (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Perfect_Storm_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Yevgeny Prigozhin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Yevgeny_Prigozhin",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Military\u2013industrial complex",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Military%E2%80%93industrial_complex",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Daguerreotype",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Daguerreotype",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     }
   ],
@@ -6382,61 +6411,61 @@
     {
       "article_name": "Flight of the Bumblebee",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Flight_of_the_Bumblebee",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Greeble",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Greeble",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Martin Gardner",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_Gardner",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Charlie Hebdo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlie_Hebdo",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Shelob",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shelob",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Flatiron Building",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Flatiron_Building",
-      "knowledge_area": "",
+      "knowledge_area": "Architecture",
       "labels": []
     },
     {
       "article_name": "Cinderella",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cinderella",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Atomic number",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_number",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Jolene",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jolene",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Valhalla",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Valhalla",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     }
   ],
@@ -6444,61 +6473,67 @@
     {
       "article_name": "Rashomon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rashomon",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Laffer curve",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Laffer_curve",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Spinal Tap (band)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Spinal_Tap_(band)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Ecosia",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ecosia",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "September (song)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/September_(song)",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Guam",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guam",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "The Cavern Club",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Cavern_Club",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Pens\u00e9es",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "Caesars Palace",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Caesars_Palace",
-      "knowledge_area": "",
+      "knowledge_area": "Architecture",
       "labels": []
     },
     {
       "article_name": "Stanford University",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stanford_University",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     }
   ],
@@ -6506,61 +6541,65 @@
     {
       "article_name": "Canel\u00e9",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Canel%C3%A9",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Jabberwocky",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jabberwocky",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Walkman",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Walkman",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Percival Lowell",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Percival_Lowell",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Imperial boomerang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Imperial_boomerang",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Neuromancer",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Neuromancer",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Flappy Bird",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Flappy_Bird",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Wimbledon Championships",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wimbledon_Championships",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Sports",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "The Last Temptation of Christ (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Temptation_of_Christ_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Ludovico Einaudi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     }
   ],
@@ -6568,61 +6607,68 @@
     {
       "article_name": "The Master (2012 film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Master_(2012_film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Wu-Tang Clan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Snake Island (Ukraine)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Snake_Island_(Ukraine)",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Johann Sebastian Bach",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "ZX Spectrum",
       "wikipedia_url": "https://en.wikipedia.org/wiki/ZX_Spectrum",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Technology and Engineering",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Lemuria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lemuria",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Black Hundreds",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Hundreds",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Philadelphia Experiment",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_Experiment",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Robin Hood",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Robin_Hood",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Bald eagle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bald_eagle",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     }
   ],
@@ -6630,61 +6676,69 @@
     {
       "article_name": "Copenhagen (horse)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_(horse)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Tom Nook",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tom_Nook",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Greek fire",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Greek_fire",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Dhalgren",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dhalgren",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Baphomet",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baphomet",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Mythology & Religion",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "Seven Years' War",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Years'_War",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Count Binface",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Count_Binface",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Pop Culture",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Salaryman",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Salaryman",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Eureka (word)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eureka_(word)",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "King Gizzard & the Lizard Wizard",
       "wikipedia_url": "https://en.wikipedia.org/wiki/King_Gizzard_%26_the_Lizard_Wizard",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     }
   ],
@@ -6692,61 +6746,63 @@
     {
       "article_name": "Polo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Polo",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Kennedy family",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kennedy_family",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Miranda Priestly",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miranda_Priestly",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Malagasy language",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Malagasy_language",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Vogue (dance)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vogue_(dance)",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Stephenson's Rocket",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stephenson's_Rocket",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Technology and Engineering",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Eileen Gu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eileen_Gu",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Robert McNamara",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_McNamara",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Heartbreak Hotel",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Heartbreak_Hotel",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Herodotus",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Herodotus",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     }
   ],
@@ -6754,61 +6810,63 @@
     {
       "article_name": "Cardiff",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cardiff",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Geography & Places",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Pantheon, Rome",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pantheon%2C_Rome",
-      "knowledge_area": "",
+      "knowledge_area": "Architecture",
       "labels": []
     },
     {
       "article_name": "Madama Butterfly",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Madama_Butterfly",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Redshift",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Redshift",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Cronut",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cronut",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Banjo Paterson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Banjo_Paterson",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Arkham Asylum",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Arkham_Asylum",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Kim Dotcom",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kim_Dotcom",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Daniel Dennett",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_Dennett",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Breakfast at Tiffany's (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Breakfast_at_Tiffany's_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     }
   ],
@@ -6816,61 +6874,71 @@
     {
       "article_name": "MIDI",
       "wikipedia_url": "https://en.wikipedia.org/wiki/MIDI",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Miss Havisham",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Miss_Havisham",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Guglielmo Marconi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Wicked Bible",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wicked_Bible",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Mythology & Religion",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Microsoft Solitaire",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Microsoft_Solitaire",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Robert the Bruce",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_the_Bruce",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Existenz",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Existenz",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Payola",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Payola",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Francisco Goya",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Goya",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Visual Art",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "Rose Bowl Game",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rose_Bowl_Game",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     }
   ],
@@ -6878,61 +6946,61 @@
     {
       "article_name": "Lethal Weapon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lethal_Weapon",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Ronald Reagan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ronald_Reagan",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Riot grrrl",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Riot_grrrl",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Zyn",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zyn",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Michael Phelps",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_Phelps",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Professor Farnsworth",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Professor_Farnsworth",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Siddhartha (novel)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siddhartha_(novel)",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Marie Colvin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Marie_Colvin",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Fabiano Caruana",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fabiano_Caruana",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Anna Karenina",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Anna_Karenina",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     }
   ],
@@ -6940,61 +7008,64 @@
     {
       "article_name": "James Cook",
       "wikipedia_url": "https://en.wikipedia.org/wiki/James_Cook",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Porcelain",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Porcelain",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Three Colours trilogy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Colours_trilogy",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Dubai chocolate",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dubai_chocolate",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Water",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Water",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "The Martians (scientists)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Martians_(scientists)",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Advanced Placement",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Advanced_Placement",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Gaia hypothesis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gaia_hypothesis",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Diamond",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Diamond",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Mystery Science Theater 3000",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mystery_Science_Theater_3000",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     }
   ],
@@ -7002,61 +7073,65 @@
     {
       "article_name": "Asteroid City",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Asteroid_City",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Heart of Darkness",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Heart_of_Darkness",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "This Is Your Brain on Drugs",
       "wikipedia_url": "https://en.wikipedia.org/wiki/This_Is_Your_Brain_on_Drugs",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Looper (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Looper_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Nico",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nico",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Zara Larsson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zara_Larsson",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Mustang",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mustang",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Philip Larkin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_Larkin",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Mad as a hatter",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mad_as_a_hatter",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Pop Culture",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Krishna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Krishna",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     }
   ],
@@ -7064,61 +7139,67 @@
     {
       "article_name": "Agatha Christie",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Agatha_Christie",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Rongorongo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rongorongo",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Mai Tai",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mai_Tai",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "The KLF",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_KLF",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "ASAP Rocky",
       "wikipedia_url": "https://en.wikipedia.org/wiki/ASAP_Rocky",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Gallipoli (1981 film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gallipoli_(1981_film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Sputnik 1",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sputnik_1",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Shakers",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Shakers",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Mythology & Religion",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Ball boy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ball_boy",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Lasagna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lasagna",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     }
   ],
@@ -7126,61 +7207,61 @@
     {
       "article_name": "Buy Nothing Day",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Buy_Nothing_Day",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Stephen Curry",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stephen_Curry",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Nutella",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nutella",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Wiz Khalifa",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wiz_Khalifa",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Hugo Boss (businessman)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hugo_Boss_(businessman)",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "John the Apostle",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_the_Apostle",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Ford Crown Victoria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ford_Crown_Victoria",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Ted Bundy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ted_Bundy",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Four Horsemen of the Apocalypse",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Horsemen_of_the_Apocalypse",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Tumblr",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tumblr",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     }
   ],
@@ -7188,61 +7269,61 @@
     {
       "article_name": "French Foreign Legion",
       "wikipedia_url": "",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Library of Congress",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Library_of_Congress",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Dal",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dal",
-      "knowledge_area": "",
+      "knowledge_area": "Food & Drink",
       "labels": []
     },
     {
       "article_name": "Will Shortz",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Will_Shortz",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Emily Dickinson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Emily_Dickinson",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Big Brother (Nineteen Eighty-Four)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Big_Brother_(Nineteen_Eighty-Four)",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Cloud cuckoo land",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cloud_cuckoo_land",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Ray Kurzweil",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ray_Kurzweil",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Haka",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Haka",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Narwhal",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Narwhal",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     }
   ],
@@ -7250,61 +7331,63 @@
     {
       "article_name": "I don't know her",
       "wikipedia_url": "https://en.wikipedia.org/wiki/I_don't_know_her",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Year 2000 problem",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Year_2000_problem",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Alps",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alps",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Stanford prison experiment",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Stanford_prison_experiment",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Smelly Cat",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Smelly_Cat",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Ricin",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ricin",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Eleanor Rigby",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eleanor_Rigby",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Cymbal",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cymbal",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Alex Honnold",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alex_Honnold",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "ThinkPad",
       "wikipedia_url": "https://en.wikipedia.org/wiki/ThinkPad",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     }
   ],
@@ -7312,61 +7395,63 @@
     {
       "article_name": "Improvised explosive device",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Improvised_explosive_device",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "NATO",
       "wikipedia_url": "https://en.wikipedia.org/wiki/NATO",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Cigarette Smoking Man",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cigarette_Smoking_Man",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Quipu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Quipu",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Polari",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Polari",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Pop Culture",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Cop Killer (song)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cop_Killer_(song)",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Gorpcore",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gorpcore",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Hayao Miyazaki",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hayao_Miyazaki",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Suez Canal",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Suez_Canal",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Ho Chi Minh",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     }
   ],
@@ -7374,61 +7459,63 @@
     {
       "article_name": "TGV",
       "wikipedia_url": "https://en.wikipedia.org/wiki/TGV",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Northeast Passage",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Northeast_Passage",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Gaborone",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gaborone",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Sisu",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sisu",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Great Barrier Reef",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Wear Sunscreen",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Wear_Sunscreen",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Black Sabbath",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Sabbath",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Bela Lugosi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bela_Lugosi",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Bluey (TV series)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bluey_(TV_series)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Mood ring",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mood_ring",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     }
   ],
@@ -7436,61 +7523,66 @@
     {
       "article_name": "Beowulf (hero)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Beowulf_(hero)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Overwatch",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Overwatch",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Fantastic Four",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fantastic_Four",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Bloody Sunday (1972)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bloody_Sunday_(1972)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Ouija",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ouija",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Chaparral",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Chaparral",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "University of Bologna",
       "wikipedia_url": "https://en.wikipedia.org/wiki/University_of_Bologna",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Walden",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Walden",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Ghost riding",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ghost_riding",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Sufism",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sufism",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     }
   ],
@@ -7498,61 +7590,66 @@
     {
       "article_name": "Candyman (character)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Candyman_(character)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Tammany Hall",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tammany_Hall",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "TSMC",
       "wikipedia_url": "https://en.wikipedia.org/wiki/TSMC",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Asbestos",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Asbestos",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "You're Beautiful",
       "wikipedia_url": "https://en.wikipedia.org/wiki/You're_Beautiful",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Graceland (album)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Graceland_(album)",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Foot binding",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Foot_binding",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "The Kiss (Klimt)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     },
     {
       "article_name": "Prospero",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Prospero",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Code Geass",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Code_Geass",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     }
   ],
@@ -7560,61 +7657,65 @@
     {
       "article_name": "Moya Brennan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Moya_Brennan",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Music",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Charles Atlas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Atlas",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Alfred Hitchcock",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alfred_Hitchcock",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Gross National Happiness",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gross_National_Happiness",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Khartoum",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Khartoum",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Groot",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Groot",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Caucasus Mountains",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Caucasus_Mountains",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Motown",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Motown",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Grigori Perelman",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Grigori_Perelman",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Edgar Degas",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edgar_Degas",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     }
   ],
@@ -7622,61 +7723,65 @@
     {
       "article_name": "Katyn massacre",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Katyn_massacre",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Appalachian Spring",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Appalachian_Spring",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Queen Victoria",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Queen_Victoria",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "LessWrong",
       "wikipedia_url": "https://en.wikipedia.org/wiki/LessWrong",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Uri Geller",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Uri_Geller",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Pop Culture",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Breakdancing",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Breakdancing",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Alfred Dreyfus",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alfred_Dreyfus",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
       "article_name": "Andrea Bocelli",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Andrea_Bocelli",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "The Evil Dead",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Evil_Dead",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Burning Man",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Burning_Man",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     }
   ],
@@ -7684,61 +7789,66 @@
     {
       "article_name": "Afrikaans",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Afrikaans",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "Russian roulette",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_roulette",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Jaws (novel)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jaws_(novel)",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Caroline Herschel",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Caroline_Herschel",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Science and Nature",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "Blade Runner",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Blade_Runner",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Time Warp (song)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Time_Warp_(song)",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Huginn and Muninn",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Huginn_and_Muninn",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Anne Hathaway (wife of Shakespeare)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Anne_Hathaway_(wife_of_Shakespeare)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit",
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "The Girl with the Dragon Tattoo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_Girl_with_the_Dragon_Tattoo",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Quebec",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Quebec",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     }
   ],
@@ -7746,61 +7856,61 @@
     {
       "article_name": "CFA franc",
       "wikipedia_url": "https://en.wikipedia.org/wiki/CFA_franc",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Dreams from My Father",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dreams_from_My_Father",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Pugwash Conferences on Science and World Affairs",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pugwash_Conferences_on_Science_and_World_Affairs",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Fragging",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fragging",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Reddit",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Reddit",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Gollum",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gollum",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
       "article_name": "Charles Ponzi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Ponzi",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Ecce homo",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ecce_homo",
-      "knowledge_area": "",
+      "knowledge_area": "Mythology & Religion",
       "labels": []
     },
     {
       "article_name": "Pillars of Hercules",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pillars_of_Hercules",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Ice",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ice",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     }
   ]
