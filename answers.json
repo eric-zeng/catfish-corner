@@ -8223,5 +8223,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "794": [
+    {
+      "article_name": "Place de la Concorde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Place_de_la_Concorde",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Lend-Lease",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lend-Lease",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "DJ Khaled",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/DJ_Khaled",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Volvo Cars",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Volvo_Cars",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "E-meter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/E-meter",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Tonsure",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tonsure",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Abraham Van Helsing",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abraham_Van_Helsing",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Volodymyr Zelenskyy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "World of Warcraft",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/World_of_Warcraft",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jodhpurs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jodhpurs",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
