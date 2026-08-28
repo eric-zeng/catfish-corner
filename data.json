@@ -7353,6 +7353,24 @@
     "guesses": "[0,1,1,0.5,0,0,0,1,0,0]"
   },
   {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-08-26T17:11:25.797Z",
+    "day_number": 794,
+    "score": 5.5,
+    "total": 10,
+    "guesses": "[0,0,1,1,0,1,1,1,0.5,0]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-26T16:51:31.174Z",
+    "day_number": 794,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[0,1,1,0,0,0,1,1,1,1]"
+  },
+  {
     "username": "hemlor",
     "user_id": "238892724076544002",
     "date": "2026-08-26T08:18:28.875Z",
@@ -7360,5 +7378,77 @@
     "score": 6.0,
     "total": 10,
     "guesses": "[0,1,1,1,0,0,1,1,1,0]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-08-27T10:52:12.965Z",
+    "day_number": 795,
+    "score": 9.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,1,1,1,1,1,0]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-08-27T07:23:36.170Z",
+    "day_number": 795,
+    "score": 4.0,
+    "total": 10,
+    "guesses": "[0,1,0,1,1,1,0,0,0,0]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-27T17:17:50.790Z",
+    "day_number": 795,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,1,1,1,1,0,0]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-08-28T13:32:25.941Z",
+    "day_number": 796,
+    "score": 8.0,
+    "total": 10,
+    "guesses": "[0,1,0,1,1,1,1,1,1,1]"
+  },
+  {
+    "username": "_positron",
+    "user_id": "195391536194650112",
+    "date": "2026-08-28T14:16:54.994Z",
+    "day_number": 796,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,1,0,0,1,0,0]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-08-28T13:39:15.330Z",
+    "day_number": 796,
+    "score": 4.0,
+    "total": 10,
+    "guesses": "[1,1,0,0,1,0,1,0,0,0]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-28T16:51:25.586Z",
+    "day_number": 796,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[0,1,1,0,1,1,1,1,0,1]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-08-28T12:13:45.440Z",
+    "day_number": 796,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,0,1,1,1,0,0]"
   }
 ]
