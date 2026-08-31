@@ -7522,5 +7522,23 @@
     "score": 9.0,
     "total": 10,
     "guesses": "[1,0,1,1,1,1,1,1,1,1]"
+  },
+  {
+    "username": "1trilliongecs",
+    "user_id": "739617437334634616",
+    "date": "2026-08-31T10:56:16.757Z",
+    "day_number": 799,
+    "score": 9.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,1,1,1,1,1,1]"
+  },
+  {
+    "username": "ghuggles",
+    "user_id": "155904795503230977",
+    "date": "2026-08-31T15:55:57.576Z",
+    "day_number": 799,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,1,0,1,1,0,0,1,0,1]"
   }
 ]
