@@ -8626,5 +8626,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "800": [
+    {
+      "article_name": "The Road to Serfdom",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Road_to_Serfdom",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Robert's Rules of Order",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert's_Rules_of_Order",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mr. Tambourine Man",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mr._Tambourine_Man",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Bumper sticker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bumper_sticker",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Hot Wheels",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hot_Wheels",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Labubu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Labubu",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Keith Haring",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keith_Haring",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Lance Armstrong",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lance_Armstrong",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Three-Body Problem (novel)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Guybrush Threepwood",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guybrush_Threepwood",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
