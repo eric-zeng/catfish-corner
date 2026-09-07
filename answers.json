@@ -8998,5 +8998,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "806": [
+    {
+      "article_name": "Bruce Lee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bruce_Lee",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "I, Claudius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I%2C_Claudius",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Romulus and Remus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romulus_and_Remus",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "FM-2030",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/FM-2030",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Peace Corps",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_Corps",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Katseye",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katseye",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Stockholm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stockholm",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Trompe-l'\u0153il",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trompe-l'%C5%93il",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Four-leaf clover",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four-leaf_clover",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Keystone Cops",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keystone_Cops",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
