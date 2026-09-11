@@ -1,141 +1,141 @@
 {
   "1trilliongecs": {
     "Geography & Places": {
-      "attempts": 68,
-      "score": 48.0,
-      "proportion": 0.7059
+      "attempts": 75,
+      "score": 53.0,
+      "proportion": 0.7067
     },
     "Science and Nature": {
-      "attempts": 95,
-      "score": 51.5,
-      "proportion": 0.5421
+      "attempts": 107,
+      "score": 61.5,
+      "proportion": 0.5748
     },
     "Film & TV": {
-      "attempts": 90,
-      "score": 73.0,
-      "proportion": 0.8111
+      "attempts": 100,
+      "score": 78.0,
+      "proportion": 0.78
     },
     "Music": {
-      "attempts": 102,
-      "score": 83.0,
-      "proportion": 0.8137
+      "attempts": 115,
+      "score": 94.0,
+      "proportion": 0.8174
     },
     "Politics and Contemporary History": {
-      "attempts": 90,
-      "score": 61.0,
-      "proportion": 0.6778
+      "attempts": 98,
+      "score": 68.0,
+      "proportion": 0.6939
     },
     "History": {
-      "attempts": 63,
-      "score": 37.0,
-      "proportion": 0.5873
+      "attempts": 68,
+      "score": 41.5,
+      "proportion": 0.6103
     },
     "Technology and Engineering": {
-      "attempts": 62,
-      "score": 48.0,
-      "proportion": 0.7742
+      "attempts": 66,
+      "score": 50.0,
+      "proportion": 0.7576
     },
     "Mythology & Religion": {
-      "attempts": 50,
-      "score": 33.0,
-      "proportion": 0.66
+      "attempts": 57,
+      "score": 38.0,
+      "proportion": 0.6667
     },
     "Food & Drink": {
-      "attempts": 33,
-      "score": 27.5,
-      "proportion": 0.8333
+      "attempts": 36,
+      "score": 30.5,
+      "proportion": 0.8472
     },
     "Pop Culture": {
-      "attempts": 89,
-      "score": 69.0,
-      "proportion": 0.7753
+      "attempts": 99,
+      "score": 76.0,
+      "proportion": 0.7677
     },
     "Visual Art": {
-      "attempts": 26,
-      "score": 15.0,
-      "proportion": 0.5769
+      "attempts": 30,
+      "score": 18.0,
+      "proportion": 0.6
     },
     "Literature & Fiction": {
-      "attempts": 100,
-      "score": 72.5,
-      "proportion": 0.725
+      "attempts": 112,
+      "score": 81.5,
+      "proportion": 0.7277
     },
     "Architecture": {
-      "attempts": 19,
-      "score": 14.0,
-      "proportion": 0.7368
+      "attempts": 21,
+      "score": 16.0,
+      "proportion": 0.7619
     },
     "Sports": {
-      "attempts": 27,
-      "score": 18.0,
-      "proportion": 0.6667
+      "attempts": 31,
+      "score": 21.0,
+      "proportion": 0.6774
     }
   },
   "_positron": {
     "Mythology & Religion": {
-      "attempts": 53,
-      "score": 23.0,
-      "proportion": 0.434
+      "attempts": 54,
+      "score": 24.0,
+      "proportion": 0.4444
     },
     "Literature & Fiction": {
-      "attempts": 124,
-      "score": 36.5,
-      "proportion": 0.2944
+      "attempts": 130,
+      "score": 37.5,
+      "proportion": 0.2885
     },
     "Film & TV": {
-      "attempts": 102,
+      "attempts": 104,
       "score": 38.5,
-      "proportion": 0.3775
+      "proportion": 0.3702
     },
     "Pop Culture": {
-      "attempts": 71,
-      "score": 47.5,
-      "proportion": 0.669
+      "attempts": 77,
+      "score": 48.5,
+      "proportion": 0.6299
     },
     "History": {
-      "attempts": 70,
-      "score": 38.5,
-      "proportion": 0.55
+      "attempts": 73,
+      "score": 40.5,
+      "proportion": 0.5548
     },
     "Food & Drink": {
-      "attempts": 35,
-      "score": 20.0,
-      "proportion": 0.5714
+      "attempts": 37,
+      "score": 22.0,
+      "proportion": 0.5946
     },
     "Technology and Engineering": {
-      "attempts": 66,
-      "score": 48.5,
-      "proportion": 0.7348
+      "attempts": 69,
+      "score": 50.5,
+      "proportion": 0.7319
     },
     "Science and Nature": {
-      "attempts": 107,
-      "score": 43.5,
-      "proportion": 0.4065
+      "attempts": 113,
+      "score": 47.5,
+      "proportion": 0.4204
     },
     "Music": {
-      "attempts": 103,
-      "score": 31.0,
-      "proportion": 0.301
+      "attempts": 109,
+      "score": 32.0,
+      "proportion": 0.2936
     },
     "Politics and Contemporary History": {
-      "attempts": 103,
-      "score": 59.0,
-      "proportion": 0.5728
+      "attempts": 108,
+      "score": 60.0,
+      "proportion": 0.5556
     },
     "Sports": {
-      "attempts": 33,
-      "score": 15.0,
-      "proportion": 0.4545
+      "attempts": 34,
+      "score": 16.0,
+      "proportion": 0.4706
     },
     "Geography & Places": {
-      "attempts": 82,
-      "score": 56.0,
-      "proportion": 0.6829
+      "attempts": 84,
+      "score": 57.0,
+      "proportion": 0.6786
     },
     "Visual Art": {
-      "attempts": 33,
+      "attempts": 36,
       "score": 6.0,
-      "proportion": 0.1818
+      "proportion": 0.1667
     },
     "Architecture": {
       "attempts": 28,
@@ -217,19 +217,19 @@
   },
   "croton140": {
     "Mythology & Religion": {
-      "attempts": 66,
-      "score": 46.5,
-      "proportion": 0.7045
+      "attempts": 67,
+      "score": 47.5,
+      "proportion": 0.709
     },
     "Literature & Fiction": {
-      "attempts": 155,
-      "score": 91.5,
-      "proportion": 0.5903
+      "attempts": 159,
+      "score": 93.5,
+      "proportion": 0.5881
     },
     "Film & TV": {
-      "attempts": 129,
+      "attempts": 130,
       "score": 63.0,
-      "proportion": 0.4884
+      "proportion": 0.4846
     },
     "Pop Culture": {
       "attempts": 104,
@@ -237,9 +237,9 @@
       "proportion": 0.6154
     },
     "History": {
-      "attempts": 84,
-      "score": 47.5,
-      "proportion": 0.5655
+      "attempts": 85,
+      "score": 48.5,
+      "proportion": 0.5706
     },
     "Food & Drink": {
       "attempts": 45,
@@ -252,19 +252,19 @@
       "proportion": 0.4881
     },
     "Science and Nature": {
-      "attempts": 126,
-      "score": 40.0,
-      "proportion": 0.3175
+      "attempts": 129,
+      "score": 41.0,
+      "proportion": 0.3178
     },
     "Music": {
-      "attempts": 134,
+      "attempts": 136,
       "score": 66.0,
-      "proportion": 0.4925
+      "proportion": 0.4853
     },
     "Politics and Contemporary History": {
-      "attempts": 123,
+      "attempts": 124,
       "score": 62.5,
-      "proportion": 0.5081
+      "proportion": 0.504
     },
     "Sports": {
       "attempts": 44,
@@ -272,9 +272,9 @@
       "proportion": 0.5114
     },
     "Geography & Places": {
-      "attempts": 94,
-      "score": 54.0,
-      "proportion": 0.5745
+      "attempts": 95,
+      "score": 55.0,
+      "proportion": 0.5789
     },
     "Visual Art": {
       "attempts": 37,
@@ -289,141 +289,141 @@
   },
   "ghuggles": {
     "Mythology & Religion": {
-      "attempts": 67,
-      "score": 44.0,
-      "proportion": 0.6567
+      "attempts": 74,
+      "score": 48.0,
+      "proportion": 0.6486
     },
     "Literature & Fiction": {
-      "attempts": 158,
-      "score": 98.0,
-      "proportion": 0.6203
+      "attempts": 170,
+      "score": 106.0,
+      "proportion": 0.6235
     },
     "Film & TV": {
-      "attempts": 134,
-      "score": 89.5,
-      "proportion": 0.6679
+      "attempts": 144,
+      "score": 96.5,
+      "proportion": 0.6701
     },
     "Pop Culture": {
-      "attempts": 107,
-      "score": 72.0,
-      "proportion": 0.6729
-    },
-    "History": {
-      "attempts": 88,
-      "score": 65.0,
-      "proportion": 0.7386
-    },
-    "Food & Drink": {
-      "attempts": 45,
-      "score": 40.0,
-      "proportion": 0.8889
-    },
-    "Technology and Engineering": {
-      "attempts": 88,
-      "score": 65.0,
-      "proportion": 0.7386
-    },
-    "Science and Nature": {
-      "attempts": 129,
-      "score": 69.5,
-      "proportion": 0.5388
-    },
-    "Music": {
-      "attempts": 141,
-      "score": 94.0,
+      "attempts": 117,
+      "score": 78.0,
       "proportion": 0.6667
     },
-    "Politics and Contemporary History": {
-      "attempts": 125,
-      "score": 66.0,
-      "proportion": 0.528
+    "History": {
+      "attempts": 93,
+      "score": 69.0,
+      "proportion": 0.7419
     },
-    "Sports": {
-      "attempts": 45,
-      "score": 34.0,
-      "proportion": 0.7556
+    "Food & Drink": {
+      "attempts": 48,
+      "score": 43.0,
+      "proportion": 0.8958
     },
-    "Geography & Places": {
-      "attempts": 99,
-      "score": 87.0,
-      "proportion": 0.8788
-    },
-    "Visual Art": {
-      "attempts": 37,
-      "score": 18.0,
-      "proportion": 0.4865
-    },
-    "Architecture": {
-      "attempts": 31,
-      "score": 20.0,
-      "proportion": 0.6452
-    }
-  },
-  "hemlor": {
-    "Literature & Fiction": {
-      "attempts": 149,
-      "score": 86.5,
-      "proportion": 0.5805
+    "Technology and Engineering": {
+      "attempts": 92,
+      "score": 68.0,
+      "proportion": 0.7391
     },
     "Science and Nature": {
-      "attempts": 127,
-      "score": 61.0,
-      "proportion": 0.4803
+      "attempts": 141,
+      "score": 77.5,
+      "proportion": 0.5496
     },
     "Music": {
+      "attempts": 154,
+      "score": 104.0,
+      "proportion": 0.6753
+    },
+    "Politics and Contemporary History": {
       "attempts": 133,
       "score": 70.0,
       "proportion": 0.5263
     },
-    "Politics and Contemporary History": {
-      "attempts": 120,
-      "score": 54.0,
-      "proportion": 0.45
-    },
-    "Technology and Engineering": {
-      "attempts": 84,
-      "score": 50.0,
-      "proportion": 0.5952
-    },
-    "History": {
-      "attempts": 83,
-      "score": 64.0,
-      "proportion": 0.7711
-    },
-    "Film & TV": {
-      "attempts": 130,
-      "score": 81.5,
-      "proportion": 0.6269
-    },
-    "Pop Culture": {
-      "attempts": 103,
-      "score": 73.0,
-      "proportion": 0.7087
-    },
     "Sports": {
-      "attempts": 42,
-      "score": 29.0,
-      "proportion": 0.6905
-    },
-    "Mythology & Religion": {
-      "attempts": 65,
-      "score": 52.0,
-      "proportion": 0.8
+      "attempts": 49,
+      "score": 38.0,
+      "proportion": 0.7755
     },
     "Geography & Places": {
-      "attempts": 90,
-      "score": 61.0,
-      "proportion": 0.6778
-    },
-    "Food & Drink": {
-      "attempts": 41,
-      "score": 37.0,
-      "proportion": 0.9024
+      "attempts": 106,
+      "score": 92.0,
+      "proportion": 0.8679
     },
     "Visual Art": {
-      "attempts": 37,
-      "score": 16.0,
-      "proportion": 0.4324
+      "attempts": 41,
+      "score": 20.0,
+      "proportion": 0.4878
+    },
+    "Architecture": {
+      "attempts": 33,
+      "score": 21.0,
+      "proportion": 0.6364
+    }
+  },
+  "hemlor": {
+    "Literature & Fiction": {
+      "attempts": 157,
+      "score": 89.5,
+      "proportion": 0.5701
+    },
+    "Science and Nature": {
+      "attempts": 136,
+      "score": 69.0,
+      "proportion": 0.5074
+    },
+    "Music": {
+      "attempts": 142,
+      "score": 75.0,
+      "proportion": 0.5282
+    },
+    "Politics and Contemporary History": {
+      "attempts": 125,
+      "score": 55.0,
+      "proportion": 0.44
+    },
+    "Technology and Engineering": {
+      "attempts": 85,
+      "score": 51.0,
+      "proportion": 0.6
+    },
+    "History": {
+      "attempts": 85,
+      "score": 66.0,
+      "proportion": 0.7765
+    },
+    "Film & TV": {
+      "attempts": 139,
+      "score": 87.5,
+      "proportion": 0.6295
+    },
+    "Pop Culture": {
+      "attempts": 108,
+      "score": 77.0,
+      "proportion": 0.713
+    },
+    "Sports": {
+      "attempts": 43,
+      "score": 30.0,
+      "proportion": 0.6977
+    },
+    "Mythology & Religion": {
+      "attempts": 70,
+      "score": 55.0,
+      "proportion": 0.7857
+    },
+    "Geography & Places": {
+      "attempts": 92,
+      "score": 63.0,
+      "proportion": 0.6848
+    },
+    "Food & Drink": {
+      "attempts": 42,
+      "score": 38.0,
+      "proportion": 0.9048
+    },
+    "Visual Art": {
+      "attempts": 40,
+      "score": 17.0,
+      "proportion": 0.425
     },
     "Architecture": {
       "attempts": 26,
@@ -505,19 +505,19 @@
   },
   "mezaros": {
     "History": {
-      "attempts": 22,
-      "score": 15.0,
-      "proportion": 0.6818
+      "attempts": 23,
+      "score": 16.0,
+      "proportion": 0.6957
     },
     "Mythology & Religion": {
-      "attempts": 15,
-      "score": 11.0,
-      "proportion": 0.7333
+      "attempts": 16,
+      "score": 12.0,
+      "proportion": 0.75
     },
     "Literature & Fiction": {
-      "attempts": 44,
-      "score": 19.5,
-      "proportion": 0.4432
+      "attempts": 47,
+      "score": 20.5,
+      "proportion": 0.4362
     },
     "Technology and Engineering": {
       "attempts": 25,
@@ -535,9 +535,9 @@
       "proportion": 0.6364
     },
     "Film & TV": {
-      "attempts": 34,
-      "score": 15.0,
-      "proportion": 0.4412
+      "attempts": 35,
+      "score": 16.0,
+      "proportion": 0.4571
     },
     "Geography & Places": {
       "attempts": 28,
@@ -555,9 +555,9 @@
       "proportion": 0.5
     },
     "Music": {
-      "attempts": 29,
-      "score": 9.0,
-      "proportion": 0.3103
+      "attempts": 30,
+      "score": 10.0,
+      "proportion": 0.3333
     },
     "Politics and Contemporary History": {
       "attempts": 27,
@@ -565,9 +565,9 @@
       "proportion": 0.4444
     },
     "Science and Nature": {
-      "attempts": 28,
-      "score": 7.0,
-      "proportion": 0.25
+      "attempts": 30,
+      "score": 8.0,
+      "proportion": 0.2667
     },
     "Architecture": {
       "attempts": 10,
@@ -582,24 +582,24 @@
       "proportion": 0.8222
     },
     "Literature & Fiction": {
-      "attempts": 110,
-      "score": 71.5,
-      "proportion": 0.65
+      "attempts": 114,
+      "score": 73.5,
+      "proportion": 0.6447
     },
     "Film & TV": {
-      "attempts": 95,
-      "score": 60.0,
-      "proportion": 0.6316
+      "attempts": 98,
+      "score": 60.5,
+      "proportion": 0.6173
     },
     "Pop Culture": {
-      "attempts": 70,
-      "score": 51.0,
-      "proportion": 0.7286
+      "attempts": 76,
+      "score": 55.0,
+      "proportion": 0.7237
     },
     "History": {
-      "attempts": 70,
+      "attempts": 71,
       "score": 34.0,
-      "proportion": 0.4857
+      "proportion": 0.4789
     },
     "Food & Drink": {
       "attempts": 31,
@@ -612,34 +612,34 @@
       "proportion": 0.3984
     },
     "Science and Nature": {
-      "attempts": 90,
+      "attempts": 92,
       "score": 34.5,
-      "proportion": 0.3833
+      "proportion": 0.375
     },
     "Music": {
-      "attempts": 93,
-      "score": 36.5,
-      "proportion": 0.3925
+      "attempts": 96,
+      "score": 38.5,
+      "proportion": 0.401
     },
     "Politics and Contemporary History": {
-      "attempts": 73,
-      "score": 22.5,
-      "proportion": 0.3082
+      "attempts": 77,
+      "score": 23.5,
+      "proportion": 0.3052
     },
     "Sports": {
-      "attempts": 32,
-      "score": 9.0,
-      "proportion": 0.2812
+      "attempts": 33,
+      "score": 10.0,
+      "proportion": 0.303
     },
     "Geography & Places": {
-      "attempts": 60,
+      "attempts": 61,
       "score": 19.0,
-      "proportion": 0.3167
+      "proportion": 0.3115
     },
     "Visual Art": {
-      "attempts": 24,
-      "score": 8.0,
-      "proportion": 0.3333
+      "attempts": 25,
+      "score": 9.0,
+      "proportion": 0.36
     },
     "Architecture": {
       "attempts": 23,
