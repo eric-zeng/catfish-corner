@@ -1,14 +1,14 @@
 {
   "1trilliongecs": {
     "Britslop and Gaelicslop": {
-      "attempts": 150,
-      "score": 93.5,
-      "proportion": 0.6233
+      "attempts": 151,
+      "score": 94.5,
+      "proportion": 0.6258
     },
     "Boat Names": {
-      "attempts": 11,
-      "score": 6.0,
-      "proportion": 0.5455
+      "attempts": 12,
+      "score": 7.0,
+      "proportion": 0.5833
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 58,
@@ -23,14 +23,14 @@
       "proportion": 0.25
     },
     "Britslop and Gaelicslop": {
-      "attempts": 145,
-      "score": 45.5,
-      "proportion": 0.3138
+      "attempts": 146,
+      "score": 46.5,
+      "proportion": 0.3185
     },
     "Boat Names": {
-      "attempts": 12,
-      "score": 7.0,
-      "proportion": 0.5833
+      "attempts": 13,
+      "score": 8.0,
+      "proportion": 0.6154
     }
   },
   "cagetron8000": {
@@ -57,14 +57,14 @@
       "proportion": 0.4058
     },
     "Britslop and Gaelicslop": {
-      "attempts": 178,
-      "score": 81.0,
-      "proportion": 0.4551
+      "attempts": 179,
+      "score": 82.0,
+      "proportion": 0.4581
     },
     "Boat Names": {
-      "attempts": 13,
-      "score": 5.0,
-      "proportion": 0.3846
+      "attempts": 14,
+      "score": 6.0,
+      "proportion": 0.4286
     }
   },
   "ghuggles": {
@@ -74,21 +74,21 @@
       "proportion": 0.6364
     },
     "Britslop and Gaelicslop": {
-      "attempts": 202,
-      "score": 119.5,
-      "proportion": 0.5916
+      "attempts": 203,
+      "score": 120.5,
+      "proportion": 0.5936
     },
     "Boat Names": {
-      "attempts": 13,
-      "score": 8.0,
-      "proportion": 0.6154
+      "attempts": 14,
+      "score": 9.0,
+      "proportion": 0.6429
     }
   },
   "hemlor": {
     "Britslop and Gaelicslop": {
-      "attempts": 188,
-      "score": 91.5,
-      "proportion": 0.4867
+      "attempts": 189,
+      "score": 92.5,
+      "proportion": 0.4894
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 72,
@@ -96,9 +96,9 @@
       "proportion": 0.5694
     },
     "Boat Names": {
-      "attempts": 13,
-      "score": 7.5,
-      "proportion": 0.5769
+      "attempts": 14,
+      "score": 8.5,
+      "proportion": 0.6071
     }
   },
   "le_roi": {
@@ -125,14 +125,14 @@
       "proportion": 0.4118
     },
     "Britslop and Gaelicslop": {
-      "attempts": 35,
-      "score": 15.0,
-      "proportion": 0.4286
+      "attempts": 36,
+      "score": 16.0,
+      "proportion": 0.4444
     },
     "Boat Names": {
-      "attempts": 3,
-      "score": 1.5,
-      "proportion": 0.5
+      "attempts": 4,
+      "score": 2.5,
+      "proportion": 0.625
     }
   },
   "optic_chiasm": {

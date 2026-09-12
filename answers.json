@@ -8589,7 +8589,7 @@
     {
       "article_name": "Sudoku",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sudoku",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
@@ -9114,7 +9114,7 @@
     {
       "article_name": "Marble (toy)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Marble_(toy)",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
@@ -9214,7 +9214,7 @@
     {
       "article_name": "PC LOAD LETTER",
       "wikipedia_url": "https://en.wikipedia.org/wiki/PC_LOAD_LETTER",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
@@ -9294,37 +9294,41 @@
     {
       "article_name": "Fawlty Towers",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fawlty_Towers",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "United States Secret Service",
       "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_Secret_Service",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Apollo 13 (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_13_(film)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Boat Names"
+      ]
     },
     {
       "article_name": "Bugs Bunny",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bugs_Bunny",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Switzerland",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Switzerland",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Sleater-Kinney",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sleater-Kinney",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
@@ -9336,18 +9340,80 @@
     {
       "article_name": "Davy Crockett (nuclear device)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Davy_Crockett_(nuclear_device)",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Omar al-Bashir",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Omar_al-Bashir",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Aaron Hernandez",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aaron_Hernandez",
+      "knowledge_area": "Sports",
+      "labels": []
+    }
+  ],
+  "811": [
+    {
+      "article_name": "Ellis Island",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ellis_Island",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Hairy ball theorem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hairy_ball_theorem",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "William Ewart Gladstone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_Ewart_Gladstone",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mother Teresa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mother_Teresa",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Yuengling",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuengling",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Life Is Beautiful",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Life_Is_Beautiful",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Olof Palme",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olof_Palme",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Kelvin Kiptum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kelvin_Kiptum",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "A Modest Proposal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Modest_Proposal",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Kimi R\u00e4ikk\u00f6nen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen",
       "knowledge_area": "",
       "labels": []
     }
