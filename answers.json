@@ -8719,19 +8719,19 @@
     {
       "article_name": "John James Audubon",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_James_Audubon",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     },
     {
       "article_name": "TeX",
       "wikipedia_url": "https://en.wikipedia.org/wiki/TeX",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "One-child policy",
       "wikipedia_url": "https://en.wikipedia.org/wiki/One-child_policy",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
@@ -9335,7 +9335,9 @@
       "article_name": "Notting Hill Carnival",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Notting_Hill_Carnival",
       "knowledge_area": "",
-      "labels": []
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Davy Crockett (nuclear device)",
@@ -9360,19 +9362,19 @@
     {
       "article_name": "Ellis Island",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ellis_Island",
-      "knowledge_area": "",
+      "knowledge_area": "Geography & Places",
       "labels": []
     },
     {
       "article_name": "Hairy ball theorem",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hairy_ball_theorem",
-      "knowledge_area": "",
+      "knowledge_area": "Science and Nature",
       "labels": []
     },
     {
       "article_name": "William Ewart Gladstone",
       "wikipedia_url": "https://en.wikipedia.org/wiki/William_Ewart_Gladstone",
-      "knowledge_area": "",
+      "knowledge_area": "History",
       "labels": []
     },
     {
@@ -9396,19 +9398,19 @@
     {
       "article_name": "Olof Palme",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Olof_Palme",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
       "article_name": "Kelvin Kiptum",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kelvin_Kiptum",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "A Modest Proposal",
       "wikipedia_url": "https://en.wikipedia.org/wiki/A_Modest_Proposal",
-      "knowledge_area": "",
+      "knowledge_area": "Literature & Fiction",
       "labels": []
     },
     {
