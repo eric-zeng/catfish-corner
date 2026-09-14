@@ -9441,8 +9441,10 @@
     {
       "article_name": "Lions led by donkeys",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lions_led_by_donkeys",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Politics and Contemporary History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "L. L. Zamenhof",
@@ -9509,7 +9511,7 @@
     {
       "article_name": "More popular than Jesus",
       "wikipedia_url": "https://en.wikipedia.org/wiki/More_popular_than_Jesus",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
@@ -9521,25 +9523,25 @@
     {
       "article_name": "Bob Marley",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bob_Marley",
-      "knowledge_area": "",
+      "knowledge_area": "Music",
       "labels": []
     },
     {
       "article_name": "Magnolia (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Magnolia_(film)",
-      "knowledge_area": "",
+      "knowledge_area": "Film & TV",
       "labels": []
     },
     {
       "article_name": "Gary Larson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gary_Larson",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "Sirhan Sirhan",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sirhan_Sirhan",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
