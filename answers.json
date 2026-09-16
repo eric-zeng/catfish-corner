@@ -9144,7 +9144,7 @@
     {
       "article_name": "Larry (cat)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Larry_(cat)",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": [
         "Britslop and Gaelicslop"
       ]
@@ -9562,7 +9562,9 @@
       "article_name": "Pierre-Simon Laplace",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pierre-Simon_Laplace",
       "knowledge_area": "Science and Nature",
-      "labels": []
+      "labels": [
+        "Medieval / Renaissance / Enlightenment Bullshit"
+      ]
     },
     {
       "article_name": "Brigham Young",
@@ -9579,7 +9581,7 @@
     {
       "article_name": "Haaretz",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Haaretz",
-      "knowledge_area": "",
+      "knowledge_area": "Politics and Contemporary History",
       "labels": []
     },
     {
@@ -9592,7 +9594,9 @@
       "article_name": "Eduardo Paolozzi",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eduardo_Paolozzi",
       "knowledge_area": "Visual Art",
-      "labels": []
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Jade",
@@ -9623,62 +9627,70 @@
     {
       "article_name": "Fleur-de-lis",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fleur-de-lis",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     },
     {
       "article_name": "Seventh-inning stretch",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seventh-inning_stretch",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Aftersun",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aftersun",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Jeeves",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jeeves",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Literature & Fiction",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "American Gothic",
       "wikipedia_url": "https://en.wikipedia.org/wiki/American_Gothic",
-      "knowledge_area": "",
+      "knowledge_area": "Visual Art",
       "labels": []
     },
     {
       "article_name": "Graggle Simpson",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Graggle_Simpson",
-      "knowledge_area": "",
+      "knowledge_area": "Pop Culture",
       "labels": []
     },
     {
       "article_name": "David Livingstone",
       "wikipedia_url": "https://en.wikipedia.org/wiki/David_Livingstone",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "History",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     },
     {
       "article_name": "Billie Jean King",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Billie_Jean_King",
-      "knowledge_area": "",
+      "knowledge_area": "Sports",
       "labels": []
     },
     {
       "article_name": "Tesla, Inc.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tesla%2C_Inc.",
-      "knowledge_area": "",
+      "knowledge_area": "Technology and Engineering",
       "labels": []
     },
     {
       "article_name": "Magical Mystery Tour (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Magical_Mystery_Tour_(film)",
-      "knowledge_area": "",
-      "labels": []
+      "knowledge_area": "Film & TV",
+      "labels": [
+        "Britslop and Gaelicslop"
+      ]
     }
   ]
 }
