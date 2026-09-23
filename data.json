@@ -8289,6 +8289,15 @@
     "guesses": "[0,1,0,1,1,0,1,1,1,1]"
   },
   {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-09-23T12:06:09.094Z",
+    "day_number": 818,
+    "score": 2.5,
+    "total": 10,
+    "guesses": "[0,1,0,0,0,0,0,0.5,1,0]"
+  },
+  {
     "username": "mezaros",
     "user_id": "579871818450468904",
     "date": "2026-09-19T12:13:33.707Z",
@@ -8325,9 +8334,27 @@
     "guesses": "[1,1,1,1,1,1,1,1,0,1]"
   },
   {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-09-23T12:16:16.103Z",
+    "day_number": 819,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[0,0,1,1,1,1,1,1,0,1]"
+  },
+  {
     "username": "1trilliongecs",
     "user_id": "739617437334634616",
     "date": "2026-09-21T12:36:36.760Z",
+    "day_number": 820,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,1,1,1,0,0,0]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-09-23T12:02:04.769Z",
     "day_number": 820,
     "score": 7.0,
     "total": 10,
@@ -8382,6 +8409,33 @@
     "username": "1trilliongecs",
     "user_id": "739617437334634616",
     "date": "2026-09-23T10:07:35.146Z",
+    "day_number": 822,
+    "score": 7.0,
+    "total": 10,
+    "guesses": "[1,1,1,1,0,1,0,1,1,0]"
+  },
+  {
+    "username": "croton140",
+    "user_id": "934560035718189076",
+    "date": "2026-09-23T12:02:09.293Z",
+    "day_number": 822,
+    "score": 6.5,
+    "total": 10,
+    "guesses": "[0.5,1,1,1,0,1,0,1,1,0]"
+  },
+  {
+    "username": "hemlor",
+    "user_id": "238892724076544002",
+    "date": "2026-09-23T11:50:58.952Z",
+    "day_number": 822,
+    "score": 6.0,
+    "total": 10,
+    "guesses": "[1,0,0,1,0,1,0,1,1,1]"
+  },
+  {
+    "username": "mezaros",
+    "user_id": "579871818450468904",
+    "date": "2026-09-23T12:02:21.782Z",
     "day_number": 822,
     "score": 7.0,
     "total": 10,
