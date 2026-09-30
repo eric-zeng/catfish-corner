@@ -10498,5 +10498,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "829": [
+    {
+      "article_name": "Louisiana Purchase",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louisiana_Purchase",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Lyme disease",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyme_disease",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Parsec",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Parsec",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Shahada",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahada",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Curling",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Curling",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Antikythera mechanism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "It (novel)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/It_(novel)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Deep Throat (Watergate)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deep_Throat_(Watergate)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jack Skellington",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_Skellington",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Three wise monkeys",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_wise_monkeys",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
