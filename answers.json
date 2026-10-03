@@ -10684,5 +10684,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "832": [
+    {
+      "article_name": "Nearer, My God, to Thee",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nearer%2C_My_God%2C_to_Thee",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Arc de Triomphe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arc_de_Triomphe",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Dunkirk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dunkirk",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Lazarus of Bethany",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lazarus_of_Bethany",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mariel boatlift",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mariel_boatlift",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "My Chemical Romance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/My_Chemical_Romance",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Wolpertinger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wolpertinger",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Make love, not war",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Make_love%2C_not_war",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Moo Deng",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moo_Deng",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "League of Legends",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/League_of_Legends",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
