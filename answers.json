@@ -3462,9 +3462,7 @@
       "article_name": "Prometheus",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Prometheus",
       "knowledge_area": "Mythology & Religion",
-      "labels": [
-        "Boat Names"
-      ]
+      "labels": []
     },
     {
       "article_name": "Samson",
@@ -4813,9 +4811,7 @@
       "article_name": "Lockheed U-2",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lockheed_U-2",
       "knowledge_area": "Technology and Engineering",
-      "labels": [
-        "Boat Names"
-      ]
+      "labels": []
     },
     {
       "article_name": "Backrooms (film)",
@@ -5797,7 +5793,6 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Enola_Gay_(song)",
       "knowledge_area": "Music",
       "labels": [
-        "Boat Names",
         "Britslop and Gaelicslop"
       ]
     },
@@ -6654,7 +6649,9 @@
       "article_name": "Philadelphia Experiment",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philadelphia_Experiment",
       "knowledge_area": "Pop Culture",
-      "labels": []
+      "labels": [
+        "Boat Names"
+      ]
     },
     {
       "article_name": "Robin Hood",
@@ -8142,6 +8139,7 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/St_Nazaire_Raid",
       "knowledge_area": "Politics and Contemporary History",
       "labels": [
+        "Boat Names",
         "Britslop and Gaelicslop"
       ]
     },
@@ -9309,9 +9307,7 @@
       "article_name": "Apollo 13 (film)",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_13_(film)",
       "knowledge_area": "Film & TV",
-      "labels": [
-        "Boat Names"
-      ]
+      "labels": []
     },
     {
       "article_name": "Bugs Bunny",
@@ -10792,7 +10788,9 @@
       "article_name": "Mariel boatlift",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mariel_boatlift",
       "knowledge_area": "Politics and Contemporary History",
-      "labels": []
+      "labels": [
+        "Boat Names"
+      ]
     },
     {
       "article_name": "My Chemical Romance",

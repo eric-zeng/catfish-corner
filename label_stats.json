@@ -6,9 +6,9 @@
       "proportion": 0.6439
     },
     "Boat Names": {
-      "attempts": 13,
-      "score": 8.0,
-      "proportion": 0.6154
+      "attempts": 12,
+      "score": 6.0,
+      "proportion": 0.5
     },
     "Medieval / Renaissance / Enlightenment Bullshit": {
       "attempts": 71,
@@ -28,9 +28,9 @@
       "proportion": 0.3378
     },
     "Boat Names": {
-      "attempts": 14,
-      "score": 9.0,
-      "proportion": 0.6429
+      "attempts": 11,
+      "score": 5.0,
+      "proportion": 0.4545
     }
   },
   "cagetron8000": {
@@ -45,9 +45,9 @@
       "proportion": 0.3871
     },
     "Boat Names": {
-      "attempts": 6,
+      "attempts": 7,
       "score": 3.0,
-      "proportion": 0.5
+      "proportion": 0.4286
     }
   },
   "croton140": {
@@ -62,9 +62,9 @@
       "proportion": 0.4714
     },
     "Boat Names": {
-      "attempts": 14,
-      "score": 6.0,
-      "proportion": 0.4286
+      "attempts": 11,
+      "score": 4.0,
+      "proportion": 0.3636
     }
   },
   "ghuggles": {
@@ -79,9 +79,9 @@
       "proportion": 0.6128
     },
     "Boat Names": {
-      "attempts": 15,
-      "score": 10.0,
-      "proportion": 0.6667
+      "attempts": 14,
+      "score": 8.0,
+      "proportion": 0.5714
     }
   },
   "hemlor": {
@@ -96,9 +96,9 @@
       "proportion": 0.5595
     },
     "Boat Names": {
-      "attempts": 15,
-      "score": 9.5,
-      "proportion": 0.6333
+      "attempts": 14,
+      "score": 7.5,
+      "proportion": 0.5357
     }
   },
   "le_roi": {
@@ -113,9 +113,9 @@
       "proportion": 0.2899
     },
     "Boat Names": {
-      "attempts": 13,
-      "score": 5.0,
-      "proportion": 0.3846
+      "attempts": 10,
+      "score": 4.0,
+      "proportion": 0.4
     }
   },
   "mezaros": {
@@ -130,9 +130,9 @@
       "proportion": 0.5231
     },
     "Boat Names": {
-      "attempts": 4,
-      "score": 2.5,
-      "proportion": 0.625
+      "attempts": 3,
+      "score": 1.5,
+      "proportion": 0.5
     }
   },
   "optic_chiasm": {
@@ -147,9 +147,9 @@
       "proportion": 0.4803
     },
     "Boat Names": {
-      "attempts": 9,
-      "score": 2.0,
-      "proportion": 0.2222
+      "attempts": 6,
+      "score": 1.0,
+      "proportion": 0.1667
     }
   }
 }
