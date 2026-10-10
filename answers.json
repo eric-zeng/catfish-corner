@@ -11216,5 +11216,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "839": [
+    {
+      "article_name": "La France Insoumise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_France_Insoumise",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Athena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athena",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Boethius",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boethius",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Dyson sphere",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dyson_sphere",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Puff, the Magic Dragon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puff%2C_the_Magic_Dragon",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Breathalyzer",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Breathalyzer",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mpox",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mpox",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Take Me to Church",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Take_Me_to_Church",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Red Hand of Ulster",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Hand_of_Ulster",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Bethlehem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethlehem",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
