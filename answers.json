@@ -11278,5 +11278,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "840": [
+    {
+      "article_name": "Giovanni Battista Piranesi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Giovanni_Battista_Piranesi",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Oil!",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oil!",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Plague (novel)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Plague_(novel)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Boycott",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boycott",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Jack Ma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_Ma",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mermaid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mermaid",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Lin-Manuel Miranda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lin-Manuel_Miranda",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "They Might Be Giants",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/They_Might_Be_Giants",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "HTML",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/HTML",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Madam C. J. Walker",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madam_C._J._Walker",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
