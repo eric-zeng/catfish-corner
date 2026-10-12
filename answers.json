@@ -11340,5 +11340,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "841": [
+    {
+      "article_name": "Spartacus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spartacus",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Cartouche",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cartouche",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Geppetto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geppetto",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Peggy Guggenheim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peggy_Guggenheim",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Parable",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Parable",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Luddites",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luddites",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Mark David Chapman",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mark_David_Chapman",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Hindu Kush",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hindu_Kush",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Kitchen sink realism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kitchen_sink_realism",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Spirited Away",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spirited_Away",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
