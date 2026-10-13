@@ -11402,5 +11402,67 @@
       "knowledge_area": "",
       "labels": []
     }
+  ],
+  "842": [
+    {
+      "article_name": "Daniel Defoe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daniel_Defoe",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "The Color Purple (musical)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Color_Purple_(musical)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Twilight (novel series)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twilight_(novel_series)",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Busby Babes",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Busby_Babes",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Subnautica",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Subnautica",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Sloop John B",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sloop_John_B",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Opium of the people",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Opium_of_the_people",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Maasai people",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maasai_people",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Johnny Hallyday",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Johnny_Hallyday",
+      "knowledge_area": "",
+      "labels": []
+    },
+    {
+      "article_name": "Batmobile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Batmobile",
+      "knowledge_area": "",
+      "labels": []
+    }
   ]
 }
